@@ -1,0 +1,3529 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "path": "/dev-404-page/",
+      "id": "SitePage /dev-404-page/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "2691c3cc418f29f427ed0eb36773a7e8",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "1fc32581-893a-55e8-8927-bcd667e2b700": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "id": "1fc32581-893a-55e8-8927-bcd667e2b700",
+      "name": "load-babel-config",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "packageJson": {
+        "name": "load-babel-config",
+        "description": "Internal plugin that handles loading Babel configs",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "e039eb8c20efa55f14af7a68fc833ce3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "a5079d69-ba80-53dc-82f9-0f440bd5448c": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "a5079d69-ba80-53dc-82f9-0f440bd5448c",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "52dfd281f58670948cce186cdbfe543d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "f795702c-a3b8-5a88-88ee-5d06019d44fa": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "4b86c2af0f0984adae70e8524546b589",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "84dad27f-1d44-51fc-ac56-4db2e5222995": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "84dad27f-1d44-51fc-ac56-4db2e5222995",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "e7980f36855f8083b0622efe450d210f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "6f4b2fa9-66b5-5205-a03f-140005a2cfe5": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
+      "id": "6f4b2fa9-66b5-5205-a03f-140005a2cfe5",
+      "name": "webpack-theme-component-shadowing",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateWebpackConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
+      "packageJson": {
+        "name": "webpack-theme-component-shadowing",
+        "description": "An internal Gatsby plugin which handles configuring webpack to ensure theme components fall back from the user's site to theme modules.",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Chris Biscardi <chris@christopherbiscardi.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "81cc32ebf84b5cce39c9df4e7bfdd428",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "924c983c-1c26-5fa2-8262-897c81268afc": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-source-filesystem",
+      "id": "924c983c-1c26-5fa2-8262-897c81268afc",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.28",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
+        "name": "blog"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.28",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "2.1.2"
+          },
+          {
+            "name": "file-type",
+            "version": "^10.2.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "read-chunk",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "xstate",
+            "version": "^3.1.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "c9883980312712ad2a924104fd279a0c",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "20061000-e8ad-54ea-a2f4-2579b494add1": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-source-filesystem",
+      "id": "20061000-e8ad-54ea-a2f4-2579b494add1",
+      "name": "gatsby-source-filesystem",
+      "version": "2.0.28",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
+        "name": "assets"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "2.0.28",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "2.1.2"
+          },
+          {
+            "name": "file-type",
+            "version": "^10.2.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^2.2.0"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "read-chunk",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          },
+          {
+            "name": "xstate",
+            "version": "^3.1.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "da4d8c0197d00a2878ee46ba88d1d7d4",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "0944cff4-2f72-5372-9e75-e4f9c30d3039": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-transformer-remark",
+      "id": "0944cff4-2f72-5372-9e75-e4f9c30d3039",
+      "name": "gatsby-transformer-remark",
+      "version": "2.3.8",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-images",
+            "id": "4a359a36-fef3-5c49-a0f9-45c24a5fd434",
+            "name": "gatsby-remark-images",
+            "version": "2.0.6",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 590,
+              "wrapperStyle": "",
+              "backgroundColor": "white",
+              "linkImagesToOriginal": true,
+              "showCaptions": false,
+              "pathPrefix": "",
+              "withWebp": false
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-responsive-iframe",
+            "id": "1a3d9dbf-c3c7-50dc-9f59-97f0cf8bb163",
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "2.1.1",
+            "pluginOptions": {
+              "plugins": [],
+              "wrapperStyle": "margin-bottom: 1.0725rem"
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-responsive-iframe"
+          },
+          {
+            "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-prismjs",
+            "id": "b8d3a2f5-5540-5699-b862-153e57b2c618",
+            "name": "gatsby-remark-prismjs",
+            "version": "3.2.6",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-prismjs"
+          },
+          {
+            "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-copy-linked-files",
+            "id": "80533a5b-ad2d-50ff-af51-726674869458",
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "2.0.11",
+            "pluginOptions": {
+              "plugins": [],
+              "ignoreFileExtensions": [
+                "png",
+                "jpg",
+                "jpeg",
+                "bmp",
+                "tiff"
+              ]
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-copy-linked-files"
+          },
+          {
+            "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-smartypants",
+            "id": "90305615-131b-5991-a708-2c2d1c43d946",
+            "name": "gatsby-remark-smartypants",
+            "version": "2.0.9",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-smartypants"
+          }
+        ]
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "2.3.8",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "hast-util-raw",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "mdast-util-to-string",
+            "version": "^1.0.5"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "remark",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.18.2"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.5"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-remove-position",
+            "version": "^1.1.2"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.88"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "79d4caaa678b26093cfface2308ccdad",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "4a359a36-fef3-5c49-a0f9-45c24a5fd434": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-images",
+      "id": "4a359a36-fef3-5c49-a0f9-45c24a5fd434",
+      "name": "gatsby-remark-images",
+      "version": "2.0.6",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 590,
+        "wrapperStyle": "",
+        "backgroundColor": "white",
+        "linkImagesToOriginal": true,
+        "showCaptions": false,
+        "pathPrefix": "",
+        "withWebp": false
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "2.0.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "markdown",
+          "remark",
+          "responsive images"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit-parents",
+            "version": "^2.0.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.2"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": ">2.0.0-alpha"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.5"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "16e6783797e1687a7c9b771daf1ab31e",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "1a3d9dbf-c3c7-50dc-9f59-97f0cf8bb163": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-responsive-iframe",
+      "id": "1a3d9dbf-c3c7-50dc-9f59-97f0cf8bb163",
+      "name": "gatsby-remark-responsive-iframe",
+      "version": "2.1.1",
+      "pluginOptions": {
+        "plugins": [],
+        "wrapperStyle": "margin-bottom: 1.0725rem"
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-responsive-iframe",
+      "packageJson": {
+        "name": "gatsby-remark-responsive-iframe",
+        "description": "Make iframes in Markdown processed by Remark responsive",
+        "version": "2.1.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          },
+          {
+            "name": "remark",
+            "version": "^9.0.0"
+          },
+          {
+            "name": "unist-util-find",
+            "version": "^1.0.1"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "34f5266d5576467f47a34e240912febd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "b8d3a2f5-5540-5699-b862-153e57b2c618": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-prismjs",
+      "id": "b8d3a2f5-5540-5699-b862-153e57b2c618",
+      "name": "gatsby-remark-prismjs",
+      "version": "3.2.6",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-prismjs",
+      "packageJson": {
+        "name": "gatsby-remark-prismjs",
+        "description": "Adds syntax highlighting to code blocks at build time using PrismJS",
+        "version": "3.2.6",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "parse-numeric-range",
+            "version": "^0.0.2"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.15.0"
+          },
+          {
+            "name": "remark",
+            "version": "^9.0.0"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.15.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "3e4b6f390a6cb190e7bdc4ac74186b47",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "80533a5b-ad2d-50ff-af51-726674869458": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-copy-linked-files",
+      "id": "80533a5b-ad2d-50ff-af51-726674869458",
+      "name": "gatsby-remark-copy-linked-files",
+      "version": "2.0.11",
+      "pluginOptions": {
+        "plugins": [],
+        "ignoreFileExtensions": [
+          "png",
+          "jpg",
+          "jpeg",
+          "bmp",
+          "tiff"
+        ]
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-copy-linked-files",
+      "packageJson": {
+        "name": "gatsby-remark-copy-linked-files",
+        "description": "Find files which are linked to from markdown and copy them to the public directory",
+        "version": "2.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "path-is-inside",
+            "version": "^1.0.2"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "e9a8547638cc6de74a792ef6d5ae5194",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "90305615-131b-5991-a708-2c2d1c43d946": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-smartypants",
+      "id": "90305615-131b-5991-a708-2c2d1c43d946",
+      "name": "gatsby-remark-smartypants",
+      "version": "2.0.9",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-remark-smartypants",
+      "packageJson": {
+        "name": "gatsby-remark-smartypants",
+        "description": "Use retext-smartypants to auto-enhance typography of markdown",
+        "version": "2.0.9",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "smartypants"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "retext",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "retext-smartypants",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "8bdf13a41e4a699356ebb0563500f850",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-transformer-sharp",
+      "id": "da3d06eb-685e-5c77-ae1d-750eb6a2e4a9",
+      "name": "gatsby-transformer-sharp",
+      "version": "2.1.17",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "2.1.17",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.21.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.33"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.0-beta.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "0a41e8d916f564ff3115864f04b27999",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "84d6154d-4241-556c-a679-cc8339cac100": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-sharp",
+      "id": "84d6154d-4241-556c-a679-cc8339cac100",
+      "name": "gatsby-plugin-sharp",
+      "version": "2.0.30",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "2.0.30",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-mozjpeg",
+            "version": "^8.0.0"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "^6.0.0"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^5.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.21.3"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "4b3da4c0338170af468c37bccf4d987f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "624c196c-30dd-59e4-bcdd-a6f980c0396f": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-google-analytics",
+      "id": "624c196c-30dd-59e4-bcdd-a6f980c0396f",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "2.0.17",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "2.0.17",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "56f9432704180d5584dad9a9096cc7d7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "e1a9b6ff-843f-5a8b-b9fa-7ab223df58a2": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-feed",
+      "id": "e1a9b6ff-843f-5a8b-b9fa-7ab223df58a2",
+      "name": "gatsby-plugin-feed",
+      "version": "2.1.0",
+      "pluginOptions": {},
+      "nodeAPIs": [
+        "onPreBootstrap",
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-feed",
+      "packageJson": {
+        "name": "gatsby-plugin-feed",
+        "description": "Creates an RSS feed for your Gatsby site.",
+        "version": "2.1.0",
+        "main": "index.js",
+        "keywords": [
+          "atom",
+          "feed",
+          "gatsby",
+          "gatsby-plugin",
+          "rss"
+        ],
+        "author": {
+          "name": "Nicholas Young",
+          "email": "nicholas@nicholaswyoung.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "lodash.merge",
+            "version": "^4.6.0"
+          },
+          {
+            "name": "rss",
+            "version": "^1.2.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "d50ba548814a99a48bcea5964c6c39f2",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "dee44986-459d-5a9c-bea6-1de7842285fd": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-manifest",
+      "id": "dee44986-459d-5a9c-bea6-1de7842285fd",
+      "name": "gatsby-plugin-manifest",
+      "version": "2.0.24",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "Gatsby Starter Blog",
+        "short_name": "GatsbyJS",
+        "start_url": "/",
+        "background_color": "#ffffff",
+        "theme_color": "#663399",
+        "display": "minimal-ui",
+        "icon": "content/assets/gatsby-icon.png"
+      },
+      "nodeAPIs": [
+        "onPostBootstrap"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-manifest",
+      "packageJson": {
+        "name": "gatsby-plugin-manifest",
+        "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
+        "version": "2.0.24",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "icons",
+          "manifest.webmanifest",
+          "progressive-web-app",
+          "pwa"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.21.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.15"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "9cbdaa4ae954b3ed2d652ec0ceb7f9ab",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "63e5f7ff-e5f1-58f7-8e2c-55872ac42281": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline",
+      "id": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "name": "gatsby-plugin-offline",
+      "version": "2.0.25",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "browserAPIs": [
+        "registerServiceWorker",
+        "onServiceWorkerActive",
+        "onPostPrefetchPathname"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "2.0.25",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "idb-keyval",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "workbox-build",
+            "version": "^3.6.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cpx",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.100"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "c6a923f91c7bab57e9ae3556734f3f3b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "1943ff2f-9c0c-558d-8d0c-006603e8106a": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-react-helmet",
+      "id": "1943ff2f-9c0c-558d-8d0c-006603e8106a",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "3.0.10",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "3.0.10",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "c0d87581020edcb8d5e609fea9c4ce03",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "64059fc2-eafe-53ab-a542-ad6d70a5c7ff": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-typography",
+      "id": "64059fc2-eafe-53ab-a542-ad6d70a5c7ff",
+      "name": "gatsby-plugin-typography",
+      "version": "2.2.10",
+      "pluginOptions": {
+        "plugins": [],
+        "pathToConfigModule": "src/utils/typography"
+      },
+      "nodeAPIs": [
+        "onPreBootstrap"
+      ],
+      "browserAPIs": [
+        "onClientEntry"
+      ],
+      "ssrAPIs": [
+        "onRenderBody",
+        "onPreRenderHTML"
+      ],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-typography",
+      "packageJson": {
+        "name": "gatsby-plugin-typography",
+        "description": "Gatsby plugin to setup server rendering of Typography.js' CSS",
+        "version": "2.2.10",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "typography",
+          "typography.js"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.4"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.18"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.18"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.1 || ^1.0.0-alpha.0"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.0 || ^1.0.0-alpha.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "ded3a8efd8621685ee00954821a411af",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io",
+      "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "name": "default-site-plugin",
+      "version": "274b569c66ff507f1322e66d57ce81d0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onCreateNode"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io",
+      "packageJson": {
+        "name": "gatsby-starter-blog",
+        "description": "A starter for a blog powered by Gatsby and Markdown",
+        "version": "0.1.0",
+        "main": "n/a",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.2.5"
+          },
+          {
+            "name": "gatsby-image",
+            "version": "^2.0.34"
+          },
+          {
+            "name": "gatsby-plugin-feed",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "^2.0.17"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "^2.0.24"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "^2.0.25"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^3.0.10"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^2.0.30"
+          },
+          {
+            "name": "gatsby-plugin-typography",
+            "version": "^2.2.10"
+          },
+          {
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "^2.0.11"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "^2.0.6"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "^3.2.6"
+          },
+          {
+            "name": "gatsby-remark-responsive-iframe",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "gatsby-remark-smartypants",
+            "version": "^2.0.9"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^2.0.27"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "^2.3.8"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "^2.1.17"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.15.0"
+          },
+          {
+            "name": "react",
+            "version": "^16.8.4"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.8.4"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          },
+          {
+            "name": "react-typography",
+            "version": "^0.16.19"
+          },
+          {
+            "name": "typeface-merriweather",
+            "version": "0.0.72"
+          },
+          {
+            "name": "typeface-montserrat",
+            "version": "0.0.54"
+          },
+          {
+            "name": "typography",
+            "version": "^0.16.19"
+          },
+          {
+            "name": "typography-theme-fairy-gates",
+            "version": "^0.16.19"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "prettier",
+            "version": "^1.16.4"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "ab9d811910714c79cb6a8a1261c9091b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "06a64eab-9a33-5718-9fad-51513318545e": {
+      "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-page-creator",
+      "id": "06a64eab-9a33-5718-9fad-51513318545e",
+      "name": "gatsby-plugin-page-creator",
+      "version": "2.0.11",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "2.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "2.1.2"
+          },
+          {
+            "name": "fs-exists-cached",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.10"
+          },
+          {
+            "name": "micromatch",
+            "version": "^3.1.10"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "aaeb25cd2a3fc4aac233916dbee21e44",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Shreya Shankar",
+        "author": "Shreya Shankar",
+        "description": "My blog.",
+        "siteUrl": "https://gatsby-starter-blog-demo.netlify.com/",
+        "social": {
+          "twitter": "shreyashankar"
+        }
+      },
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-03-24T23:18:46.721Z",
+      "id": "Site",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "7cd7205f28999e294360cb98fe115d04",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "36b44b8a-1350-51ea-8ba3-73d5a40673e5": {
+      "id": "36b44b8a-1350-51ea-8ba3-73d5a40673e5",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "contentDigest": "4ec99edba54504d26355317e28c6905d",
+        "type": "Directory",
+        "description": "Directory \"content/blog\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
+      "relativePath": "",
+      "extension": "",
+      "size": 224,
+      "prettySize": "224 B",
+      "modifiedTime": "2019-03-24T22:59:18.224Z",
+      "accessTime": "2019-03-24T23:18:49.025Z",
+      "changeTime": "2019-03-24T22:59:18.224Z",
+      "birthTime": "2019-03-24T22:59:18.219Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content",
+      "base": "blog",
+      "ext": "",
+      "name": "blog",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 7,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560207,
+      "blocks": 0,
+      "atimeMs": 1553469529025.4636,
+      "mtimeMs": 1553468358224.0627,
+      "ctimeMs": 1553468358224.0627,
+      "birthtimeMs": 1553468358218.542,
+      "atime": "2019-03-24T23:18:49.025Z",
+      "mtime": "2019-03-24T22:59:18.224Z",
+      "ctime": "2019-03-24T22:59:18.224Z",
+      "birthtime": "2019-03-24T22:59:18.219Z"
+    },
+    "4cf8abe9-4a1d-5731-8c46-c21ee04126c7": {
+      "id": "4cf8abe9-4a1d-5731-8c46-c21ee04126c7",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "contentDigest": "e432128384f22bd61098705c8fc123f3",
+        "type": "Directory",
+        "description": "Directory \"content/blog/ai-for-everyone\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone",
+      "relativePath": "ai-for-everyone",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2019-03-24T23:16:50.367Z",
+      "accessTime": "2019-03-24T23:18:49.028Z",
+      "changeTime": "2019-03-24T23:16:50.367Z",
+      "birthTime": "2019-03-24T22:59:18.222Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
+      "base": "ai-for-everyone",
+      "ext": "",
+      "name": "ai-for-everyone",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560212,
+      "blocks": 0,
+      "atimeMs": 1553469529027.5618,
+      "mtimeMs": 1553469410367.4849,
+      "ctimeMs": 1553469410367.4849,
+      "birthtimeMs": 1553468358221.72,
+      "atime": "2019-03-24T23:18:49.028Z",
+      "mtime": "2019-03-24T23:16:50.367Z",
+      "ctime": "2019-03-24T23:16:50.367Z",
+      "birthtime": "2019-03-24T22:59:18.222Z"
+    },
+    "a3949d0c-bac7-5ef6-8574-4e7bffb3414b": {
+      "id": "a3949d0c-bac7-5ef6-8574-4e7bffb3414b",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "contentDigest": "a797827c7cf9a4b8a2150fa69fe2b00d",
+        "type": "Directory",
+        "description": "Directory \"content/blog/it-starts-early\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early",
+      "relativePath": "it-starts-early",
+      "extension": "",
+      "size": 224,
+      "prettySize": "224 B",
+      "modifiedTime": "2019-03-24T23:16:50.368Z",
+      "accessTime": "2019-03-24T23:18:49.028Z",
+      "changeTime": "2019-03-24T23:16:50.368Z",
+      "birthTime": "2019-03-24T22:59:18.224Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
+      "base": "it-starts-early",
+      "ext": "",
+      "name": "it-starts-early",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 7,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560217,
+      "blocks": 0,
+      "atimeMs": 1553469529027.638,
+      "mtimeMs": 1553469410367.8003,
+      "ctimeMs": 1553469410367.8003,
+      "birthtimeMs": 1553468358224.0532,
+      "atime": "2019-03-24T23:18:49.028Z",
+      "mtime": "2019-03-24T23:16:50.368Z",
+      "ctime": "2019-03-24T23:16:50.368Z",
+      "birthtime": "2019-03-24T22:59:18.224Z"
+    },
+    "6b7f151f-2c06-5e89-87c3-4df4a380cd37": {
+      "id": "6b7f151f-2c06-5e89-87c3-4df4a380cd37",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "contentDigest": "4dadd15919058599931471fdb3eeb9e4",
+        "type": "Directory",
+        "description": "Directory \"content/blog/taylor-swift-ai\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
+      "relativePath": "taylor-swift-ai",
+      "extension": "",
+      "size": 160,
+      "prettySize": "160 B",
+      "modifiedTime": "2019-03-24T23:16:50.368Z",
+      "accessTime": "2019-03-24T23:18:49.028Z",
+      "changeTime": "2019-03-24T23:16:50.368Z",
+      "birthTime": "2019-03-24T22:59:18.219Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
+      "base": "taylor-swift-ai",
+      "ext": "",
+      "name": "taylor-swift-ai",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560208,
+      "blocks": 0,
+      "atimeMs": 1553469529027.6409,
+      "mtimeMs": 1553469410368.0784,
+      "ctimeMs": 1553469410368.0784,
+      "birthtimeMs": 1553468358218.8079,
+      "atime": "2019-03-24T23:18:49.028Z",
+      "mtime": "2019-03-24T23:16:50.368Z",
+      "ctime": "2019-03-24T23:16:50.368Z",
+      "birthtime": "2019-03-24T22:59:18.219Z"
+    },
+    "bdf92a78-328e-559d-bf83-9f59f5611e7e": {
+      "id": "bdf92a78-328e-559d-bf83-9f59f5611e7e",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "contentDigest": "b545dccf3b9e88cfdd0a0a8f25dd5311",
+        "type": "Directory",
+        "description": "Directory \"content/blog/you-got-this\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/you-got-this",
+      "relativePath": "you-got-this",
+      "extension": "",
+      "size": 96,
+      "prettySize": "96 B",
+      "modifiedTime": "2019-03-24T23:16:50.368Z",
+      "accessTime": "2019-03-24T23:18:49.028Z",
+      "changeTime": "2019-03-24T23:16:50.368Z",
+      "birthTime": "2019-03-24T22:59:18.223Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
+      "base": "you-got-this",
+      "ext": "",
+      "name": "you-got-this",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560215,
+      "blocks": 0,
+      "atimeMs": 1553469529027.6306,
+      "mtimeMs": 1553469410368.314,
+      "ctimeMs": 1553469410368.314,
+      "birthtimeMs": 1553468358223.2244,
+      "atime": "2019-03-24T23:18:49.028Z",
+      "mtime": "2019-03-24T23:16:50.368Z",
+      "ctime": "2019-03-24T23:16:50.368Z",
+      "birthtime": "2019-03-24T22:59:18.223Z"
+    },
+    "b9271a27-a1a0-5b40-97c9-e359fe8946a9": {
+      "id": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
+      "children": [
+        "49cc22d5-b8d3-5943-878d-8ad7947a0a62"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "285730c51a33cae0ba1aadcf6190200a",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/ai-for-everyone/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
+      "relativePath": "ai-for-everyone/index.md",
+      "extension": "md",
+      "size": 3873,
+      "prettySize": "3.87 kB",
+      "modifiedTime": "2019-03-24T23:16:50.368Z",
+      "accessTime": "2019-03-24T23:18:34.662Z",
+      "changeTime": "2019-03-24T23:16:50.368Z",
+      "birthTime": "2019-03-24T23:16:50.367Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "ai-for-everyone",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732452,
+      "blocks": 8,
+      "atimeMs": 1553469514662.3928,
+      "mtimeMs": 1553469410367.5889,
+      "ctimeMs": 1553469410367.5889,
+      "birthtimeMs": 1553469410367.4758,
+      "atime": "2019-03-24T23:18:34.662Z",
+      "mtime": "2019-03-24T23:16:50.368Z",
+      "ctime": "2019-03-24T23:16:50.368Z",
+      "birthtime": "2019-03-24T23:16:50.367Z"
+    },
+    "9be71790-6fea-5327-94ed-f2b1396e69da": {
+      "id": "9be71790-6fea-5327-94ed-f2b1396e69da",
+      "children": [
+        "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "ed34ea742845f37cf55589298265c94e",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/you-got-this/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/you-got-this/index.md",
+      "relativePath": "you-got-this/index.md",
+      "extension": "md",
+      "size": 5394,
+      "prettySize": "5.39 kB",
+      "modifiedTime": "2019-03-24T23:17:38.654Z",
+      "accessTime": "2019-03-24T23:18:11.768Z",
+      "changeTime": "2019-03-24T23:17:38.654Z",
+      "birthTime": "2019-03-24T23:16:50.368Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/you-got-this",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "you-got-this",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732455,
+      "blocks": 16,
+      "atimeMs": 1553469491767.6082,
+      "mtimeMs": 1553469458654.32,
+      "ctimeMs": 1553469458654.32,
+      "birthtimeMs": 1553469410368.3074,
+      "atime": "2019-03-24T23:18:11.768Z",
+      "mtime": "2019-03-24T23:17:38.654Z",
+      "ctime": "2019-03-24T23:17:38.654Z",
+      "birthtime": "2019-03-24T23:16:50.368Z"
+    },
+    "fa2f9b3d-a248-5b40-98cd-5afe34a16c09": {
+      "id": "fa2f9b3d-a248-5b40-98cd-5afe34a16c09",
+      "children": [
+        "85b6b148-069d-57b4-9b33-8952b104a266"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "33edfc5c33ba16c5b437e30d0b326552",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/it-starts-early/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early/index.md",
+      "relativePath": "it-starts-early/index.md",
+      "extension": "md",
+      "size": 11134,
+      "prettySize": "11.1 kB",
+      "modifiedTime": "2019-03-24T23:17:33.023Z",
+      "accessTime": "2019-03-24T23:18:11.767Z",
+      "changeTime": "2019-03-24T23:17:33.023Z",
+      "birthTime": "2019-03-24T23:16:50.368Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "it-starts-early",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732453,
+      "blocks": 24,
+      "atimeMs": 1553469491767.425,
+      "mtimeMs": 1553469453023.007,
+      "ctimeMs": 1553469453023.007,
+      "birthtimeMs": 1553469410367.7905,
+      "atime": "2019-03-24T23:18:11.767Z",
+      "mtime": "2019-03-24T23:17:33.023Z",
+      "ctime": "2019-03-24T23:17:33.023Z",
+      "birthtime": "2019-03-24T23:16:50.368Z"
+    },
+    "257eed26-20ae-51d9-b4d3-6134ea5db182": {
+      "id": "257eed26-20ae-51d9-b4d3-6134ea5db182",
+      "children": [
+        "a4d9f3e0-bd9f-521a-86ba-e0b69b69a322"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "5c0288aabd56f8607dee6edd8f925312",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/blog/it-starts-early/n1.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early/n1.png",
+      "relativePath": "it-starts-early/n1.png",
+      "extension": "png",
+      "size": 47975,
+      "prettySize": "48 kB",
+      "modifiedTime": "2019-03-24T22:59:18.226Z",
+      "accessTime": "2019-03-24T23:18:11.767Z",
+      "changeTime": "2019-03-24T22:59:18.226Z",
+      "birthTime": "2019-03-24T22:59:18.226Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early",
+      "base": "n1.png",
+      "ext": ".png",
+      "name": "n1",
+      "relativeDirectory": "it-starts-early",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560220,
+      "blocks": 96,
+      "atimeMs": 1553469491767.4395,
+      "mtimeMs": 1553468358226.037,
+      "ctimeMs": 1553468358226.2925,
+      "birthtimeMs": 1553468358225.679,
+      "atime": "2019-03-24T23:18:11.767Z",
+      "mtime": "2019-03-24T22:59:18.226Z",
+      "ctime": "2019-03-24T22:59:18.226Z",
+      "birthtime": "2019-03-24T22:59:18.226Z"
+    },
+    "c2f188cd-ea78-5ec4-acdb-3d2999361932": {
+      "id": "c2f188cd-ea78-5ec4-acdb-3d2999361932",
+      "children": [
+        "fadd68c0-e3b2-5ff8-8b14-86a0e4b35d5c"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "cd4639f6c88dd2fffba0b0d5f7a0dd32",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/blog/it-starts-early/n2.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early/n2.png",
+      "relativePath": "it-starts-early/n2.png",
+      "extension": "png",
+      "size": 31344,
+      "prettySize": "31.3 kB",
+      "modifiedTime": "2019-03-24T22:59:18.228Z",
+      "accessTime": "2019-03-24T23:18:11.767Z",
+      "changeTime": "2019-03-24T22:59:18.229Z",
+      "birthTime": "2019-03-24T22:59:18.228Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early",
+      "base": "n2.png",
+      "ext": ".png",
+      "name": "n2",
+      "relativeDirectory": "it-starts-early",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560222,
+      "blocks": 64,
+      "atimeMs": 1553469491767.4534,
+      "mtimeMs": 1553468358228.2876,
+      "ctimeMs": 1553468358228.6636,
+      "birthtimeMs": 1553468358227.7454,
+      "atime": "2019-03-24T23:18:11.767Z",
+      "mtime": "2019-03-24T22:59:18.228Z",
+      "ctime": "2019-03-24T22:59:18.229Z",
+      "birthtime": "2019-03-24T22:59:18.228Z"
+    },
+    "5ab0713f-be5f-59cf-b3c6-70259e0e3db8": {
+      "id": "5ab0713f-be5f-59cf-b3c6-70259e0e3db8",
+      "children": [
+        "b03437e0-dccf-5029-a6d8-89afc4a341a9"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "f489cbe9efaa19cc5d8e78a8caff573b",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/blog/it-starts-early/n4.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early/n4.png",
+      "relativePath": "it-starts-early/n4.png",
+      "extension": "png",
+      "size": 45421,
+      "prettySize": "45.4 kB",
+      "modifiedTime": "2019-03-24T22:59:18.225Z",
+      "accessTime": "2019-03-24T23:18:11.767Z",
+      "changeTime": "2019-03-24T22:59:18.226Z",
+      "birthTime": "2019-03-24T22:59:18.225Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early",
+      "base": "n4.png",
+      "ext": ".png",
+      "name": "n4",
+      "relativeDirectory": "it-starts-early",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560219,
+      "blocks": 96,
+      "atimeMs": 1553469491767.48,
+      "mtimeMs": 1553468358225.279,
+      "ctimeMs": 1553468358225.5442,
+      "birthtimeMs": 1553468358224.904,
+      "atime": "2019-03-24T23:18:11.767Z",
+      "mtime": "2019-03-24T22:59:18.225Z",
+      "ctime": "2019-03-24T22:59:18.226Z",
+      "birthtime": "2019-03-24T22:59:18.225Z"
+    },
+    "3dc112ad-ebab-54db-b78a-55f120f17548": {
+      "id": "3dc112ad-ebab-54db-b78a-55f120f17548",
+      "children": [
+        "7af3edb5-96e4-58c2-9143-51aa205d006e"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "ef02cddfd6a0de0de9e5d9b4dc1a1efd",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/taylor-swift-ai/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
+      "relativePath": "taylor-swift-ai/index.md",
+      "extension": "md",
+      "size": 2549,
+      "prettySize": "2.55 kB",
+      "modifiedTime": "2019-03-24T23:17:36.005Z",
+      "accessTime": "2019-03-24T23:18:11.768Z",
+      "changeTime": "2019-03-24T23:17:36.005Z",
+      "birthTime": "2019-03-24T23:16:50.368Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "taylor-swift-ai",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732454,
+      "blocks": 8,
+      "atimeMs": 1553469491767.5073,
+      "mtimeMs": 1553469456005.4246,
+      "ctimeMs": 1553469456005.4246,
+      "birthtimeMs": 1553469410368.0718,
+      "atime": "2019-03-24T23:18:11.768Z",
+      "mtime": "2019-03-24T23:17:36.005Z",
+      "ctime": "2019-03-24T23:17:36.005Z",
+      "birthtime": "2019-03-24T23:16:50.368Z"
+    },
+    "0e8f494b-d78d-599e-acb7-cf8bb8e6d326": {
+      "id": "0e8f494b-d78d-599e-acb7-cf8bb8e6d326",
+      "children": [
+        "3ecbf90e-4968-511e-9774-6840c55a9ee3"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "a3ad9a352668ee9b85f42153941fcb45",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/blog/it-starts-early/n3.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early/n3.png",
+      "relativePath": "it-starts-early/n3.png",
+      "extension": "png",
+      "size": 68425,
+      "prettySize": "68.4 kB",
+      "modifiedTime": "2019-03-24T22:59:18.227Z",
+      "accessTime": "2019-03-24T23:18:11.767Z",
+      "changeTime": "2019-03-24T22:59:18.227Z",
+      "birthTime": "2019-03-24T22:59:18.226Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early",
+      "base": "n3.png",
+      "ext": ".png",
+      "name": "n3",
+      "relativeDirectory": "it-starts-early",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560221,
+      "blocks": 136,
+      "atimeMs": 1553469491767.466,
+      "mtimeMs": 1553468358226.9736,
+      "ctimeMs": 1553468358227.3745,
+      "birthtimeMs": 1553468358226.466,
+      "atime": "2019-03-24T23:18:11.767Z",
+      "mtime": "2019-03-24T22:59:18.227Z",
+      "ctime": "2019-03-24T22:59:18.227Z",
+      "birthtime": "2019-03-24T22:59:18.226Z"
+    },
+    "a4d9f3e0-bd9f-521a-86ba-e0b69b69a322": {
+      "id": "a4d9f3e0-bd9f-521a-86ba-e0b69b69a322",
+      "children": [],
+      "parent": "257eed26-20ae-51d9-b4d3-6134ea5db182",
+      "internal": {
+        "contentDigest": "5c0288aabd56f8607dee6edd8f925312",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "fadd68c0-e3b2-5ff8-8b14-86a0e4b35d5c": {
+      "id": "fadd68c0-e3b2-5ff8-8b14-86a0e4b35d5c",
+      "children": [],
+      "parent": "c2f188cd-ea78-5ec4-acdb-3d2999361932",
+      "internal": {
+        "contentDigest": "cd4639f6c88dd2fffba0b0d5f7a0dd32",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "b03437e0-dccf-5029-a6d8-89afc4a341a9": {
+      "id": "b03437e0-dccf-5029-a6d8-89afc4a341a9",
+      "children": [],
+      "parent": "5ab0713f-be5f-59cf-b3c6-70259e0e3db8",
+      "internal": {
+        "contentDigest": "f489cbe9efaa19cc5d8e78a8caff573b",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "36b5b7f5-c4c8-5e5e-ab0b-869386534999": {
+      "id": "36b5b7f5-c4c8-5e5e-ab0b-869386534999",
+      "children": [
+        "bb95713e-1f9a-5db0-9edb-85f3e6569424"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "71e3ac914f52c89f157d4ebb4b3f9519",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/blog/taylor-swift-ai/sample1.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/sample1.png",
+      "relativePath": "taylor-swift-ai/sample1.png",
+      "extension": "png",
+      "size": 161067,
+      "prettySize": "161 kB",
+      "modifiedTime": "2019-03-24T22:59:18.220Z",
+      "accessTime": "2019-03-24T23:18:11.768Z",
+      "changeTime": "2019-03-24T22:59:18.221Z",
+      "birthTime": "2019-03-24T22:59:18.220Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
+      "base": "sample1.png",
+      "ext": ".png",
+      "name": "sample1",
+      "relativeDirectory": "taylor-swift-ai",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560210,
+      "blocks": 320,
+      "atimeMs": 1553469491767.5203,
+      "mtimeMs": 1553468358220.2188,
+      "ctimeMs": 1553468358220.5203,
+      "birthtimeMs": 1553468358219.6611,
+      "atime": "2019-03-24T23:18:11.768Z",
+      "mtime": "2019-03-24T22:59:18.220Z",
+      "ctime": "2019-03-24T22:59:18.221Z",
+      "birthtime": "2019-03-24T22:59:18.220Z"
+    },
+    "1db1b3ff-0463-5470-ba94-fc44000be52d": {
+      "id": "1db1b3ff-0463-5470-ba94-fc44000be52d",
+      "children": [
+        "eed70b40-32c3-50b0-a796-ec589f8605d0"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "7f7cef774635a4f4b852b9a62da6c6ee",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/blog/taylor-swift-ai/sample2.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/sample2.png",
+      "relativePath": "taylor-swift-ai/sample2.png",
+      "extension": "png",
+      "size": 162377,
+      "prettySize": "162 kB",
+      "modifiedTime": "2019-03-24T22:59:18.221Z",
+      "accessTime": "2019-03-24T23:18:11.768Z",
+      "changeTime": "2019-03-24T22:59:18.222Z",
+      "birthTime": "2019-03-24T22:59:18.221Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
+      "base": "sample2.png",
+      "ext": ".png",
+      "name": "sample2",
+      "relativeDirectory": "taylor-swift-ai",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560211,
+      "blocks": 320,
+      "atimeMs": 1553469491767.5322,
+      "mtimeMs": 1553468358221.3047,
+      "ctimeMs": 1553468358221.5737,
+      "birthtimeMs": 1553468358220.7073,
+      "atime": "2019-03-24T23:18:11.768Z",
+      "mtime": "2019-03-24T22:59:18.221Z",
+      "ctime": "2019-03-24T22:59:18.222Z",
+      "birthtime": "2019-03-24T22:59:18.221Z"
+    },
+    "3ecbf90e-4968-511e-9774-6840c55a9ee3": {
+      "id": "3ecbf90e-4968-511e-9774-6840c55a9ee3",
+      "children": [],
+      "parent": "0e8f494b-d78d-599e-acb7-cf8bb8e6d326",
+      "internal": {
+        "contentDigest": "a3ad9a352668ee9b85f42153941fcb45",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "bb95713e-1f9a-5db0-9edb-85f3e6569424": {
+      "id": "bb95713e-1f9a-5db0-9edb-85f3e6569424",
+      "children": [],
+      "parent": "36b5b7f5-c4c8-5e5e-ab0b-869386534999",
+      "internal": {
+        "contentDigest": "71e3ac914f52c89f157d4ebb4b3f9519",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "eed70b40-32c3-50b0-a796-ec589f8605d0": {
+      "id": "eed70b40-32c3-50b0-a796-ec589f8605d0",
+      "children": [],
+      "parent": "1db1b3ff-0463-5470-ba94-fc44000be52d",
+      "internal": {
+        "contentDigest": "7f7cef774635a4f4b852b9a62da6c6ee",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c": {
+      "id": "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c",
+      "children": [],
+      "parent": "9be71790-6fea-5327-94ed-f2b1396e69da",
+      "internal": {
+        "content": "\nIt's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying \"[he] could have easily gotten it if [he] was a girl.\"\n\nI'm grateful for for the opportunities I receive, but I can't help feeling bummed when I hear these comments. As a diversity program participant, I know it sucks to feel like a pawn in the game of affirmative action, sacrificing my feelings for future women in tech to enter a level playing field. Get over it! Many of my female mentors and role models have advised. You're qualified! You're smart! And you did a \"real\" software engineering internship at Facebook!\n\nBut hearing this does not fix the problem. As an underclassman female CS major, once the first few guys doubted my technical qualifications, I began to wonder if all my male friends felt the same way. Maybe they didn't voice it out loud because they wanted to be tactful. There weren't any older female CS majors that I could talk to about how I felt - mainly because these diversity programs are so new, and my class is one of the first few waves of diversity program participants.\n\nI'm grateful that I have a lot of close male friends who support me as a woman. But every time I hear some insensitive comment from someone else about diversity programs during recruiting season, here's the two-sided dialogue that goes through my head, as I contemplate what to say to fight centuries of sexism.\n\n---\n\n*He's probably right. Even if guys are nice and smart, they don't get internships at large companies after freshman year.*\n\nWrong! By being a woman and minority in tech, you've probably had to overcome so many more obstacles, like stereotype threat, to get to this same place that he has. Just by showing up to the career fair, you've challenged the stereotype of a CS student. By taking CS classes, you've gone outside of your comfort zone to pursue a field that has few role models that look like you. That guy who made the comment feels entitled to an internship, while you feel like you're not good enough. That speaks for itself.\n\n*I'm not as technically qualified for an internship as he is.*\n\nA little-known secret: the core CS class sequence at many schools is way more than enough for several upperclassman internships. Freshman and sophomore programs assume only a few CS classes. After a certain level, additional knowledge isn't required. Reality is, you are way more qualified for the position than you think. And the fact that you're different is a bonus - by hiring you, companies get a maximally different perspective.\n\n*I don't even know if I like CS; how do I deserve this more than him?*\n\nWho knows who deserves the position more. Does it matter? Statistically, he is [more likely to complete the CS major](http://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and get a full-time software engineering offer, regardless of how many internships he has done. Women on the other hand [drop out of CS](https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Accenture-Cracking-The-Gender-Code-Report.pdf) because they don't have many relatable role models or a strong sense of community like majority of men do. An internship is more likely to help you decide whether you like it or not so you can see yourself as a full-time software engineer. You deserve this chance.\n\n*Everyone will continue to look at me as a \"diversity hire,\" even later on.*\n\nWhen I showed up to Facebook, a lot of people outside my team asked me if I participated in Facebook's diversity program, FBU. Maybe they had never seen a rising junior female software engineering intern who didn't participate in FBU. But we're clearly technically qualified, because we successfully work on impactful projects.\n\n*Did I actually get this because I'm a girl?*\n\nAh, the question everyone squirms away from, trying to console you with a variation of the answers above. Here's the real deal: nobody knows. There are too many variables involved in the internship or job hunt. But to get a return or full-time offer, you have to be as technically qualified as everyone else while justifying your ability as a female programmer to everyone that doubts you for your looks. Most guys don't have to do that.\n\n---\n\nAfter this internal back-and-forth, I still don't have a concise, convincing answer. I sigh and respond. \"You could be right,\" I usually concede. \"We're fighting historical oppression of females in tech. But we'll all end up with jobs in this industry anyways.\"\n\nHe isn't satisfied, but he has nothing more to say. Meanwhile, I'm raging internally, wishing I stood up for women like me. But I don't want to offend him, because he's most likely a friend or well-respected by my peers. Feeling like a failed feminist, I trudge back home to add a new, challenging CS course to my study list or start a technical side project to justify my self-worth.",
+        "type": "MarkdownRemark",
+        "contentDigest": "ffa6ca0411efd86fc037fb6ddcebac0d",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "You got this because you're a girl.",
+        "date": "2017-09-15",
+        "description": ""
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nIt's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying \"[he] could have easily gotten it if [he] was a girl.\"\n\nI'm grateful for for the opportunities I receive, but I can't help feeling bummed when I hear these comments. As a diversity program participant, I know it sucks to feel like a pawn in the game of affirmative action, sacrificing my feelings for future women in tech to enter a level playing field. Get over it! Many of my female mentors and role models have advised. You're qualified! You're smart! And you did a \"real\" software engineering internship at Facebook!\n\nBut hearing this does not fix the problem. As an underclassman female CS major, once the first few guys doubted my technical qualifications, I began to wonder if all my male friends felt the same way. Maybe they didn't voice it out loud because they wanted to be tactful. There weren't any older female CS majors that I could talk to about how I felt - mainly because these diversity programs are so new, and my class is one of the first few waves of diversity program participants.\n\nI'm grateful that I have a lot of close male friends who support me as a woman. But every time I hear some insensitive comment from someone else about diversity programs during recruiting season, here's the two-sided dialogue that goes through my head, as I contemplate what to say to fight centuries of sexism.\n\n---\n\n*He's probably right. Even if guys are nice and smart, they don't get internships at large companies after freshman year.*\n\nWrong! By being a woman and minority in tech, you've probably had to overcome so many more obstacles, like stereotype threat, to get to this same place that he has. Just by showing up to the career fair, you've challenged the stereotype of a CS student. By taking CS classes, you've gone outside of your comfort zone to pursue a field that has few role models that look like you. That guy who made the comment feels entitled to an internship, while you feel like you're not good enough. That speaks for itself.\n\n*I'm not as technically qualified for an internship as he is.*\n\nA little-known secret: the core CS class sequence at many schools is way more than enough for several upperclassman internships. Freshman and sophomore programs assume only a few CS classes. After a certain level, additional knowledge isn't required. Reality is, you are way more qualified for the position than you think. And the fact that you're different is a bonus - by hiring you, companies get a maximally different perspective.\n\n*I don't even know if I like CS; how do I deserve this more than him?*\n\nWho knows who deserves the position more. Does it matter? Statistically, he is [more likely to complete the CS major](http://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and get a full-time software engineering offer, regardless of how many internships he has done. Women on the other hand [drop out of CS](https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Accenture-Cracking-The-Gender-Code-Report.pdf) because they don't have many relatable role models or a strong sense of community like majority of men do. An internship is more likely to help you decide whether you like it or not so you can see yourself as a full-time software engineer. You deserve this chance.\n\n*Everyone will continue to look at me as a \"diversity hire,\" even later on.*\n\nWhen I showed up to Facebook, a lot of people outside my team asked me if I participated in Facebook's diversity program, FBU. Maybe they had never seen a rising junior female software engineering intern who didn't participate in FBU. But we're clearly technically qualified, because we successfully work on impactful projects.\n\n*Did I actually get this because I'm a girl?*\n\nAh, the question everyone squirms away from, trying to console you with a variation of the answers above. Here's the real deal: nobody knows. There are too many variables involved in the internship or job hunt. But to get a return or full-time offer, you have to be as technically qualified as everyone else while justifying your ability as a female programmer to everyone that doubts you for your looks. Most guys don't have to do that.\n\n---\n\nAfter this internal back-and-forth, I still don't have a concise, convincing answer. I sigh and respond. \"You could be right,\" I usually concede. \"We're fighting historical oppression of females in tech. But we'll all end up with jobs in this industry anyways.\"\n\nHe isn't satisfied, but he has nothing more to say. Meanwhile, I'm raging internally, wishing I stood up for women like me. But I don't want to offend him, because he's most likely a friend or well-respected by my peers. Feeling like a failed feminist, I trudge back home to add a new, challenging CS course to my study list or start a technical side project to justify my self-worth.",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/you-got-this/index.md",
+      "fields": {
+        "slug": "/you-got-this/"
+      }
+    },
+    "7af3edb5-96e4-58c2-9143-51aa205d006e": {
+      "id": "7af3edb5-96e4-58c2-9143-51aa205d006e",
+      "children": [],
+      "parent": "3dc112ad-ebab-54db-b78a-55f120f17548",
+      "internal": {
+        "content": "\nI was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.\n\nNaturally, I stayed up late every night last week, eagerly anticipating the preview song from Taylor's new album, *Reputation*. But when [\"Look What You Made Me Do\"](https://www.youtube.com/watch?v=3tmd-ClpJxA) came out [shattering YouTube records](https://www.forbes.com/sites/hughmcintyre/2017/08/27/taylor-swifts-look-what-you-made-me-do-lyric-video-just-broke-a-youtube-record/#5d1f994558a8), I was a little...bummed. Don't get me wrong - I still listened to it at least twenty times. But what happened to Taylor's powerful lyrics and catchy melodies? How come this song was filled with hate and revenge?\n\nThis past weekend, I wanted to see if machine learning (ML) techniques could write better songs for Taylor. I fed all of Taylor's song lyrics into a recurrent neural network (RNN) and sampled some new lyrics. I generated samples with about 900 characters each. Here's what I got (unmodified, copy-pasted right from my terminal):\n\n![Lyrics Screenshot](./sample1.png)\n\nAfter reading these generated lyrics, I concluded that Taylor is most definitely better at writing her own music. The generated songs' grammar is weird, and numerous words are misspelled. Most of the phrases don't really make sense. Opening parentheses or quotes sometimes don't close. But hey - I'm pretty impressed that the RNN was able to learn the lyric structure with commas, line lengths, and line breaks!\n\nTo conclude this fun experiment, I generated possible song titles with the same RNN. Here are the song titles in the ML-generated Reputation:\n\n* Go won't hit me there\n* Your love through all\n* We said to be better\n* Walls if miles\n* No conversation\n* I should ever say that\n* I don't wanna see the way\n* I don't leave you here\n* You want to me\n* And we say how I just\n* Anything a good taft\n* Love there on more\n\n\"Anything a good taft?\" sounds kind of weird to me. But I could see myself jamming out to some of these, like \"Your love through all\" or \"I don't wanna see the way.\"\n\nI guess I'll go back to impatiently waiting for the real Reputation to come out in November. In the meantime, please let me know if you have any fun AI or ML ideas to experiment with!",
+        "type": "MarkdownRemark",
+        "contentDigest": "2eecaa7800f3a181a9769892c8944636",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Taylor Swift vs Artificial Intelligence: Who's Better?",
+        "date": "2017-08-28",
+        "description": ""
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nI was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.\n\nNaturally, I stayed up late every night last week, eagerly anticipating the preview song from Taylor's new album, *Reputation*. But when [\"Look What You Made Me Do\"](https://www.youtube.com/watch?v=3tmd-ClpJxA) came out [shattering YouTube records](https://www.forbes.com/sites/hughmcintyre/2017/08/27/taylor-swifts-look-what-you-made-me-do-lyric-video-just-broke-a-youtube-record/#5d1f994558a8), I was a little...bummed. Don't get me wrong - I still listened to it at least twenty times. But what happened to Taylor's powerful lyrics and catchy melodies? How come this song was filled with hate and revenge?\n\nThis past weekend, I wanted to see if machine learning (ML) techniques could write better songs for Taylor. I fed all of Taylor's song lyrics into a recurrent neural network (RNN) and sampled some new lyrics. I generated samples with about 900 characters each. Here's what I got (unmodified, copy-pasted right from my terminal):\n\n![Lyrics Screenshot](./sample1.png)\n\nAfter reading these generated lyrics, I concluded that Taylor is most definitely better at writing her own music. The generated songs' grammar is weird, and numerous words are misspelled. Most of the phrases don't really make sense. Opening parentheses or quotes sometimes don't close. But hey - I'm pretty impressed that the RNN was able to learn the lyric structure with commas, line lengths, and line breaks!\n\nTo conclude this fun experiment, I generated possible song titles with the same RNN. Here are the song titles in the ML-generated Reputation:\n\n* Go won't hit me there\n* Your love through all\n* We said to be better\n* Walls if miles\n* No conversation\n* I should ever say that\n* I don't wanna see the way\n* I don't leave you here\n* You want to me\n* And we say how I just\n* Anything a good taft\n* Love there on more\n\n\"Anything a good taft?\" sounds kind of weird to me. But I could see myself jamming out to some of these, like \"Your love through all\" or \"I don't wanna see the way.\"\n\nI guess I'll go back to impatiently waiting for the real Reputation to come out in November. In the meantime, please let me know if you have any fun AI or ML ideas to experiment with!",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
+      "fields": {
+        "slug": "/taylor-swift-ai/"
+      }
+    },
+    "49cc22d5-b8d3-5943-878d-8ad7947a0a62": {
+      "id": "49cc22d5-b8d3-5943-878d-8ad7947a0a62",
+      "children": [],
+      "parent": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
+      "internal": {
+        "content": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
+        "type": "MarkdownRemark",
+        "contentDigest": "50c211060d43654ebc5f97edd3882efa",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "AI for Everyone: Things to Consider when Experimenting",
+        "date": "2017-10-01",
+        "image": "",
+        "tags": ""
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
+      "fields": {
+        "slug": "/ai-for-everyone/"
+      }
+    },
+    "85b6b148-069d-57b4-9b33-8952b104a266": {
+      "id": "85b6b148-069d-57b4-9b33-8952b104a266",
+      "children": [],
+      "parent": "fa2f9b3d-a248-5b40-98cd-5afe34a16c09",
+      "internal": {
+        "content": "\nSeveral weeks ago, I woke up to the news that six female entrepreneurs were claiming that Justin Caldbeck, co-founder of Binary Capital, had harassed them. More was to come, with the New York Times outing claims against high-profile investors, Chris Sacca and Dave McClure. McClure was eventually forced to step down from his leadership position at venture capital firm 500 Startups. And yesterday, I read all about a Google engineer's belief that biological differences between females and males \"may explain why we don't see equal representation of women in tech and leadership.\"\nYikes, I thought. I want to be an entrepreneur in the tech industry someday. Is this what I have to deal with? A frightening thought - especially since I have already been the target of such harassment, early in my career.\n\n## Fall 2016\n\nMy sophomore year as a CS major at Stanford began with a disagreement between my best friend - a fellow STEM student at Stanford - and me. To protect his identity, I'll call him Joe. He was getting increasingly \"clingy\" over the summer, where I couldn't go more than a few hours without him wanting to know what I was doing or if I was thinking about him. The friendship was taking a toll on me. He frequently guilt-tripped me, saying things like \"meeting you was the best thing that ever happened to me\" and \"I'd be the saddest person if we weren't friends anymore.\"\n\nIt was too much. So at the beginning of the year, I told him I needed some space. I explicitly made it clear that I wouldn't be contacting him until I felt comfortable, and I didn't want him to contact me. \"Fine,\" he said, mentioning how sad he would be until I called him again. \"Please message me anytime.\"\n\nI felt sad that we weren't on talking terms anymore. Actually, I felt miserable, but I pushed on through my classes, determined to stop thinking about the situation. Soon after, he started talking to my other friends more. He stared at me in the dining halls. The red flags were there, but I naively ignored them. What was the worst that could happen?\n\n## Winter 2017\n\n![Message Screenshot](./n1.png)\n\nWinter quarter began, and he wanted to meet with me. I agreed to meet him over a meal.\n\"No,\" he adamantly refused. \"Can we go for a walk together? Just the two of us?\"\n\nCreeped out, I said I was busy. He responded that I could sacrifice an hour of my time for him. Something just didn't feel right, but I agreed to meet him in the evening at a public place.\nDuring the first five minutes, the conversation flowed unexpectedly well. Then, he requested that we walk the four-mile loop around campus. I politely declined, saying that I had to wake up early the next morning. Immediately, he became aggressive.\n\n\"Why won't you walk with me?\"\n\n\"You hate me, right? Why won't you tell me you hate me? Why do you hate me?\"\n\nAfter 10 minutes, I turned to leave. He immediately fell to the ground and started sobbing and begging me to stay.\n\n\"I'm going to kill myself if you leave. I have nothing to live for. How could you be so inhuman? What happened to my best friend?\"\n\nI freaked out and started speed-walking towards my dorm. I glanced behind me, noticing that he was following. Immediately, I sprinted up the stairs and through the hallway to my room and shut the door. Inside, I was shaking, trying to calm myself, and wondering if he was okay - but not wanting to go back outside.\n\n![Message Screenshot](./n2.png)\n\nAfter that, he started stalking me.\n\nHe stayed in the dining hall during all meal hours to watch me whenever I came to eat. He followed me in the gym. He bugged my friends to convince me to talk to him. I never thought I would be a target - but here I was, just trying to find a safe space on campus where I wouldn't be harassed.\n\n![Message Screenshot](./n3.png)\n\nMy friends began to notice something was wrong and reached out in my defense. He denied everything: \"I wasn't stalking Shreya at the gym because I wasn't next to her while running - there were a couple of treadmills between us. And I didn't look at her directly - I only looked at her in the mirror\" was one such example. I still hesitated to report him to my dorm's resident assistant (RA) because I didn't want to get in trouble. As weird as it sounds, I still felt guilty, like he was doing this because I neglected him as a friend.\n\n## Spring 2017\n\n![Message Screenshot](./n4.png)\n\nSpring quarter came around, and I still hadn't contacted my RA. Meanwhile, Joe began harassing my friends, trying to get them to force me to respond to his messages. For the first time, I felt angry about the whole situation. I was one thing, but my friends were off limits. I marched into my RA's room, and bits and pieces of the story began spilling out - \"he keeps staring at me in the dining halls\" and \"he sends me hundreds of messages a day.\" My RA warned Joe about the potential ramifications if he continued to harass me and my friends. Joe promised that he would not contact me until I felt comfortable talking to him again. I thought the situation would resolve itself.\nI was wrong. Joe showed up to the lectures for one of my classes. I panicked. He desperately wanted to check problem sets with me. He began to harass me on Facebook Messenger again. I blocked him. Then, he started texting me. I blocked his number - so he followed up on email. He chased me on various social media platforms as I blocked him on each one.\n\nIn the class we were both in, he showed up to office hours, asking me to work on the problem set with him around our classmates. Sometimes he would cut me off, acting like we were friends in front of everyone. I was one of a few female students in the class, and the entire teaching staff was male. I felt uncomfortable talking to anyone about it - I didn't want to stand out more than I already did.\nI felt like I was falling apart - every measure that I was taking to stop him from ruining aspects of my life was failing. By this point, eight months later, my mental health had gone out the window. I didn't have enough time to devote to my family. My friends constantly fought off Joe's advances. And now my academics were compromised.\n\nAfter my final exams ended, I was initially relieved. I was going to work in New York at Facebook for the summer, and Joe was staying in the Bay Area. However, the number of messages he was sending me via Google Hangouts grew exponentially. I couldn't figure out how to block him on Hangouts on my phone. Multiple times, he threatened to kill himself if I didn't respond. He also messaged my friends, telling them that he would continue to take classes with me if it meant I would \"notice him.\"\nThe last thing I wanted was to go through another class with him, so I alerted my dorm's resident fellow (RF). After hearing the latest chapter, the RF and I alerted campus police, who called him with a request to stop contacting me and my friends. All of a sudden, the situation seemed extremely serious. The police mentioned to him that he wouldn't face any consequences if he stopped. I didn't want to get him in trouble, and I wasn't trying to get revenge. I just wanted the drama to end.\nImmediately, he messaged my friend again, saying he was going to buy a knife and stab himself because I ruined his life by calling the police. Frightened, my friend reported the messages to the local police, who tracked him down to make sure that he wasn't in any imminent danger of self-harm. They decided he was okay and let him go - at which point he threatened my friend over Messenger again.\nI felt defeated by the whole system. What does it take to keep a Stanford student safe? Fortunately, the situation finally made its way to the Title IX office. An investigation was promptly initiated, during which Joe was not allowed to contact me. Seven weeks later, I received an email with the official document issuing a no-contact order for Joe both online and in-person for as long as I'm at Stanford. After nine months, I can finally breathe a sigh of relief, knowing that this situation with Joe is finally in the past.\n\n## What now?\n\nStanford has inspired my interest in computer science and the tech industry - particularly startups. There's something exhilarating about having a vision for the future, finding a sense of purpose, and seeing these ideas manifest themselves into companies. I want so desperately to belong in the tech industry - but this industry has been traditionally dominated by men.\n\nWomen - especially women of color, like me - face issues like these while pitching startup ideas or climbing the corporate ladder in the tech industry. Stories shared by strong women in tech are both inspiring and disturbing to me, a nineteen-year-old hopeful tech entrepreneur. On one hand, I have amazing female professors and role models to look up to who support my dreams and ambitions. On the other hand, I wonder if investors will assume I can't write a line of code, or if my outfit will be scrutinized more than my technical decisions, or if I'll have to fend off unwanted stalking with a smile in order to be a fundable entrepreneur.\n\nI've noticed that each story - like Susan Fowler's [reflection](https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber) on her time at Uber - strengthens our community of strong, intelligent technologists who believe in open-mindedness and mutual respect. We benefit from hearing each other women's experiences in the industry.\n\nAs the new co-director for she++, a nonprofit that aims to rebrand the stereotype of a programmer, I want to focus more on creating a network for future female leaders in tech. I'm starting a project to centralize stories, thoughts, and quotes about female tech students' experiences. If something happened to you as a female student in tech that you don't want happening to others, please share. Or, if you want to share a positive experience, that's awesome - we could all use some stories of empowerment. You can fill out the anonymous Google form [here](https://docs.google.com/forms/d/e/1FAIpQLScMPHF20yxVfvVDYHlWudQ7x1BVSHJEohlxk7Adon4pB-HO0A/viewform). I'll tweet short responses with the hashtag #imafemaletechstudent. Longer responses can be found [here](https://drive.google.com/drive/u/2/folders/0B6J-5np2spQnS2lYLTJlb241cTQ?usp=sharing). Your voice deserves to be heard.\n\nIt's hard to share stories. They can be emotionally triggering for many. It can feel wrong to talk about the actions of people we respect, even when they do something wrong. Logistically, stories take a while to write, and everyone is busy. But when we share our experiences, we are part of a movement larger than us - a community aspiring to make the tech industry a better place for those around us and those who come after us.\n\n*Note: I'm immensely grateful for my friends and family, Stanford residential staff, and the Title IX office for their support. I couldn't have made it through all this without them.*",
+        "type": "MarkdownRemark",
+        "contentDigest": "57127990b53f09372bba0c31e2a4fed6",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "It Starts Early: My Experience as a Female Tech Student",
+        "date": "2017-08-07",
+        "description": ""
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nSeveral weeks ago, I woke up to the news that six female entrepreneurs were claiming that Justin Caldbeck, co-founder of Binary Capital, had harassed them. More was to come, with the New York Times outing claims against high-profile investors, Chris Sacca and Dave McClure. McClure was eventually forced to step down from his leadership position at venture capital firm 500 Startups. And yesterday, I read all about a Google engineer's belief that biological differences between females and males \"may explain why we don't see equal representation of women in tech and leadership.\"\nYikes, I thought. I want to be an entrepreneur in the tech industry someday. Is this what I have to deal with? A frightening thought - especially since I have already been the target of such harassment, early in my career.\n\n## Fall 2016\n\nMy sophomore year as a CS major at Stanford began with a disagreement between my best friend - a fellow STEM student at Stanford - and me. To protect his identity, I'll call him Joe. He was getting increasingly \"clingy\" over the summer, where I couldn't go more than a few hours without him wanting to know what I was doing or if I was thinking about him. The friendship was taking a toll on me. He frequently guilt-tripped me, saying things like \"meeting you was the best thing that ever happened to me\" and \"I'd be the saddest person if we weren't friends anymore.\"\n\nIt was too much. So at the beginning of the year, I told him I needed some space. I explicitly made it clear that I wouldn't be contacting him until I felt comfortable, and I didn't want him to contact me. \"Fine,\" he said, mentioning how sad he would be until I called him again. \"Please message me anytime.\"\n\nI felt sad that we weren't on talking terms anymore. Actually, I felt miserable, but I pushed on through my classes, determined to stop thinking about the situation. Soon after, he started talking to my other friends more. He stared at me in the dining halls. The red flags were there, but I naively ignored them. What was the worst that could happen?\n\n## Winter 2017\n\n![Message Screenshot](./n1.png)\n\nWinter quarter began, and he wanted to meet with me. I agreed to meet him over a meal.\n\"No,\" he adamantly refused. \"Can we go for a walk together? Just the two of us?\"\n\nCreeped out, I said I was busy. He responded that I could sacrifice an hour of my time for him. Something just didn't feel right, but I agreed to meet him in the evening at a public place.\nDuring the first five minutes, the conversation flowed unexpectedly well. Then, he requested that we walk the four-mile loop around campus. I politely declined, saying that I had to wake up early the next morning. Immediately, he became aggressive.\n\n\"Why won't you walk with me?\"\n\n\"You hate me, right? Why won't you tell me you hate me? Why do you hate me?\"\n\nAfter 10 minutes, I turned to leave. He immediately fell to the ground and started sobbing and begging me to stay.\n\n\"I'm going to kill myself if you leave. I have nothing to live for. How could you be so inhuman? What happened to my best friend?\"\n\nI freaked out and started speed-walking towards my dorm. I glanced behind me, noticing that he was following. Immediately, I sprinted up the stairs and through the hallway to my room and shut the door. Inside, I was shaking, trying to calm myself, and wondering if he was okay - but not wanting to go back outside.\n\n![Message Screenshot](./n2.png)\n\nAfter that, he started stalking me.\n\nHe stayed in the dining hall during all meal hours to watch me whenever I came to eat. He followed me in the gym. He bugged my friends to convince me to talk to him. I never thought I would be a target - but here I was, just trying to find a safe space on campus where I wouldn't be harassed.\n\n![Message Screenshot](./n3.png)\n\nMy friends began to notice something was wrong and reached out in my defense. He denied everything: \"I wasn't stalking Shreya at the gym because I wasn't next to her while running - there were a couple of treadmills between us. And I didn't look at her directly - I only looked at her in the mirror\" was one such example. I still hesitated to report him to my dorm's resident assistant (RA) because I didn't want to get in trouble. As weird as it sounds, I still felt guilty, like he was doing this because I neglected him as a friend.\n\n## Spring 2017\n\n![Message Screenshot](./n4.png)\n\nSpring quarter came around, and I still hadn't contacted my RA. Meanwhile, Joe began harassing my friends, trying to get them to force me to respond to his messages. For the first time, I felt angry about the whole situation. I was one thing, but my friends were off limits. I marched into my RA's room, and bits and pieces of the story began spilling out - \"he keeps staring at me in the dining halls\" and \"he sends me hundreds of messages a day.\" My RA warned Joe about the potential ramifications if he continued to harass me and my friends. Joe promised that he would not contact me until I felt comfortable talking to him again. I thought the situation would resolve itself.\nI was wrong. Joe showed up to the lectures for one of my classes. I panicked. He desperately wanted to check problem sets with me. He began to harass me on Facebook Messenger again. I blocked him. Then, he started texting me. I blocked his number - so he followed up on email. He chased me on various social media platforms as I blocked him on each one.\n\nIn the class we were both in, he showed up to office hours, asking me to work on the problem set with him around our classmates. Sometimes he would cut me off, acting like we were friends in front of everyone. I was one of a few female students in the class, and the entire teaching staff was male. I felt uncomfortable talking to anyone about it - I didn't want to stand out more than I already did.\nI felt like I was falling apart - every measure that I was taking to stop him from ruining aspects of my life was failing. By this point, eight months later, my mental health had gone out the window. I didn't have enough time to devote to my family. My friends constantly fought off Joe's advances. And now my academics were compromised.\n\nAfter my final exams ended, I was initially relieved. I was going to work in New York at Facebook for the summer, and Joe was staying in the Bay Area. However, the number of messages he was sending me via Google Hangouts grew exponentially. I couldn't figure out how to block him on Hangouts on my phone. Multiple times, he threatened to kill himself if I didn't respond. He also messaged my friends, telling them that he would continue to take classes with me if it meant I would \"notice him.\"\nThe last thing I wanted was to go through another class with him, so I alerted my dorm's resident fellow (RF). After hearing the latest chapter, the RF and I alerted campus police, who called him with a request to stop contacting me and my friends. All of a sudden, the situation seemed extremely serious. The police mentioned to him that he wouldn't face any consequences if he stopped. I didn't want to get him in trouble, and I wasn't trying to get revenge. I just wanted the drama to end.\nImmediately, he messaged my friend again, saying he was going to buy a knife and stab himself because I ruined his life by calling the police. Frightened, my friend reported the messages to the local police, who tracked him down to make sure that he wasn't in any imminent danger of self-harm. They decided he was okay and let him go - at which point he threatened my friend over Messenger again.\nI felt defeated by the whole system. What does it take to keep a Stanford student safe? Fortunately, the situation finally made its way to the Title IX office. An investigation was promptly initiated, during which Joe was not allowed to contact me. Seven weeks later, I received an email with the official document issuing a no-contact order for Joe both online and in-person for as long as I'm at Stanford. After nine months, I can finally breathe a sigh of relief, knowing that this situation with Joe is finally in the past.\n\n## What now?\n\nStanford has inspired my interest in computer science and the tech industry - particularly startups. There's something exhilarating about having a vision for the future, finding a sense of purpose, and seeing these ideas manifest themselves into companies. I want so desperately to belong in the tech industry - but this industry has been traditionally dominated by men.\n\nWomen - especially women of color, like me - face issues like these while pitching startup ideas or climbing the corporate ladder in the tech industry. Stories shared by strong women in tech are both inspiring and disturbing to me, a nineteen-year-old hopeful tech entrepreneur. On one hand, I have amazing female professors and role models to look up to who support my dreams and ambitions. On the other hand, I wonder if investors will assume I can't write a line of code, or if my outfit will be scrutinized more than my technical decisions, or if I'll have to fend off unwanted stalking with a smile in order to be a fundable entrepreneur.\n\nI've noticed that each story - like Susan Fowler's [reflection](https://www.susanjfowler.com/blog/2017/2/19/reflecting-on-one-very-strange-year-at-uber) on her time at Uber - strengthens our community of strong, intelligent technologists who believe in open-mindedness and mutual respect. We benefit from hearing each other women's experiences in the industry.\n\nAs the new co-director for she++, a nonprofit that aims to rebrand the stereotype of a programmer, I want to focus more on creating a network for future female leaders in tech. I'm starting a project to centralize stories, thoughts, and quotes about female tech students' experiences. If something happened to you as a female student in tech that you don't want happening to others, please share. Or, if you want to share a positive experience, that's awesome - we could all use some stories of empowerment. You can fill out the anonymous Google form [here](https://docs.google.com/forms/d/e/1FAIpQLScMPHF20yxVfvVDYHlWudQ7x1BVSHJEohlxk7Adon4pB-HO0A/viewform). I'll tweet short responses with the hashtag #imafemaletechstudent. Longer responses can be found [here](https://drive.google.com/drive/u/2/folders/0B6J-5np2spQnS2lYLTJlb241cTQ?usp=sharing). Your voice deserves to be heard.\n\nIt's hard to share stories. They can be emotionally triggering for many. It can feel wrong to talk about the actions of people we respect, even when they do something wrong. Logistically, stories take a while to write, and everyone is busy. But when we share our experiences, we are part of a movement larger than us - a community aspiring to make the tech industry a better place for those around us and those who come after us.\n\n*Note: I'm immensely grateful for my friends and family, Stanford residential staff, and the Title IX office for their support. I couldn't have made it through all this without them.*",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/it-starts-early/index.md",
+      "fields": {
+        "slug": "/it-starts-early/"
+      }
+    },
+    "00de4b02-c933-56f7-9b10-f0fbdcea5384": {
+      "id": "00de4b02-c933-56f7-9b10-f0fbdcea5384",
+      "children": [],
+      "parent": null,
+      "internal": {
+        "contentDigest": "e790f30073d2c9d3a6c407734d6a83e8",
+        "type": "Directory",
+        "description": "Directory \"content/assets\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "assets",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
+      "relativePath": "",
+      "extension": "",
+      "size": 160,
+      "prettySize": "160 B",
+      "modifiedTime": "2019-03-24T22:59:18.231Z",
+      "accessTime": "2019-03-24T23:18:49.082Z",
+      "changeTime": "2019-03-24T22:59:18.231Z",
+      "birthTime": "2019-03-24T22:59:18.229Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content",
+      "base": "assets",
+      "ext": "",
+      "name": "assets",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560223,
+      "blocks": 0,
+      "atimeMs": 1553469529082.43,
+      "mtimeMs": 1553468358230.9895,
+      "ctimeMs": 1553468358230.9895,
+      "birthtimeMs": 1553468358228.9492,
+      "atime": "2019-03-24T23:18:49.082Z",
+      "mtime": "2019-03-24T22:59:18.231Z",
+      "ctime": "2019-03-24T22:59:18.231Z",
+      "birthtime": "2019-03-24T22:59:18.229Z"
+    },
+    "9be965c2-3e13-5de8-89be-7a603510080a": {
+      "id": "9be965c2-3e13-5de8-89be-7a603510080a",
+      "children": [
+        "59105a36-98b3-5b01-b04a-43ad3fbd826c"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/assets/gatsby-icon.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "assets",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets/gatsby-icon.png",
+      "relativePath": "gatsby-icon.png",
+      "extension": "png",
+      "size": 21212,
+      "prettySize": "21.2 kB",
+      "modifiedTime": "2019-03-24T22:59:18.231Z",
+      "accessTime": "2019-03-24T23:18:15.006Z",
+      "changeTime": "2019-03-24T22:59:18.231Z",
+      "birthTime": "2019-03-24T22:59:18.230Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
+      "base": "gatsby-icon.png",
+      "ext": ".png",
+      "name": "gatsby-icon",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560225,
+      "blocks": 48,
+      "atimeMs": 1553469495005.6392,
+      "mtimeMs": 1553468358230.686,
+      "ctimeMs": 1553468358230.8079,
+      "birthtimeMs": 1553468358230.2263,
+      "atime": "2019-03-24T23:18:15.006Z",
+      "mtime": "2019-03-24T22:59:18.231Z",
+      "ctime": "2019-03-24T22:59:18.231Z",
+      "birthtime": "2019-03-24T22:59:18.230Z"
+    },
+    "59105a36-98b3-5b01-b04a-43ad3fbd826c": {
+      "id": "59105a36-98b3-5b01-b04a-43ad3fbd826c",
+      "children": [],
+      "parent": "9be965c2-3e13-5de8-89be-7a603510080a",
+      "internal": {
+        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "2cd3d461-8ff2-575f-b17c-21dba1243422": {
+      "id": "2cd3d461-8ff2-575f-b17c-21dba1243422",
+      "children": [
+        "888ec415-9924-5641-aa6a-096baea69450"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "6382089468f78db73988549afc8f2826",
+        "type": "File",
+        "mediaType": "image/jpeg",
+        "description": "File \"content/assets/profile-pic.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "assets",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets/profile-pic.jpg",
+      "relativePath": "profile-pic.jpg",
+      "extension": "jpg",
+      "size": 6322953,
+      "prettySize": "6.32 MB",
+      "modifiedTime": "2019-03-24T22:59:18.241Z",
+      "accessTime": "2019-03-24T23:18:15.006Z",
+      "changeTime": "2019-03-24T22:59:18.242Z",
+      "birthTime": "2019-03-24T22:59:18.231Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
+      "base": "profile-pic.jpg",
+      "ext": ".jpg",
+      "name": "profile-pic",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21560226,
+      "blocks": 12352,
+      "atimeMs": 1553469495005.6711,
+      "mtimeMs": 1553468358241.3245,
+      "ctimeMs": 1553468358241.6545,
+      "birthtimeMs": 1553468358230.9766,
+      "atime": "2019-03-24T23:18:15.006Z",
+      "mtime": "2019-03-24T22:59:18.241Z",
+      "ctime": "2019-03-24T22:59:18.242Z",
+      "birthtime": "2019-03-24T22:59:18.231Z"
+    },
+    "888ec415-9924-5641-aa6a-096baea69450": {
+      "id": "888ec415-9924-5641-aa6a-096baea69450",
+      "children": [],
+      "parent": "2cd3d461-8ff2-575f-b17c-21dba1243422",
+      "internal": {
+        "contentDigest": "6382089468f78db73988549afc8f2826",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /offline-plugin-app-shell-fallback/": {
+      "jsonName": "offline-plugin-app-shell-fallback-a30",
+      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
+      "path": "/offline-plugin-app-shell-fallback/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js",
+      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
+      "isCreatedByStatefulCreatePages": false,
+      "context": {},
+      "pluginCreator___NODE": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "pluginCreatorId": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js",
+      "id": "SitePage /offline-plugin-app-shell-fallback/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "7ffc0938fc7e0903b898c58c173f8f62",
+        "description": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /ai-for-everyone/": {
+      "jsonName": "ai-for-everyone-bff",
+      "internalComponentName": "ComponentAiForEveryone",
+      "path": "/ai-for-everyone/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "isCreatedByStatefulCreatePages": false,
+      "context": {
+        "slug": "/ai-for-everyone/",
+        "previous": {
+          "fields": {
+            "slug": "/you-got-this/"
+          },
+          "frontmatter": {
+            "title": "You got this because you're a girl."
+          }
+        },
+        "next": null
+      },
+      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "id": "SitePage /ai-for-everyone/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cc32ea5e02c3584d05691b24bb573872",
+        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /you-got-this/": {
+      "jsonName": "you-got-this-5f8",
+      "internalComponentName": "ComponentYouGotThis",
+      "path": "/you-got-this/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "isCreatedByStatefulCreatePages": false,
+      "context": {
+        "slug": "/you-got-this/",
+        "previous": {
+          "fields": {
+            "slug": "/taylor-swift-ai/"
+          },
+          "frontmatter": {
+            "title": "Taylor Swift vs Artificial Intelligence: Who's Better?"
+          }
+        },
+        "next": {
+          "fields": {
+            "slug": "/ai-for-everyone/"
+          },
+          "frontmatter": {
+            "title": "AI for Everyone: Things to Consider when Experimenting"
+          }
+        }
+      },
+      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "id": "SitePage /you-got-this/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "d59a9401c3424177807758b4b98f3565",
+        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /taylor-swift-ai/": {
+      "jsonName": "taylor-swift-ai-9a8",
+      "internalComponentName": "ComponentTaylorSwiftAi",
+      "path": "/taylor-swift-ai/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "isCreatedByStatefulCreatePages": false,
+      "context": {
+        "slug": "/taylor-swift-ai/",
+        "previous": {
+          "fields": {
+            "slug": "/it-starts-early/"
+          },
+          "frontmatter": {
+            "title": "It Starts Early: My Experience as a Female Tech Student"
+          }
+        },
+        "next": {
+          "fields": {
+            "slug": "/you-got-this/"
+          },
+          "frontmatter": {
+            "title": "You got this because you're a girl."
+          }
+        }
+      },
+      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "id": "SitePage /taylor-swift-ai/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e10a55ad9dcf93b04c1dad42f6e1973a",
+        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /it-starts-early/": {
+      "jsonName": "it-starts-early-5b1",
+      "internalComponentName": "ComponentItStartsEarly",
+      "path": "/it-starts-early/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "componentChunkName": "component---src-templates-blog-post-js",
+      "isCreatedByStatefulCreatePages": false,
+      "context": {
+        "slug": "/it-starts-early/",
+        "previous": null,
+        "next": {
+          "fields": {
+            "slug": "/taylor-swift-ai/"
+          },
+          "frontmatter": {
+            "title": "Taylor Swift vs Artificial Intelligence: Who's Better?"
+          }
+        }
+      },
+      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
+      "id": "SitePage /it-starts-early/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "abfc27c216b81d78751c063c29c25109",
+        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "jsonName": "404-22d",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "06a64eab-9a33-5718-9fad-51513318545e",
+      "pluginCreatorId": "06a64eab-9a33-5718-9fad-51513318545e",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "0f95da53cd4f66c5cf4e1f2d49492ebf",
+        "description": "06a64eab-9a33-5718-9fad-51513318545e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "jsonName": "index",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "06a64eab-9a33-5718-9fad-51513318545e",
+      "pluginCreatorId": "06a64eab-9a33-5718-9fad-51513318545e",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "35b3b4b5d9b2e7ad87951e80970459bb",
+        "description": "06a64eab-9a33-5718-9fad-51513318545e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "jsonName": "404-html-516",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "pluginCreatorId": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "6755171a6f4f94d3c4868df0c3c35c2c",
+        "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "2f8041ac2c8ca7b5c2a2a1ff484bf8a7"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "sq--src-components-bio-js",
+        "sq--src-components-seo-js",
+        "/404/",
+        "/404.html",
+        "/",
+        "/ai-for-everyone/",
+        "/you-got-this/",
+        "/taylor-swift-ai/",
+        "/it-starts-early/"
+      ],
+      "2cd3d461-8ff2-575f-b17c-21dba1243422": [
+        "sq--src-components-bio-js"
+      ],
+      "888ec415-9924-5641-aa6a-096baea69450": [
+        "sq--src-components-bio-js"
+      ],
+      "49cc22d5-b8d3-5943-878d-8ad7947a0a62": [
+        "/ai-for-everyone/"
+      ],
+      "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c": [
+        "/you-got-this/"
+      ],
+      "7af3edb5-96e4-58c2-9143-51aa205d006e": [
+        "/taylor-swift-ai/"
+      ],
+      "85b6b148-069d-57b4-9b33-8952b104a266": [
+        "/it-starts-early/"
+      ]
+    },
+    "connections": {
+      "MarkdownRemark": [
+        "/"
+      ]
+    }
+  },
+  "jsonDataPaths": {
+    "sq--src-components-seo-js": 2417117884,
+    "404-22d": "461/path---404-22-d-bce-canWq7mYqF6q0JNTt40FlSoXsuw",
+    "404-html-516": "992/path---404-html-516-62a-canWq7mYqF6q0JNTt40FlSoXsuw",
+    "ai-for-everyone-bff": "334/path---ai-for-everyone-bff-622-6gLILcQDQtDj46xLilQge7b31jE",
+    "you-got-this-5f8": "129/path---you-got-this-5-f-8-419-JjI5Xe6TOjModsaDzNOgO11394A",
+    "sq--src-components-bio-js": 4007731267,
+    "offline-plugin-app-shell-fallback-a30": "604/path---offline-plugin-app-shell-fallback-a-30-c5a-BawJvyh36KKFwbrWPg4a4aYuc8",
+    "taylor-swift-ai-9a8": "210/path---taylor-swift-ai-9-a-8-6e2-CwZcmrwMgLFqcOOL80M1Bvcpl8",
+    "it-starts-early-5b1": "814/path---it-starts-early-5-b-1-154-hPGi1X6ZTSayTttG6n07DRiJL5w",
+    "index": "10/path---index-6a9-iK0xNgibZxKnk6DdzBcKaEuzFqI"
+  },
+  "components": {
+    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js": {
+      "query": "",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js"
+    },
+    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js": {
+      "query": "query BlogPostBySlug(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n      author\n    }\n  }\n  markdownRemark(fields: {slug: {eq: $slug}}) {\n    id\n    excerpt(pruneLength: 160)\n    html\n    frontmatter {\n      title\n      date(formatString: \"MMMM DD, YYYY\")\n      description\n    }\n  }\n}\n",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js"
+    },
+    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js": {
+      "query": "query usersShreyashankarDocumentsProjectsShreyashankarGithubIoSrcPages404Js1097489062 {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js"
+    },
+    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/index.js": {
+      "query": "query usersShreyashankarDocumentsProjectsShreyashankarGithubIoSrcPagesIndexJs2785444898 {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {\n    edges {\n      node {\n        excerpt\n        fields {\n          slug\n        }\n        frontmatter {\n          date(formatString: \"MMMM DD, YYYY\")\n          title\n          description\n        }\n      }\n    }\n  }\n}\n",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/index.js"
+    }
+  },
+  "staticQueryComponents": {
+    "sq--src-components-bio-js": {
+      "name": "BioQuery",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/components/bio.js",
+      "id": "sq--src-components-bio-js",
+      "jsonName": "sq--src-components-bio-js",
+      "query": "query BioQuery {\n  avatar: file(absolutePath: {regex: \"/profile-pic.jpg/\"}) {\n    childImageSharp {\n      fixed(width: 50, height: 50) {\n        ...GatsbyImageSharpFixed\n      }\n    }\n  }\n  site {\n    siteMetadata {\n      author\n      social {\n        twitter\n      }\n    }\n  }\n}\n\nfragment GatsbyImageSharpFixed on ImageSharpFixed {\n  base64\n  width\n  height\n  src\n  srcSet\n}\n",
+      "hash": 4007731267
+    },
+    "sq--src-components-seo-js": {
+      "name": "usersShreyashankarDocumentsProjectsShreyashankarGithubIoSrcComponentsSeoJs2417117884",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/components/seo.js",
+      "id": "sq--src-components-seo-js",
+      "jsonName": "sq--src-components-seo-js",
+      "query": "query usersShreyashankarDocumentsProjectsShreyashankarGithubIoSrcComponentsSeoJs2417117884 {\n  site {\n    siteMetadata {\n      title\n      description\n      author\n    }\n  }\n}\n",
+      "hash": 2417117884
+    }
+  }
+}

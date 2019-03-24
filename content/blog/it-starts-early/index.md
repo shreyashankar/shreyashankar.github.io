@@ -1,8 +1,7 @@
 ---
 title: "It Starts Early: My Experience as a Female Tech Student"
 date: "2017-08-07"
-image: ''
-tags: ''
+description: ''
 ---
 
 Several weeks ago, I woke up to the news that six female entrepreneurs were claiming that Justin Caldbeck, co-founder of Binary Capital, had harassed them. More was to come, with the New York Times outing claims against high-profile investors, Chris Sacca and Dave McClure. McClure was eventually forced to step down from his leadership position at venture capital firm 500 Startups. And yesterday, I read all about a Google engineer's belief that biological differences between females and males "may explain why we don't see equal representation of women in tech and leadership."

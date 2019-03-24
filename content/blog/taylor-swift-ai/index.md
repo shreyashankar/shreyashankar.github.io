@@ -1,8 +1,7 @@
 ---
 title: "Taylor Swift vs Artificial Intelligence: Who's Better?"
 date: "2017-08-28"
-image: ''
-tags: ''
+description: ''
 ---
 
 I was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.
