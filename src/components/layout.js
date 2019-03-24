@@ -17,7 +17,8 @@ class Layout extends React.Component {
             marginBottom: rhythm(1.5),
             marginTop: 0,
             textTransform: `uppercase`,
-            textAlign: 'center'
+            textAlign: 'center',
+            fontFamily: 'Quattrocento Sans'
           }}
         >
           <Link
@@ -36,7 +37,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Lato, sans-serif`,
+            fontFamily: `Quattrocento Sans`,
             marginTop: 0,
             textTransform: 'uppercase',
             textAlign: 'center'

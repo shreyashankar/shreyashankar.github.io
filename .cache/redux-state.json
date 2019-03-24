@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "jsonName": "dev-404-page-5f9",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+      "pluginCreatorId": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "ab0c2ee9eecbbffd45a5010fb50c622f",
+        "description": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
         "owner": "internal-data-bridge"
       }
     },
@@ -1930,7 +1940,7 @@
       "resolve": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "274b569c66ff507f1322e66d57ce81d0",
+      "version": "21a4d0ee82c79e2bae70998ea3644754",
       "pluginOptions": {
         "plugins": []
       },
@@ -2070,7 +2080,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "ab9d811910714c79cb6a8a1261c9091b",
+        "contentDigest": "25cc6f9c6368e66a23aece7a79471650",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -2185,17 +2195,19 @@
         "description": "My blog.",
         "siteUrl": "https://gatsby-starter-blog-demo.netlify.com/",
         "social": {
-          "twitter": "shreyashankar"
+          "twitter": "sh_reya"
         }
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-24T23:18:46.721Z",
+      "buildTime": "2019-03-24T23:43:00.512Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "7cd7205f28999e294360cb98fe115d04",
+        "contentDigest": "6e436dcdd37ec6a02938c15e87029ac5",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -2205,7 +2217,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "4ec99edba54504d26355317e28c6905d",
+        "contentDigest": "8c55d514a5c79a95c52498acc0b81505",
         "type": "Directory",
         "description": "Directory \"content/blog\"",
         "owner": "gatsby-source-filesystem"
@@ -2217,7 +2229,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2019-03-24T22:59:18.224Z",
-      "accessTime": "2019-03-24T23:18:49.025Z",
+      "accessTime": "2019-03-24T23:43:05.287Z",
       "changeTime": "2019-03-24T22:59:18.224Z",
       "birthTime": "2019-03-24T22:59:18.219Z",
       "root": "/",
@@ -2235,11 +2247,11 @@
       "blksize": 4096,
       "ino": 21560207,
       "blocks": 0,
-      "atimeMs": 1553469529025.4636,
+      "atimeMs": 1553470985287.143,
       "mtimeMs": 1553468358224.0627,
       "ctimeMs": 1553468358224.0627,
       "birthtimeMs": 1553468358218.542,
-      "atime": "2019-03-24T23:18:49.025Z",
+      "atime": "2019-03-24T23:43:05.287Z",
       "mtime": "2019-03-24T22:59:18.224Z",
       "ctime": "2019-03-24T22:59:18.224Z",
       "birthtime": "2019-03-24T22:59:18.219Z"
@@ -2249,7 +2261,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "e432128384f22bd61098705c8fc123f3",
+        "contentDigest": "b2e3ee53148faf17b8ab7beb3dc36a2f",
         "type": "Directory",
         "description": "Directory \"content/blog/ai-for-everyone\"",
         "owner": "gatsby-source-filesystem"
@@ -2261,7 +2273,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-03-24T23:16:50.367Z",
-      "accessTime": "2019-03-24T23:18:49.028Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:16:50.367Z",
       "birthTime": "2019-03-24T22:59:18.222Z",
       "root": "/",
@@ -2279,11 +2291,11 @@
       "blksize": 4096,
       "ino": 21560212,
       "blocks": 0,
-      "atimeMs": 1553469529027.5618,
+      "atimeMs": 1553470985289.903,
       "mtimeMs": 1553469410367.4849,
       "ctimeMs": 1553469410367.4849,
       "birthtimeMs": 1553468358221.72,
-      "atime": "2019-03-24T23:18:49.028Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:16:50.367Z",
       "ctime": "2019-03-24T23:16:50.367Z",
       "birthtime": "2019-03-24T22:59:18.222Z"
@@ -2293,7 +2305,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "a797827c7cf9a4b8a2150fa69fe2b00d",
+        "contentDigest": "9e6aecfd7afece0166872efa7ab0aae5",
         "type": "Directory",
         "description": "Directory \"content/blog/it-starts-early\"",
         "owner": "gatsby-source-filesystem"
@@ -2305,7 +2317,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:18:49.028Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.224Z",
       "root": "/",
@@ -2323,11 +2335,11 @@
       "blksize": 4096,
       "ino": 21560217,
       "blocks": 0,
-      "atimeMs": 1553469529027.638,
+      "atimeMs": 1553470985289.9368,
       "mtimeMs": 1553469410367.8003,
       "ctimeMs": 1553469410367.8003,
       "birthtimeMs": 1553468358224.0532,
-      "atime": "2019-03-24T23:18:49.028Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.224Z"
@@ -2337,7 +2349,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "4dadd15919058599931471fdb3eeb9e4",
+        "contentDigest": "1a799e30bddb5ecf5975eadbd982d94f",
         "type": "Directory",
         "description": "Directory \"content/blog/taylor-swift-ai\"",
         "owner": "gatsby-source-filesystem"
@@ -2349,7 +2361,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:18:49.028Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.219Z",
       "root": "/",
@@ -2367,11 +2379,11 @@
       "blksize": 4096,
       "ino": 21560208,
       "blocks": 0,
-      "atimeMs": 1553469529027.6409,
+      "atimeMs": 1553470985289.9084,
       "mtimeMs": 1553469410368.0784,
       "ctimeMs": 1553469410368.0784,
       "birthtimeMs": 1553468358218.8079,
-      "atime": "2019-03-24T23:18:49.028Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.219Z"
@@ -2381,7 +2393,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "b545dccf3b9e88cfdd0a0a8f25dd5311",
+        "contentDigest": "9943a63b15e7be7aea9c617ac2c510b4",
         "type": "Directory",
         "description": "Directory \"content/blog/you-got-this\"",
         "owner": "gatsby-source-filesystem"
@@ -2393,7 +2405,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:18:49.028Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.223Z",
       "root": "/",
@@ -2411,11 +2423,11 @@
       "blksize": 4096,
       "ino": 21560215,
       "blocks": 0,
-      "atimeMs": 1553469529027.6306,
+      "atimeMs": 1553470985289.9136,
       "mtimeMs": 1553469410368.314,
       "ctimeMs": 1553469410368.314,
       "birthtimeMs": 1553468358223.2244,
-      "atime": "2019-03-24T23:18:49.028Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.223Z"
@@ -2440,7 +2452,7 @@
       "size": 3873,
       "prettySize": "3.87 kB",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:18:34.662Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T23:16:50.367Z",
       "root": "/",
@@ -2458,14 +2470,61 @@
       "blksize": 4096,
       "ino": 21732452,
       "blocks": 8,
-      "atimeMs": 1553469514662.3928,
+      "atimeMs": 1553470985290.0264,
       "mtimeMs": 1553469410367.5889,
       "ctimeMs": 1553469410367.5889,
       "birthtimeMs": 1553469410367.4758,
-      "atime": "2019-03-24T23:18:34.662Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T23:16:50.367Z"
+    },
+    "3dc112ad-ebab-54db-b78a-55f120f17548": {
+      "id": "3dc112ad-ebab-54db-b78a-55f120f17548",
+      "children": [
+        "7af3edb5-96e4-58c2-9143-51aa205d006e"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "ef02cddfd6a0de0de9e5d9b4dc1a1efd",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/taylor-swift-ai/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
+      "relativePath": "taylor-swift-ai/index.md",
+      "extension": "md",
+      "size": 2549,
+      "prettySize": "2.55 kB",
+      "modifiedTime": "2019-03-24T23:17:36.005Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
+      "changeTime": "2019-03-24T23:17:36.005Z",
+      "birthTime": "2019-03-24T23:16:50.368Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "taylor-swift-ai",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732454,
+      "blocks": 8,
+      "atimeMs": 1553470985290.066,
+      "mtimeMs": 1553469456005.4246,
+      "ctimeMs": 1553469456005.4246,
+      "birthtimeMs": 1553469410368.0718,
+      "atime": "2019-03-24T23:43:05.290Z",
+      "mtime": "2019-03-24T23:17:36.005Z",
+      "ctime": "2019-03-24T23:17:36.005Z",
+      "birthtime": "2019-03-24T23:16:50.368Z"
     },
     "9be71790-6fea-5327-94ed-f2b1396e69da": {
       "id": "9be71790-6fea-5327-94ed-f2b1396e69da",
@@ -2487,7 +2546,7 @@
       "size": 5394,
       "prettySize": "5.39 kB",
       "modifiedTime": "2019-03-24T23:17:38.654Z",
-      "accessTime": "2019-03-24T23:18:11.768Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:17:38.654Z",
       "birthTime": "2019-03-24T23:16:50.368Z",
       "root": "/",
@@ -2505,11 +2564,11 @@
       "blksize": 4096,
       "ino": 21732455,
       "blocks": 16,
-      "atimeMs": 1553469491767.6082,
+      "atimeMs": 1553470985290.191,
       "mtimeMs": 1553469458654.32,
       "ctimeMs": 1553469458654.32,
       "birthtimeMs": 1553469410368.3074,
-      "atime": "2019-03-24T23:18:11.768Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:17:38.654Z",
       "ctime": "2019-03-24T23:17:38.654Z",
       "birthtime": "2019-03-24T23:16:50.368Z"
@@ -2534,7 +2593,7 @@
       "size": 11134,
       "prettySize": "11.1 kB",
       "modifiedTime": "2019-03-24T23:17:33.023Z",
-      "accessTime": "2019-03-24T23:18:11.767Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T23:17:33.023Z",
       "birthTime": "2019-03-24T23:16:50.368Z",
       "root": "/",
@@ -2552,11 +2611,11 @@
       "blksize": 4096,
       "ino": 21732453,
       "blocks": 24,
-      "atimeMs": 1553469491767.425,
+      "atimeMs": 1553470985290.2192,
       "mtimeMs": 1553469453023.007,
       "ctimeMs": 1553469453023.007,
       "birthtimeMs": 1553469410367.7905,
-      "atime": "2019-03-24T23:18:11.767Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T23:17:33.023Z",
       "ctime": "2019-03-24T23:17:33.023Z",
       "birthtime": "2019-03-24T23:16:50.368Z"
@@ -2581,7 +2640,7 @@
       "size": 47975,
       "prettySize": "48 kB",
       "modifiedTime": "2019-03-24T22:59:18.226Z",
-      "accessTime": "2019-03-24T23:18:11.767Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T22:59:18.226Z",
       "birthTime": "2019-03-24T22:59:18.226Z",
       "root": "/",
@@ -2599,11 +2658,11 @@
       "blksize": 4096,
       "ino": 21560220,
       "blocks": 96,
-      "atimeMs": 1553469491767.4395,
+      "atimeMs": 1553470985290.229,
       "mtimeMs": 1553468358226.037,
       "ctimeMs": 1553468358226.2925,
       "birthtimeMs": 1553468358225.679,
-      "atime": "2019-03-24T23:18:11.767Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T22:59:18.226Z",
       "ctime": "2019-03-24T22:59:18.226Z",
       "birthtime": "2019-03-24T22:59:18.226Z"
@@ -2628,7 +2687,7 @@
       "size": 31344,
       "prettySize": "31.3 kB",
       "modifiedTime": "2019-03-24T22:59:18.228Z",
-      "accessTime": "2019-03-24T23:18:11.767Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T22:59:18.229Z",
       "birthTime": "2019-03-24T22:59:18.228Z",
       "root": "/",
@@ -2646,11 +2705,11 @@
       "blksize": 4096,
       "ino": 21560222,
       "blocks": 64,
-      "atimeMs": 1553469491767.4534,
+      "atimeMs": 1553470985290.2363,
       "mtimeMs": 1553468358228.2876,
       "ctimeMs": 1553468358228.6636,
       "birthtimeMs": 1553468358227.7454,
-      "atime": "2019-03-24T23:18:11.767Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T22:59:18.228Z",
       "ctime": "2019-03-24T22:59:18.229Z",
       "birthtime": "2019-03-24T22:59:18.228Z"
@@ -2675,7 +2734,7 @@
       "size": 45421,
       "prettySize": "45.4 kB",
       "modifiedTime": "2019-03-24T22:59:18.225Z",
-      "accessTime": "2019-03-24T23:18:11.767Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T22:59:18.226Z",
       "birthTime": "2019-03-24T22:59:18.225Z",
       "root": "/",
@@ -2693,61 +2752,14 @@
       "blksize": 4096,
       "ino": 21560219,
       "blocks": 96,
-      "atimeMs": 1553469491767.48,
+      "atimeMs": 1553470985290.26,
       "mtimeMs": 1553468358225.279,
       "ctimeMs": 1553468358225.5442,
       "birthtimeMs": 1553468358224.904,
-      "atime": "2019-03-24T23:18:11.767Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T22:59:18.225Z",
       "ctime": "2019-03-24T22:59:18.226Z",
       "birthtime": "2019-03-24T22:59:18.225Z"
-    },
-    "3dc112ad-ebab-54db-b78a-55f120f17548": {
-      "id": "3dc112ad-ebab-54db-b78a-55f120f17548",
-      "children": [
-        "7af3edb5-96e4-58c2-9143-51aa205d006e"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "ef02cddfd6a0de0de9e5d9b4dc1a1efd",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"content/blog/taylor-swift-ai/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "blog",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
-      "relativePath": "taylor-swift-ai/index.md",
-      "extension": "md",
-      "size": 2549,
-      "prettySize": "2.55 kB",
-      "modifiedTime": "2019-03-24T23:17:36.005Z",
-      "accessTime": "2019-03-24T23:18:11.768Z",
-      "changeTime": "2019-03-24T23:17:36.005Z",
-      "birthTime": "2019-03-24T23:16:50.368Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "taylor-swift-ai",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 21732454,
-      "blocks": 8,
-      "atimeMs": 1553469491767.5073,
-      "mtimeMs": 1553469456005.4246,
-      "ctimeMs": 1553469456005.4246,
-      "birthtimeMs": 1553469410368.0718,
-      "atime": "2019-03-24T23:18:11.768Z",
-      "mtime": "2019-03-24T23:17:36.005Z",
-      "ctime": "2019-03-24T23:17:36.005Z",
-      "birthtime": "2019-03-24T23:16:50.368Z"
     },
     "0e8f494b-d78d-599e-acb7-cf8bb8e6d326": {
       "id": "0e8f494b-d78d-599e-acb7-cf8bb8e6d326",
@@ -2769,7 +2781,7 @@
       "size": 68425,
       "prettySize": "68.4 kB",
       "modifiedTime": "2019-03-24T22:59:18.227Z",
-      "accessTime": "2019-03-24T23:18:11.767Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T22:59:18.227Z",
       "birthTime": "2019-03-24T22:59:18.226Z",
       "root": "/",
@@ -2787,11 +2799,11 @@
       "blksize": 4096,
       "ino": 21560221,
       "blocks": 136,
-      "atimeMs": 1553469491767.466,
+      "atimeMs": 1553470985290.2483,
       "mtimeMs": 1553468358226.9736,
       "ctimeMs": 1553468358227.3745,
       "birthtimeMs": 1553468358226.466,
-      "atime": "2019-03-24T23:18:11.767Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T22:59:18.227Z",
       "ctime": "2019-03-24T22:59:18.227Z",
       "birthtime": "2019-03-24T22:59:18.226Z"
@@ -2846,7 +2858,7 @@
       "size": 161067,
       "prettySize": "161 kB",
       "modifiedTime": "2019-03-24T22:59:18.220Z",
-      "accessTime": "2019-03-24T23:18:11.768Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T22:59:18.221Z",
       "birthTime": "2019-03-24T22:59:18.220Z",
       "root": "/",
@@ -2864,11 +2876,11 @@
       "blksize": 4096,
       "ino": 21560210,
       "blocks": 320,
-      "atimeMs": 1553469491767.5203,
+      "atimeMs": 1553470985290.086,
       "mtimeMs": 1553468358220.2188,
       "ctimeMs": 1553468358220.5203,
       "birthtimeMs": 1553468358219.6611,
-      "atime": "2019-03-24T23:18:11.768Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T22:59:18.220Z",
       "ctime": "2019-03-24T22:59:18.221Z",
       "birthtime": "2019-03-24T22:59:18.220Z"
@@ -2893,7 +2905,7 @@
       "size": 162377,
       "prettySize": "162 kB",
       "modifiedTime": "2019-03-24T22:59:18.221Z",
-      "accessTime": "2019-03-24T23:18:11.768Z",
+      "accessTime": "2019-03-24T23:43:05.290Z",
       "changeTime": "2019-03-24T22:59:18.222Z",
       "birthTime": "2019-03-24T22:59:18.221Z",
       "root": "/",
@@ -2911,11 +2923,11 @@
       "blksize": 4096,
       "ino": 21560211,
       "blocks": 320,
-      "atimeMs": 1553469491767.5322,
+      "atimeMs": 1553470985290.094,
       "mtimeMs": 1553468358221.3047,
       "ctimeMs": 1553468358221.5737,
       "birthtimeMs": 1553468358220.7073,
-      "atime": "2019-03-24T23:18:11.768Z",
+      "atime": "2019-03-24T23:43:05.290Z",
       "mtime": "2019-03-24T22:59:18.221Z",
       "ctime": "2019-03-24T22:59:18.222Z",
       "birthtime": "2019-03-24T22:59:18.221Z"
@@ -2950,29 +2962,30 @@
         "owner": "gatsby-transformer-sharp"
       }
     },
-    "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c": {
-      "id": "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c",
+    "49cc22d5-b8d3-5943-878d-8ad7947a0a62": {
+      "id": "49cc22d5-b8d3-5943-878d-8ad7947a0a62",
       "children": [],
-      "parent": "9be71790-6fea-5327-94ed-f2b1396e69da",
+      "parent": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
       "internal": {
-        "content": "\nIt's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying \"[he] could have easily gotten it if [he] was a girl.\"\n\nI'm grateful for for the opportunities I receive, but I can't help feeling bummed when I hear these comments. As a diversity program participant, I know it sucks to feel like a pawn in the game of affirmative action, sacrificing my feelings for future women in tech to enter a level playing field. Get over it! Many of my female mentors and role models have advised. You're qualified! You're smart! And you did a \"real\" software engineering internship at Facebook!\n\nBut hearing this does not fix the problem. As an underclassman female CS major, once the first few guys doubted my technical qualifications, I began to wonder if all my male friends felt the same way. Maybe they didn't voice it out loud because they wanted to be tactful. There weren't any older female CS majors that I could talk to about how I felt - mainly because these diversity programs are so new, and my class is one of the first few waves of diversity program participants.\n\nI'm grateful that I have a lot of close male friends who support me as a woman. But every time I hear some insensitive comment from someone else about diversity programs during recruiting season, here's the two-sided dialogue that goes through my head, as I contemplate what to say to fight centuries of sexism.\n\n---\n\n*He's probably right. Even if guys are nice and smart, they don't get internships at large companies after freshman year.*\n\nWrong! By being a woman and minority in tech, you've probably had to overcome so many more obstacles, like stereotype threat, to get to this same place that he has. Just by showing up to the career fair, you've challenged the stereotype of a CS student. By taking CS classes, you've gone outside of your comfort zone to pursue a field that has few role models that look like you. That guy who made the comment feels entitled to an internship, while you feel like you're not good enough. That speaks for itself.\n\n*I'm not as technically qualified for an internship as he is.*\n\nA little-known secret: the core CS class sequence at many schools is way more than enough for several upperclassman internships. Freshman and sophomore programs assume only a few CS classes. After a certain level, additional knowledge isn't required. Reality is, you are way more qualified for the position than you think. And the fact that you're different is a bonus - by hiring you, companies get a maximally different perspective.\n\n*I don't even know if I like CS; how do I deserve this more than him?*\n\nWho knows who deserves the position more. Does it matter? Statistically, he is [more likely to complete the CS major](http://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and get a full-time software engineering offer, regardless of how many internships he has done. Women on the other hand [drop out of CS](https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Accenture-Cracking-The-Gender-Code-Report.pdf) because they don't have many relatable role models or a strong sense of community like majority of men do. An internship is more likely to help you decide whether you like it or not so you can see yourself as a full-time software engineer. You deserve this chance.\n\n*Everyone will continue to look at me as a \"diversity hire,\" even later on.*\n\nWhen I showed up to Facebook, a lot of people outside my team asked me if I participated in Facebook's diversity program, FBU. Maybe they had never seen a rising junior female software engineering intern who didn't participate in FBU. But we're clearly technically qualified, because we successfully work on impactful projects.\n\n*Did I actually get this because I'm a girl?*\n\nAh, the question everyone squirms away from, trying to console you with a variation of the answers above. Here's the real deal: nobody knows. There are too many variables involved in the internship or job hunt. But to get a return or full-time offer, you have to be as technically qualified as everyone else while justifying your ability as a female programmer to everyone that doubts you for your looks. Most guys don't have to do that.\n\n---\n\nAfter this internal back-and-forth, I still don't have a concise, convincing answer. I sigh and respond. \"You could be right,\" I usually concede. \"We're fighting historical oppression of females in tech. But we'll all end up with jobs in this industry anyways.\"\n\nHe isn't satisfied, but he has nothing more to say. Meanwhile, I'm raging internally, wishing I stood up for women like me. But I don't want to offend him, because he's most likely a friend or well-respected by my peers. Feeling like a failed feminist, I trudge back home to add a new, challenging CS course to my study list or start a technical side project to justify my self-worth.",
+        "content": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
         "type": "MarkdownRemark",
-        "contentDigest": "ffa6ca0411efd86fc037fb6ddcebac0d",
+        "contentDigest": "50c211060d43654ebc5f97edd3882efa",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
           "slug": "default-site-plugin"
         }
       },
       "frontmatter": {
-        "title": "You got this because you're a girl.",
-        "date": "2017-09-15",
-        "description": ""
+        "title": "AI for Everyone: Things to Consider when Experimenting",
+        "date": "2017-10-01",
+        "image": "",
+        "tags": ""
       },
       "excerpt": "",
-      "rawMarkdownBody": "\nIt's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying \"[he] could have easily gotten it if [he] was a girl.\"\n\nI'm grateful for for the opportunities I receive, but I can't help feeling bummed when I hear these comments. As a diversity program participant, I know it sucks to feel like a pawn in the game of affirmative action, sacrificing my feelings for future women in tech to enter a level playing field. Get over it! Many of my female mentors and role models have advised. You're qualified! You're smart! And you did a \"real\" software engineering internship at Facebook!\n\nBut hearing this does not fix the problem. As an underclassman female CS major, once the first few guys doubted my technical qualifications, I began to wonder if all my male friends felt the same way. Maybe they didn't voice it out loud because they wanted to be tactful. There weren't any older female CS majors that I could talk to about how I felt - mainly because these diversity programs are so new, and my class is one of the first few waves of diversity program participants.\n\nI'm grateful that I have a lot of close male friends who support me as a woman. But every time I hear some insensitive comment from someone else about diversity programs during recruiting season, here's the two-sided dialogue that goes through my head, as I contemplate what to say to fight centuries of sexism.\n\n---\n\n*He's probably right. Even if guys are nice and smart, they don't get internships at large companies after freshman year.*\n\nWrong! By being a woman and minority in tech, you've probably had to overcome so many more obstacles, like stereotype threat, to get to this same place that he has. Just by showing up to the career fair, you've challenged the stereotype of a CS student. By taking CS classes, you've gone outside of your comfort zone to pursue a field that has few role models that look like you. That guy who made the comment feels entitled to an internship, while you feel like you're not good enough. That speaks for itself.\n\n*I'm not as technically qualified for an internship as he is.*\n\nA little-known secret: the core CS class sequence at many schools is way more than enough for several upperclassman internships. Freshman and sophomore programs assume only a few CS classes. After a certain level, additional knowledge isn't required. Reality is, you are way more qualified for the position than you think. And the fact that you're different is a bonus - by hiring you, companies get a maximally different perspective.\n\n*I don't even know if I like CS; how do I deserve this more than him?*\n\nWho knows who deserves the position more. Does it matter? Statistically, he is [more likely to complete the CS major](http://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and get a full-time software engineering offer, regardless of how many internships he has done. Women on the other hand [drop out of CS](https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Accenture-Cracking-The-Gender-Code-Report.pdf) because they don't have many relatable role models or a strong sense of community like majority of men do. An internship is more likely to help you decide whether you like it or not so you can see yourself as a full-time software engineer. You deserve this chance.\n\n*Everyone will continue to look at me as a \"diversity hire,\" even later on.*\n\nWhen I showed up to Facebook, a lot of people outside my team asked me if I participated in Facebook's diversity program, FBU. Maybe they had never seen a rising junior female software engineering intern who didn't participate in FBU. But we're clearly technically qualified, because we successfully work on impactful projects.\n\n*Did I actually get this because I'm a girl?*\n\nAh, the question everyone squirms away from, trying to console you with a variation of the answers above. Here's the real deal: nobody knows. There are too many variables involved in the internship or job hunt. But to get a return or full-time offer, you have to be as technically qualified as everyone else while justifying your ability as a female programmer to everyone that doubts you for your looks. Most guys don't have to do that.\n\n---\n\nAfter this internal back-and-forth, I still don't have a concise, convincing answer. I sigh and respond. \"You could be right,\" I usually concede. \"We're fighting historical oppression of females in tech. But we'll all end up with jobs in this industry anyways.\"\n\nHe isn't satisfied, but he has nothing more to say. Meanwhile, I'm raging internally, wishing I stood up for women like me. But I don't want to offend him, because he's most likely a friend or well-respected by my peers. Feeling like a failed feminist, I trudge back home to add a new, challenging CS course to my study list or start a technical side project to justify my self-worth.",
-      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/you-got-this/index.md",
+      "rawMarkdownBody": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
       "fields": {
-        "slug": "/you-got-this/"
+        "slug": "/ai-for-everyone/"
       }
     },
     "7af3edb5-96e4-58c2-9143-51aa205d006e": {
@@ -3000,30 +3013,29 @@
         "slug": "/taylor-swift-ai/"
       }
     },
-    "49cc22d5-b8d3-5943-878d-8ad7947a0a62": {
-      "id": "49cc22d5-b8d3-5943-878d-8ad7947a0a62",
+    "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c": {
+      "id": "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c",
       "children": [],
-      "parent": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
+      "parent": "9be71790-6fea-5327-94ed-f2b1396e69da",
       "internal": {
-        "content": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
+        "content": "\nIt's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying \"[he] could have easily gotten it if [he] was a girl.\"\n\nI'm grateful for for the opportunities I receive, but I can't help feeling bummed when I hear these comments. As a diversity program participant, I know it sucks to feel like a pawn in the game of affirmative action, sacrificing my feelings for future women in tech to enter a level playing field. Get over it! Many of my female mentors and role models have advised. You're qualified! You're smart! And you did a \"real\" software engineering internship at Facebook!\n\nBut hearing this does not fix the problem. As an underclassman female CS major, once the first few guys doubted my technical qualifications, I began to wonder if all my male friends felt the same way. Maybe they didn't voice it out loud because they wanted to be tactful. There weren't any older female CS majors that I could talk to about how I felt - mainly because these diversity programs are so new, and my class is one of the first few waves of diversity program participants.\n\nI'm grateful that I have a lot of close male friends who support me as a woman. But every time I hear some insensitive comment from someone else about diversity programs during recruiting season, here's the two-sided dialogue that goes through my head, as I contemplate what to say to fight centuries of sexism.\n\n---\n\n*He's probably right. Even if guys are nice and smart, they don't get internships at large companies after freshman year.*\n\nWrong! By being a woman and minority in tech, you've probably had to overcome so many more obstacles, like stereotype threat, to get to this same place that he has. Just by showing up to the career fair, you've challenged the stereotype of a CS student. By taking CS classes, you've gone outside of your comfort zone to pursue a field that has few role models that look like you. That guy who made the comment feels entitled to an internship, while you feel like you're not good enough. That speaks for itself.\n\n*I'm not as technically qualified for an internship as he is.*\n\nA little-known secret: the core CS class sequence at many schools is way more than enough for several upperclassman internships. Freshman and sophomore programs assume only a few CS classes. After a certain level, additional knowledge isn't required. Reality is, you are way more qualified for the position than you think. And the fact that you're different is a bonus - by hiring you, companies get a maximally different perspective.\n\n*I don't even know if I like CS; how do I deserve this more than him?*\n\nWho knows who deserves the position more. Does it matter? Statistically, he is [more likely to complete the CS major](http://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and get a full-time software engineering offer, regardless of how many internships he has done. Women on the other hand [drop out of CS](https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Accenture-Cracking-The-Gender-Code-Report.pdf) because they don't have many relatable role models or a strong sense of community like majority of men do. An internship is more likely to help you decide whether you like it or not so you can see yourself as a full-time software engineer. You deserve this chance.\n\n*Everyone will continue to look at me as a \"diversity hire,\" even later on.*\n\nWhen I showed up to Facebook, a lot of people outside my team asked me if I participated in Facebook's diversity program, FBU. Maybe they had never seen a rising junior female software engineering intern who didn't participate in FBU. But we're clearly technically qualified, because we successfully work on impactful projects.\n\n*Did I actually get this because I'm a girl?*\n\nAh, the question everyone squirms away from, trying to console you with a variation of the answers above. Here's the real deal: nobody knows. There are too many variables involved in the internship or job hunt. But to get a return or full-time offer, you have to be as technically qualified as everyone else while justifying your ability as a female programmer to everyone that doubts you for your looks. Most guys don't have to do that.\n\n---\n\nAfter this internal back-and-forth, I still don't have a concise, convincing answer. I sigh and respond. \"You could be right,\" I usually concede. \"We're fighting historical oppression of females in tech. But we'll all end up with jobs in this industry anyways.\"\n\nHe isn't satisfied, but he has nothing more to say. Meanwhile, I'm raging internally, wishing I stood up for women like me. But I don't want to offend him, because he's most likely a friend or well-respected by my peers. Feeling like a failed feminist, I trudge back home to add a new, challenging CS course to my study list or start a technical side project to justify my self-worth.",
         "type": "MarkdownRemark",
-        "contentDigest": "50c211060d43654ebc5f97edd3882efa",
+        "contentDigest": "ffa6ca0411efd86fc037fb6ddcebac0d",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
           "slug": "default-site-plugin"
         }
       },
       "frontmatter": {
-        "title": "AI for Everyone: Things to Consider when Experimenting",
-        "date": "2017-10-01",
-        "image": "",
-        "tags": ""
+        "title": "You got this because you're a girl.",
+        "date": "2017-09-15",
+        "description": ""
       },
       "excerpt": "",
-      "rawMarkdownBody": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
-      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
+      "rawMarkdownBody": "\nIt's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying \"[he] could have easily gotten it if [he] was a girl.\"\n\nI'm grateful for for the opportunities I receive, but I can't help feeling bummed when I hear these comments. As a diversity program participant, I know it sucks to feel like a pawn in the game of affirmative action, sacrificing my feelings for future women in tech to enter a level playing field. Get over it! Many of my female mentors and role models have advised. You're qualified! You're smart! And you did a \"real\" software engineering internship at Facebook!\n\nBut hearing this does not fix the problem. As an underclassman female CS major, once the first few guys doubted my technical qualifications, I began to wonder if all my male friends felt the same way. Maybe they didn't voice it out loud because they wanted to be tactful. There weren't any older female CS majors that I could talk to about how I felt - mainly because these diversity programs are so new, and my class is one of the first few waves of diversity program participants.\n\nI'm grateful that I have a lot of close male friends who support me as a woman. But every time I hear some insensitive comment from someone else about diversity programs during recruiting season, here's the two-sided dialogue that goes through my head, as I contemplate what to say to fight centuries of sexism.\n\n---\n\n*He's probably right. Even if guys are nice and smart, they don't get internships at large companies after freshman year.*\n\nWrong! By being a woman and minority in tech, you've probably had to overcome so many more obstacles, like stereotype threat, to get to this same place that he has. Just by showing up to the career fair, you've challenged the stereotype of a CS student. By taking CS classes, you've gone outside of your comfort zone to pursue a field that has few role models that look like you. That guy who made the comment feels entitled to an internship, while you feel like you're not good enough. That speaks for itself.\n\n*I'm not as technically qualified for an internship as he is.*\n\nA little-known secret: the core CS class sequence at many schools is way more than enough for several upperclassman internships. Freshman and sophomore programs assume only a few CS classes. After a certain level, additional knowledge isn't required. Reality is, you are way more qualified for the position than you think. And the fact that you're different is a bonus - by hiring you, companies get a maximally different perspective.\n\n*I don't even know if I like CS; how do I deserve this more than him?*\n\nWho knows who deserves the position more. Does it matter? Statistically, he is [more likely to complete the CS major](http://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and get a full-time software engineering offer, regardless of how many internships he has done. Women on the other hand [drop out of CS](https://3zjc852t4swp1lmezl171oga-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/Accenture-Cracking-The-Gender-Code-Report.pdf) because they don't have many relatable role models or a strong sense of community like majority of men do. An internship is more likely to help you decide whether you like it or not so you can see yourself as a full-time software engineer. You deserve this chance.\n\n*Everyone will continue to look at me as a \"diversity hire,\" even later on.*\n\nWhen I showed up to Facebook, a lot of people outside my team asked me if I participated in Facebook's diversity program, FBU. Maybe they had never seen a rising junior female software engineering intern who didn't participate in FBU. But we're clearly technically qualified, because we successfully work on impactful projects.\n\n*Did I actually get this because I'm a girl?*\n\nAh, the question everyone squirms away from, trying to console you with a variation of the answers above. Here's the real deal: nobody knows. There are too many variables involved in the internship or job hunt. But to get a return or full-time offer, you have to be as technically qualified as everyone else while justifying your ability as a female programmer to everyone that doubts you for your looks. Most guys don't have to do that.\n\n---\n\nAfter this internal back-and-forth, I still don't have a concise, convincing answer. I sigh and respond. \"You could be right,\" I usually concede. \"We're fighting historical oppression of females in tech. But we'll all end up with jobs in this industry anyways.\"\n\nHe isn't satisfied, but he has nothing more to say. Meanwhile, I'm raging internally, wishing I stood up for women like me. But I don't want to offend him, because he's most likely a friend or well-respected by my peers. Feeling like a failed feminist, I trudge back home to add a new, challenging CS course to my study list or start a technical side project to justify my self-worth.",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/you-got-this/index.md",
       "fields": {
-        "slug": "/ai-for-everyone/"
+        "slug": "/you-got-this/"
       }
     },
     "85b6b148-069d-57b4-9b33-8952b104a266": {
@@ -3056,7 +3068,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "e790f30073d2c9d3a6c407734d6a83e8",
+        "contentDigest": "740afb1a54d0ba1921bb23385103cdc8",
         "type": "Directory",
         "description": "Directory \"content/assets\"",
         "owner": "gatsby-source-filesystem"
@@ -3067,9 +3079,9 @@
       "extension": "",
       "size": 160,
       "prettySize": "160 B",
-      "modifiedTime": "2019-03-24T22:59:18.231Z",
-      "accessTime": "2019-03-24T23:18:49.082Z",
-      "changeTime": "2019-03-24T22:59:18.231Z",
+      "modifiedTime": "2019-03-24T23:42:55.775Z",
+      "accessTime": "2019-03-24T23:43:05.335Z",
+      "changeTime": "2019-03-24T23:42:55.775Z",
       "birthTime": "2019-03-24T22:59:18.229Z",
       "root": "/",
       "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content",
@@ -3086,13 +3098,13 @@
       "blksize": 4096,
       "ino": 21560223,
       "blocks": 0,
-      "atimeMs": 1553469529082.43,
-      "mtimeMs": 1553468358230.9895,
-      "ctimeMs": 1553468358230.9895,
+      "atimeMs": 1553470985334.7002,
+      "mtimeMs": 1553470975775.4124,
+      "ctimeMs": 1553470975775.4124,
       "birthtimeMs": 1553468358228.9492,
-      "atime": "2019-03-24T23:18:49.082Z",
-      "mtime": "2019-03-24T22:59:18.231Z",
-      "ctime": "2019-03-24T22:59:18.231Z",
+      "atime": "2019-03-24T23:43:05.335Z",
+      "mtime": "2019-03-24T23:42:55.775Z",
+      "ctime": "2019-03-24T23:42:55.775Z",
       "birthtime": "2019-03-24T22:59:18.229Z"
     },
     "9be965c2-3e13-5de8-89be-7a603510080a": {
@@ -3102,7 +3114,7 @@
       ],
       "parent": null,
       "internal": {
-        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "contentDigest": "c0e07c534de44df29378d0dd86a59a4f",
         "type": "File",
         "mediaType": "image/png",
         "description": "File \"content/assets/gatsby-icon.png\"",
@@ -3112,12 +3124,12 @@
       "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets/gatsby-icon.png",
       "relativePath": "gatsby-icon.png",
       "extension": "png",
-      "size": 21212,
-      "prettySize": "21.2 kB",
-      "modifiedTime": "2019-03-24T22:59:18.231Z",
-      "accessTime": "2019-03-24T23:18:15.006Z",
-      "changeTime": "2019-03-24T22:59:18.231Z",
-      "birthTime": "2019-03-24T22:59:18.230Z",
+      "size": 3377,
+      "prettySize": "3.38 kB",
+      "modifiedTime": "2019-03-24T23:41:31.313Z",
+      "accessTime": "2019-03-24T23:41:31.313Z",
+      "changeTime": "2019-03-24T23:42:55.775Z",
+      "birthTime": "2019-03-24T23:41:31.313Z",
       "root": "/",
       "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
       "base": "gatsby-icon.png",
@@ -3131,23 +3143,23 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 21560225,
-      "blocks": 48,
-      "atimeMs": 1553469495005.6392,
-      "mtimeMs": 1553468358230.686,
-      "ctimeMs": 1553468358230.8079,
-      "birthtimeMs": 1553468358230.2263,
-      "atime": "2019-03-24T23:18:15.006Z",
-      "mtime": "2019-03-24T22:59:18.231Z",
-      "ctime": "2019-03-24T22:59:18.231Z",
-      "birthtime": "2019-03-24T22:59:18.230Z"
+      "ino": 21782176,
+      "blocks": 8,
+      "atimeMs": 1553470891312.5764,
+      "mtimeMs": 1553470891312.7566,
+      "ctimeMs": 1553470975775.412,
+      "birthtimeMs": 1553470891312.5764,
+      "atime": "2019-03-24T23:41:31.313Z",
+      "mtime": "2019-03-24T23:41:31.313Z",
+      "ctime": "2019-03-24T23:42:55.775Z",
+      "birthtime": "2019-03-24T23:41:31.313Z"
     },
     "59105a36-98b3-5b01-b04a-43ad3fbd826c": {
       "id": "59105a36-98b3-5b01-b04a-43ad3fbd826c",
       "children": [],
       "parent": "9be965c2-3e13-5de8-89be-7a603510080a",
       "internal": {
-        "contentDigest": "4a9773549091c227cd2eb82ccd9c5e3a",
+        "contentDigest": "c0e07c534de44df29378d0dd86a59a4f",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
       }
@@ -3172,7 +3184,7 @@
       "size": 6322953,
       "prettySize": "6.32 MB",
       "modifiedTime": "2019-03-24T22:59:18.241Z",
-      "accessTime": "2019-03-24T23:18:15.006Z",
+      "accessTime": "2019-03-24T23:42:20.816Z",
       "changeTime": "2019-03-24T22:59:18.242Z",
       "birthTime": "2019-03-24T22:59:18.231Z",
       "root": "/",
@@ -3190,11 +3202,11 @@
       "blksize": 4096,
       "ino": 21560226,
       "blocks": 12352,
-      "atimeMs": 1553469495005.6711,
+      "atimeMs": 1553470940815.9983,
       "mtimeMs": 1553468358241.3245,
       "ctimeMs": 1553468358241.6545,
       "birthtimeMs": 1553468358230.9766,
-      "atime": "2019-03-24T23:18:15.006Z",
+      "atime": "2019-03-24T23:42:20.816Z",
       "mtime": "2019-03-24T22:59:18.241Z",
       "ctime": "2019-03-24T22:59:18.242Z",
       "birthtime": "2019-03-24T22:59:18.231Z"
@@ -3207,27 +3219,6 @@
         "contentDigest": "6382089468f78db73988549afc8f2826",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "SitePage /offline-plugin-app-shell-fallback/": {
-      "jsonName": "offline-plugin-app-shell-fallback-a30",
-      "internalComponentName": "ComponentOfflinePluginAppShellFallback",
-      "path": "/offline-plugin-app-shell-fallback/",
-      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js",
-      "componentChunkName": "component---node-modules-gatsby-plugin-offline-app-shell-js",
-      "isCreatedByStatefulCreatePages": false,
-      "context": {},
-      "pluginCreator___NODE": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
-      "pluginCreatorId": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
-      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js",
-      "id": "SitePage /offline-plugin-app-shell-fallback/",
-      "parent": null,
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "7ffc0938fc7e0903b898c58c173f8f62",
-        "description": "63e5f7ff-e5f1-58f7-8e2c-55872ac42281",
-        "owner": "internal-data-bridge"
       }
     },
     "SitePage /ai-for-everyone/": {
@@ -3438,7 +3429,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "2f8041ac2c8ca7b5c2a2a1ff484bf8a7"
+    "PLUGINS_HASH": "35d128e1ae7ff9948e9f24db86f7cf1f"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -3488,16 +3479,17 @@
     "offline-plugin-app-shell-fallback-a30": "604/path---offline-plugin-app-shell-fallback-a-30-c5a-BawJvyh36KKFwbrWPg4a4aYuc8",
     "taylor-swift-ai-9a8": "210/path---taylor-swift-ai-9-a-8-6e2-CwZcmrwMgLFqcOOL80M1Bvcpl8",
     "it-starts-early-5b1": "814/path---it-starts-early-5-b-1-154-hPGi1X6ZTSayTttG6n07DRiJL5w",
-    "index": "10/path---index-6a9-iK0xNgibZxKnk6DdzBcKaEuzFqI"
+    "index": "10/path---index-6a9-iK0xNgibZxKnk6DdzBcKaEuzFqI",
+    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8"
   },
   "components": {
-    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js": {
-      "query": "",
-      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/app-shell.js"
-    },
     "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js": {
       "query": "query BlogPostBySlug(\n  $slug: String!\n) {\n  site {\n    siteMetadata {\n      title\n      author\n    }\n  }\n  markdownRemark(fields: {slug: {eq: $slug}}) {\n    id\n    excerpt(pruneLength: 160)\n    html\n    frontmatter {\n      title\n      date(formatString: \"MMMM DD, YYYY\")\n      description\n    }\n  }\n}\n",
       "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js"
+    },
+    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/.cache/dev-404-page.js": {
+      "query": "",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/.cache/dev-404-page.js"
     },
     "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/404.js": {
       "query": "query usersShreyashankarDocumentsProjectsShreyashankarGithubIoSrcPages404Js1097489062 {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n}\n",
