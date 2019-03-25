@@ -2202,12 +2202,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-03-24T23:43:00.512Z",
+      "buildTime": "2019-03-24T23:47:35.403Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "6e436dcdd37ec6a02938c15e87029ac5",
+        "contentDigest": "84b7466ddb7eaedddebe26398786895e",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -2217,7 +2217,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "8c55d514a5c79a95c52498acc0b81505",
+        "contentDigest": "b6090eb0f38043febfd6ad8fc57e9a29",
         "type": "Directory",
         "description": "Directory \"content/blog\"",
         "owner": "gatsby-source-filesystem"
@@ -2229,7 +2229,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2019-03-24T22:59:18.224Z",
-      "accessTime": "2019-03-24T23:43:05.287Z",
+      "accessTime": "2019-03-24T23:47:40.319Z",
       "changeTime": "2019-03-24T22:59:18.224Z",
       "birthTime": "2019-03-24T22:59:18.219Z",
       "root": "/",
@@ -2247,11 +2247,11 @@
       "blksize": 4096,
       "ino": 21560207,
       "blocks": 0,
-      "atimeMs": 1553470985287.143,
+      "atimeMs": 1553471260319.1636,
       "mtimeMs": 1553468358224.0627,
       "ctimeMs": 1553468358224.0627,
       "birthtimeMs": 1553468358218.542,
-      "atime": "2019-03-24T23:43:05.287Z",
+      "atime": "2019-03-24T23:47:40.319Z",
       "mtime": "2019-03-24T22:59:18.224Z",
       "ctime": "2019-03-24T22:59:18.224Z",
       "birthtime": "2019-03-24T22:59:18.219Z"
@@ -2261,7 +2261,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "b2e3ee53148faf17b8ab7beb3dc36a2f",
+        "contentDigest": "b4a0d133b92317f5047a9db4031111e1",
         "type": "Directory",
         "description": "Directory \"content/blog/ai-for-everyone\"",
         "owner": "gatsby-source-filesystem"
@@ -2273,7 +2273,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-03-24T23:16:50.367Z",
-      "accessTime": "2019-03-24T23:43:05.290Z",
+      "accessTime": "2019-03-24T23:47:40.322Z",
       "changeTime": "2019-03-24T23:16:50.367Z",
       "birthTime": "2019-03-24T22:59:18.222Z",
       "root": "/",
@@ -2291,11 +2291,11 @@
       "blksize": 4096,
       "ino": 21560212,
       "blocks": 0,
-      "atimeMs": 1553470985289.903,
+      "atimeMs": 1553471260322.074,
       "mtimeMs": 1553469410367.4849,
       "ctimeMs": 1553469410367.4849,
       "birthtimeMs": 1553468358221.72,
-      "atime": "2019-03-24T23:43:05.290Z",
+      "atime": "2019-03-24T23:47:40.322Z",
       "mtime": "2019-03-24T23:16:50.367Z",
       "ctime": "2019-03-24T23:16:50.367Z",
       "birthtime": "2019-03-24T22:59:18.222Z"
@@ -2305,7 +2305,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "9e6aecfd7afece0166872efa7ab0aae5",
+        "contentDigest": "f112ebe535f2ec5130828bea4f3188f5",
         "type": "Directory",
         "description": "Directory \"content/blog/it-starts-early\"",
         "owner": "gatsby-source-filesystem"
@@ -2317,7 +2317,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:43:05.290Z",
+      "accessTime": "2019-03-24T23:47:40.322Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.224Z",
       "root": "/",
@@ -2335,11 +2335,11 @@
       "blksize": 4096,
       "ino": 21560217,
       "blocks": 0,
-      "atimeMs": 1553470985289.9368,
+      "atimeMs": 1553471260321.9556,
       "mtimeMs": 1553469410367.8003,
       "ctimeMs": 1553469410367.8003,
       "birthtimeMs": 1553468358224.0532,
-      "atime": "2019-03-24T23:43:05.290Z",
+      "atime": "2019-03-24T23:47:40.322Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.224Z"
@@ -2349,7 +2349,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "1a799e30bddb5ecf5975eadbd982d94f",
+        "contentDigest": "21334bdeb39fb1993d134ce041d4a923",
         "type": "Directory",
         "description": "Directory \"content/blog/taylor-swift-ai\"",
         "owner": "gatsby-source-filesystem"
@@ -2361,7 +2361,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:43:05.290Z",
+      "accessTime": "2019-03-24T23:47:40.323Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.219Z",
       "root": "/",
@@ -2379,11 +2379,11 @@
       "blksize": 4096,
       "ino": 21560208,
       "blocks": 0,
-      "atimeMs": 1553470985289.9084,
+      "atimeMs": 1553471260322.5835,
       "mtimeMs": 1553469410368.0784,
       "ctimeMs": 1553469410368.0784,
       "birthtimeMs": 1553468358218.8079,
-      "atime": "2019-03-24T23:43:05.290Z",
+      "atime": "2019-03-24T23:47:40.323Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.219Z"
@@ -2393,7 +2393,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "9943a63b15e7be7aea9c617ac2c510b4",
+        "contentDigest": "9b57d353d82fc036e9b366eee165b48a",
         "type": "Directory",
         "description": "Directory \"content/blog/you-got-this\"",
         "owner": "gatsby-source-filesystem"
@@ -2405,7 +2405,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-03-24T23:43:05.290Z",
+      "accessTime": "2019-03-24T23:47:40.323Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.223Z",
       "root": "/",
@@ -2423,11 +2423,11 @@
       "blksize": 4096,
       "ino": 21560215,
       "blocks": 0,
-      "atimeMs": 1553470985289.9136,
+      "atimeMs": 1553471260322.6555,
       "mtimeMs": 1553469410368.314,
       "ctimeMs": 1553469410368.314,
       "birthtimeMs": 1553468358223.2244,
-      "atime": "2019-03-24T23:43:05.290Z",
+      "atime": "2019-03-24T23:47:40.323Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.223Z"
@@ -3068,7 +3068,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "740afb1a54d0ba1921bb23385103cdc8",
+        "contentDigest": "791b5860e6ba3ce743d48a17c30a4878",
         "type": "Directory",
         "description": "Directory \"content/assets\"",
         "owner": "gatsby-source-filesystem"
@@ -3080,7 +3080,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2019-03-24T23:42:55.775Z",
-      "accessTime": "2019-03-24T23:43:05.335Z",
+      "accessTime": "2019-03-24T23:47:40.344Z",
       "changeTime": "2019-03-24T23:42:55.775Z",
       "birthTime": "2019-03-24T22:59:18.229Z",
       "root": "/",
@@ -3098,71 +3098,14 @@
       "blksize": 4096,
       "ino": 21560223,
       "blocks": 0,
-      "atimeMs": 1553470985334.7002,
+      "atimeMs": 1553471260344.411,
       "mtimeMs": 1553470975775.4124,
       "ctimeMs": 1553470975775.4124,
       "birthtimeMs": 1553468358228.9492,
-      "atime": "2019-03-24T23:43:05.335Z",
+      "atime": "2019-03-24T23:47:40.344Z",
       "mtime": "2019-03-24T23:42:55.775Z",
       "ctime": "2019-03-24T23:42:55.775Z",
       "birthtime": "2019-03-24T22:59:18.229Z"
-    },
-    "9be965c2-3e13-5de8-89be-7a603510080a": {
-      "id": "9be965c2-3e13-5de8-89be-7a603510080a",
-      "children": [
-        "59105a36-98b3-5b01-b04a-43ad3fbd826c"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "c0e07c534de44df29378d0dd86a59a4f",
-        "type": "File",
-        "mediaType": "image/png",
-        "description": "File \"content/assets/gatsby-icon.png\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "assets",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets/gatsby-icon.png",
-      "relativePath": "gatsby-icon.png",
-      "extension": "png",
-      "size": 3377,
-      "prettySize": "3.38 kB",
-      "modifiedTime": "2019-03-24T23:41:31.313Z",
-      "accessTime": "2019-03-24T23:41:31.313Z",
-      "changeTime": "2019-03-24T23:42:55.775Z",
-      "birthTime": "2019-03-24T23:41:31.313Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
-      "base": "gatsby-icon.png",
-      "ext": ".png",
-      "name": "gatsby-icon",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 21782176,
-      "blocks": 8,
-      "atimeMs": 1553470891312.5764,
-      "mtimeMs": 1553470891312.7566,
-      "ctimeMs": 1553470975775.412,
-      "birthtimeMs": 1553470891312.5764,
-      "atime": "2019-03-24T23:41:31.313Z",
-      "mtime": "2019-03-24T23:41:31.313Z",
-      "ctime": "2019-03-24T23:42:55.775Z",
-      "birthtime": "2019-03-24T23:41:31.313Z"
-    },
-    "59105a36-98b3-5b01-b04a-43ad3fbd826c": {
-      "id": "59105a36-98b3-5b01-b04a-43ad3fbd826c",
-      "children": [],
-      "parent": "9be965c2-3e13-5de8-89be-7a603510080a",
-      "internal": {
-        "contentDigest": "c0e07c534de44df29378d0dd86a59a4f",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
     },
     "2cd3d461-8ff2-575f-b17c-21dba1243422": {
       "id": "2cd3d461-8ff2-575f-b17c-21dba1243422",
@@ -3425,6 +3368,84 @@
         "description": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
         "owner": "internal-data-bridge"
       }
+    },
+    "SitePage /about/": {
+      "jsonName": "about-f34",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
+      "isCreatedByStatefulCreatePages": true,
+      "context": {},
+      "pluginCreator___NODE": "06a64eab-9a33-5718-9fad-51513318545e",
+      "pluginCreatorId": "06a64eab-9a33-5718-9fad-51513318545e",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/about.js",
+      "id": "SitePage /about/",
+      "parent": null,
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "84859b39389cc4f7a468d971ca3416f2",
+        "description": "06a64eab-9a33-5718-9fad-51513318545e",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "9be965c2-3e13-5de8-89be-7a603510080a": {
+      "id": "9be965c2-3e13-5de8-89be-7a603510080a",
+      "children": [
+        "59105a36-98b3-5b01-b04a-43ad3fbd826c"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "29644dcb47e533feff57fa2b398143b2",
+        "type": "File",
+        "mediaType": "image/png",
+        "description": "File \"content/assets/gatsby-icon.png\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "assets",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets/gatsby-icon.png",
+      "relativePath": "gatsby-icon.png",
+      "extension": "png",
+      "size": 6177,
+      "prettySize": "6.18 kB",
+      "modifiedTime": "2019-03-25T01:52:08.859Z",
+      "accessTime": "2019-03-25T01:52:24.735Z",
+      "changeTime": "2019-03-25T01:52:27.480Z",
+      "birthTime": "2019-03-24T23:41:31.313Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/assets",
+      "base": "gatsby-icon.png",
+      "ext": ".png",
+      "name": "gatsby-icon",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21787216,
+      "blocks": 16,
+      "atimeMs": 1553478744734.806,
+      "mtimeMs": 1553478728858.8718,
+      "ctimeMs": 1553478747479.8774,
+      "birthtimeMs": 1553470891312.5764,
+      "atime": "2019-03-25T01:52:24.735Z",
+      "mtime": "2019-03-25T01:52:08.859Z",
+      "ctime": "2019-03-25T01:52:27.480Z",
+      "birthtime": "2019-03-24T23:41:31.313Z"
+    },
+    "59105a36-98b3-5b01-b04a-43ad3fbd826c": {
+      "id": "59105a36-98b3-5b01-b04a-43ad3fbd826c",
+      "children": [],
+      "parent": "9be965c2-3e13-5de8-89be-7a603510080a",
+      "internal": {
+        "contentDigest": "29644dcb47e533feff57fa2b398143b2",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
     }
   },
   "status": {
@@ -3434,15 +3455,15 @@
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "sq--src-components-bio-js",
-        "sq--src-components-seo-js",
         "/404/",
         "/404.html",
         "/",
         "/ai-for-everyone/",
         "/you-got-this/",
         "/taylor-swift-ai/",
-        "/it-starts-early/"
+        "/it-starts-early/",
+        "sq--src-components-bio-js",
+        "sq--src-components-seo-js"
       ],
       "2cd3d461-8ff2-575f-b17c-21dba1243422": [
         "sq--src-components-bio-js"
@@ -3480,7 +3501,8 @@
     "taylor-swift-ai-9a8": "210/path---taylor-swift-ai-9-a-8-6e2-CwZcmrwMgLFqcOOL80M1Bvcpl8",
     "it-starts-early-5b1": "814/path---it-starts-early-5-b-1-154-hPGi1X6ZTSayTttG6n07DRiJL5w",
     "index": "10/path---index-6a9-iK0xNgibZxKnk6DdzBcKaEuzFqI",
-    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8"
+    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "about-f34": "708/path---about-f-34-4c2-0SUcWyAf8ecbYDsMhQkEfPzV8"
   },
   "components": {
     "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js": {
@@ -3498,6 +3520,10 @@
     "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/index.js": {
       "query": "query usersShreyashankarDocumentsProjectsShreyashankarGithubIoSrcPagesIndexJs2785444898 {\n  site {\n    siteMetadata {\n      title\n    }\n  }\n  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {\n    edges {\n      node {\n        excerpt\n        fields {\n          slug\n        }\n        frontmatter {\n          date(formatString: \"MMMM DD, YYYY\")\n          title\n          description\n        }\n      }\n    }\n  }\n}\n",
       "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/index.js"
+    },
+    "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/about.js": {
+      "query": "",
+      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/pages/about.js"
     }
   },
   "staticQueryComponents": {

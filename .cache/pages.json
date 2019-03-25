@@ -15,6 +15,11 @@
         "path": "/404/"
     },
     {
+        "componentChunkName": "component---src-pages-about-js",
+        "jsonName": "about-f34",
+        "path": "/about/"
+    },
+    {
         "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "ai-for-everyone-bff",
         "path": "/ai-for-everyone/"
