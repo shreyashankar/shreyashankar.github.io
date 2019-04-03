@@ -1,6 +1,6 @@
 ---
 title: "Why you should major in systems"
-date: "2018-04-02"
+date: "2018-04-03"
 description: ''
 ---
 
@@ -17,3 +17,5 @@ Looking back on my years as an undergrad, I’m extremely thankful that I ended 
 I want to be a systems programmer after graduation. I don’t learn about systems in my own time or talk excitedly about ARM processors, like many stereotypical systems programmers do, but I’m so thankful I gained the skills. Systems has made me better at not just AI, but learning new technologies. For example, I recently learned how to build a website and deploy it. This year, I want to learn how to develop phone applications.
 
 While I am not the best programmer by any means, I know I developed skills that only systems classes could have taught me. It’s been a challenging experience, but definitely worth it.
+
+*Thanks to Kate Stowell for feedback on this post.*
