@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import kebabCase from "lodash/kebabCase"
+import { DiscussionEmbed } from "disqus-react";
 
 class BlogPostTemplate extends React.Component {
   render() {
