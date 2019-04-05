@@ -69,15 +69,15 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `image`,
-          content: 'content/assets/gatsby-icon.png',
+          content: '/icon.png',
         },
         {
           name: `og:image`,
-          content: 'content/assets/gatsby-icon.png',
+          content: '/icon.png',
         },
         {
           name: `twitter:image`,
-          content: 'content/assets/gatsby-icon.png',
+          content: '/icon.png',
         },
       ]
         .concat(
