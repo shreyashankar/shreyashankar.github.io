@@ -2,6 +2,7 @@
 title: "You got this because you're a girl."
 date: "2017-09-15"
 description: ''
+tags: ['diversity']
 ---
 
 It's the dreaded time of the year again - when I go back to school, and some guy I really respect casually mentions how I got my tech internship because I'm a girl. Or when career fair time rolls around and recruiters take one look at my face and hand me a different flyer that advertises their diversity program. Or when some talented male freshman who has been programming since he was 10 scoffs that he can't get an internship at Google or Facebook, saying "[he] could have easily gotten it if [he] was a girl."

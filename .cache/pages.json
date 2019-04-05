@@ -36,6 +36,41 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "networking-7b4",
+        "path": "/networking/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
+        "jsonName": "systems-a7a",
+        "path": "/systems/"
+    },
+    {
+        "componentChunkName": "component---src-pages-tags-js",
+        "jsonName": "tags-275",
+        "path": "/tags/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-ai-612",
+        "path": "/tags/ai/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-diversity-f50",
+        "path": "/tags/diversity/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-life-skills-421",
+        "path": "/tags/life-skills/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tags-js",
+        "jsonName": "tags-systems-2db",
+        "path": "/tags/systems/"
+    },
+    {
+        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "taylor-swift-ai-9a8",
         "path": "/taylor-swift-ai/"
     },

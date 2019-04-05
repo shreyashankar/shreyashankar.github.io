@@ -2,6 +2,7 @@
 title: "Why you should major in systems"
 date: "2019-04-03"
 description: ''
+tags: ['systems']
 ---
 
 A lot of people have asked me why I chose to study computer systems for my undergrad. To be quite honest, I first declared artificial intelligence, like every other Stanford CS major. When I applied to the masters program my junior year, I realized that it would be too much work to get a second degree in AI. Given all the classes I had taken, the easiest way for me to leave Stanford with two CS degrees was for me to do a systems undergrad and AI masters. Thus, at the end of my junior year, I became an "accidental" systems major.

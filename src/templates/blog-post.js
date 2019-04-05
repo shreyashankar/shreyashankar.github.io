@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import kebabCase from "lodash/kebabCase"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -26,7 +27,9 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1)
           }}
         >
-          {post.frontmatter.date}
+          {post.frontmatter.date} in <Link to={`/tags/${kebabCase(post.frontmatter.tags)}/`}>
+                #{post.frontmatter.tags}
+              </Link>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -83,6 +86,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }

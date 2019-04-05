@@ -1,6 +1,6 @@
 module.exports = [{
       plugin: require('/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"trackingId":"UA-137597884-1"},
     },{
       plugin: require('/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-offline/gatsby-browser.js'),
       options: {"plugins":[]},

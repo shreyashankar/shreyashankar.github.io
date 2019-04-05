@@ -1,8 +1,8 @@
 ---
 title: "AI for Everyone: Things to Consider when Experimenting"
 date: "2017-10-01"
-image: ''
-tags: ''
+description: ''
+tags: ['AI']
 ---
 
 I’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.

@@ -1,6 +1,6 @@
 var plugins = [{
       plugin: require('/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
-      options: {"plugins":[]},
+      options: {"plugins":[],"trackingId":"UA-137597884-1"},
     },{
       plugin: require('/Users/shreyashankar/Documents/projects/shreyashankar.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[]},

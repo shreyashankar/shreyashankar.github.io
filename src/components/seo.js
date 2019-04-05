@@ -67,6 +67,18 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `image`,
+          content: 'content/assets/gatsby-icon.png',
+        },
+        {
+          name: `og:image`,
+          content: 'content/assets/gatsby-icon.png',
+        },
+        {
+          name: `twitter:image`,
+          content: 'content/assets/gatsby-icon.png',
+        },
       ]
         .concat(
           keywords.length > 0
@@ -93,6 +105,7 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO
