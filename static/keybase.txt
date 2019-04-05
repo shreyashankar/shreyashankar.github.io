@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/shreyashankar
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://shreya-shankar.com
+  * I am shreyashankar (https://keybase.io/shreyashankar) on keybase.
+  * I have a public key ASAQ0GL_66aGNPWLJxSKBwr9ZEQGZWTf4UmfDc8IP3ULrAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012010d062ffeba68634f58b27148a070afd6444066564dfe1499f0dcf083f750bac0a",
+      "host": "keybase.io",
+      "kid": "012010d062ffeba68634f58b27148a070afd6444066564dfe1499f0dcf083f750bac0a",
+      "uid": "8539159b962d25d5f2863cde899ac519",
+      "username": "shreyashankar"
+    },
+    "merkle_root": {
+      "ctime": 1554436646,
+      "hash": "815d5b43f8c9d583ebd12c709968a563b43ed051af2de55cf310ef8b2d5c371e8446f618b4b67fcdf95e2014b5d8e1fcbab69d6d1b2a83253f45d2b716abdcca",
+      "hash_meta": "1603dd5cf39aaff01acd96034996fcb8eb57c16793a3a2349868527787fb8e74",
+      "seqno": 5100407
+    },
+    "service": {
+      "entropy": "TUAFamLMw6sqeuzwjgQ88fEn",
+      "hostname": "shreya-shankar.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1554436692,
+  "expire_in": 504576000,
+  "prev": "3de991e5464e947be22600929a2ac94c4dfc86b9423688091b72088ae0dddd99",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgENBi/+umhjT1iycUigcK/WREBmVk3+FJnw3PCD91C6wKp3BheWxvYWTESpcCBsQgPemR5UZOlHviJgCSmirJTE38hrlCNogJG3IIiuDd3ZnEIC76DOsFu99/vjmD4VKESZbfiu9m8YjzAaNWaaipvSoCAgHCo3NpZ8RAi0Kk5wGaG8DF/Bel1BeEBtF5T7MzNvLRZvLeVx0Mq4fcww1+whhk8MXB4xbMYSerYaVS8nYkH62LA5x12KkWAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMIjc3vddQbA1h785hArH0o3MzF3kNZ3arx6zheDLstEo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/shreyashankar
+
+==================================================================
