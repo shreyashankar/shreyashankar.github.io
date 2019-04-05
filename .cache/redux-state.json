@@ -1964,6 +1964,10 @@
         "license": "MIT",
         "dependencies": [
           {
+            "name": "disqus-react",
+            "version": "^1.0.5"
+          },
+          {
             "name": "gatsby",
             "version": "^2.2.5"
           },
@@ -2203,12 +2207,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-05T00:29:18.710Z",
+      "buildTime": "2019-04-05T03:10:22.082Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "658a433d5fd959fbbef209194e8c2441",
+        "contentDigest": "b015a9384b91231bb6427ce35b43edc4",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -2218,7 +2222,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "56317d556a2e237a2ce1f23ab38bcf95",
+        "contentDigest": "c28055af9a6f00feea68b1beca61790b",
         "type": "Directory",
         "description": "Directory \"content/blog\"",
         "owner": "gatsby-source-filesystem"
@@ -2227,11 +2231,11 @@
       "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
       "relativePath": "",
       "extension": "",
-      "size": 288,
-      "prettySize": "288 B",
-      "modifiedTime": "2019-04-03T03:30:31.977Z",
-      "accessTime": "2019-04-05T00:29:23.686Z",
-      "changeTime": "2019-04-03T03:30:31.977Z",
+      "size": 256,
+      "prettySize": "256 B",
+      "modifiedTime": "2019-04-05T00:51:00.106Z",
+      "accessTime": "2019-04-05T03:10:27.408Z",
+      "changeTime": "2019-04-05T00:51:00.106Z",
       "birthTime": "2019-03-24T22:59:18.219Z",
       "root": "/",
       "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content",
@@ -2241,20 +2245,20 @@
       "relativeDirectory": "..",
       "dev": 16777220,
       "mode": 16877,
-      "nlink": 9,
+      "nlink": 8,
       "uid": 501,
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
       "ino": 21560207,
       "blocks": 0,
-      "atimeMs": 1554424163685.5596,
-      "mtimeMs": 1554262231976.8618,
-      "ctimeMs": 1554262231976.8618,
+      "atimeMs": 1554433827407.6545,
+      "mtimeMs": 1554425460105.9448,
+      "ctimeMs": 1554425460105.9448,
       "birthtimeMs": 1553468358218.542,
-      "atime": "2019-04-05T00:29:23.686Z",
-      "mtime": "2019-04-03T03:30:31.977Z",
-      "ctime": "2019-04-03T03:30:31.977Z",
+      "atime": "2019-04-05T03:10:27.408Z",
+      "mtime": "2019-04-05T00:51:00.106Z",
+      "ctime": "2019-04-05T00:51:00.106Z",
       "birthtime": "2019-03-24T22:59:18.219Z"
     },
     "4cf8abe9-4a1d-5731-8c46-c21ee04126c7": {
@@ -2262,7 +2266,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "95c66219ca52d30230730f7bddca8f87",
+        "contentDigest": "5b40c874a0bfdd30679ce78de5e3a132",
         "type": "Directory",
         "description": "Directory \"content/blog/ai-for-everyone\"",
         "owner": "gatsby-source-filesystem"
@@ -2274,7 +2278,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-03-24T23:16:50.367Z",
-      "accessTime": "2019-04-05T00:29:23.688Z",
+      "accessTime": "2019-04-05T03:10:27.410Z",
       "changeTime": "2019-03-24T23:16:50.367Z",
       "birthTime": "2019-03-24T22:59:18.222Z",
       "root": "/",
@@ -2292,11 +2296,11 @@
       "blksize": 4096,
       "ino": 21560212,
       "blocks": 0,
-      "atimeMs": 1554424163688.4912,
+      "atimeMs": 1554433827410.4407,
       "mtimeMs": 1553469410367.4849,
       "ctimeMs": 1553469410367.4849,
       "birthtimeMs": 1553468358221.72,
-      "atime": "2019-04-05T00:29:23.688Z",
+      "atime": "2019-04-05T03:10:27.410Z",
       "mtime": "2019-03-24T23:16:50.367Z",
       "ctime": "2019-03-24T23:16:50.367Z",
       "birthtime": "2019-03-24T22:59:18.222Z"
@@ -2306,7 +2310,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "d65614fd6583b073ae3c988dffa61ddd",
+        "contentDigest": "8d5e373002c5f24b6a2538510157c4b8",
         "type": "Directory",
         "description": "Directory \"content/blog/it-starts-early\"",
         "owner": "gatsby-source-filesystem"
@@ -2318,7 +2322,7 @@
       "size": 224,
       "prettySize": "224 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-04-05T00:29:23.689Z",
+      "accessTime": "2019-04-05T03:10:27.410Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.224Z",
       "root": "/",
@@ -2336,65 +2340,21 @@
       "blksize": 4096,
       "ino": 21560217,
       "blocks": 0,
-      "atimeMs": 1554424163688.582,
+      "atimeMs": 1554433827410.407,
       "mtimeMs": 1553469410367.8003,
       "ctimeMs": 1553469410367.8003,
       "birthtimeMs": 1553468358224.0532,
-      "atime": "2019-04-05T00:29:23.689Z",
+      "atime": "2019-04-05T03:10:27.410Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.224Z"
-    },
-    "599563eb-1a60-5a3d-ab53-78c41487cef8": {
-      "id": "599563eb-1a60-5a3d-ab53-78c41487cef8",
-      "children": [],
-      "parent": null,
-      "internal": {
-        "contentDigest": "1facf416aed4f8f75e3b5249a6b13494",
-        "type": "Directory",
-        "description": "Directory \"content/blog/networking\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "blog",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/networking",
-      "relativePath": "networking",
-      "extension": "",
-      "size": 96,
-      "prettySize": "96 B",
-      "modifiedTime": "2019-04-03T03:30:39.361Z",
-      "accessTime": "2019-04-05T00:29:23.688Z",
-      "changeTime": "2019-04-03T03:30:39.361Z",
-      "birthTime": "2019-04-03T03:30:31.977Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog",
-      "base": "networking",
-      "ext": "",
-      "name": "networking",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 3,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 22264354,
-      "blocks": 0,
-      "atimeMs": 1554424163688.4766,
-      "mtimeMs": 1554262239360.9456,
-      "ctimeMs": 1554262239360.9456,
-      "birthtimeMs": 1554262231976.8396,
-      "atime": "2019-04-05T00:29:23.688Z",
-      "mtime": "2019-04-03T03:30:39.361Z",
-      "ctime": "2019-04-03T03:30:39.361Z",
-      "birthtime": "2019-04-03T03:30:31.977Z"
     },
     "a6ba7390-d561-5155-9216-2e7f6a2716e6": {
       "id": "a6ba7390-d561-5155-9216-2e7f6a2716e6",
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "2b949bbe7d93ff10a7f9cb6223f06e9d",
+        "contentDigest": "ba9c80cfef0029aba336aff6539585d1",
         "type": "Directory",
         "description": "Directory \"content/blog/systems\"",
         "owner": "gatsby-source-filesystem"
@@ -2406,7 +2366,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-04-02T02:20:14.236Z",
-      "accessTime": "2019-04-05T00:29:23.689Z",
+      "accessTime": "2019-04-05T03:10:27.410Z",
       "changeTime": "2019-04-02T02:20:14.236Z",
       "birthTime": "2019-04-02T02:20:04.377Z",
       "root": "/",
@@ -2424,11 +2384,11 @@
       "blksize": 4096,
       "ino": 22230188,
       "blocks": 0,
-      "atimeMs": 1554424163688.5688,
+      "atimeMs": 1554433827410.3774,
       "mtimeMs": 1554171614236.0444,
       "ctimeMs": 1554171614236.0444,
       "birthtimeMs": 1554171604376.73,
-      "atime": "2019-04-05T00:29:23.689Z",
+      "atime": "2019-04-05T03:10:27.410Z",
       "mtime": "2019-04-02T02:20:14.236Z",
       "ctime": "2019-04-02T02:20:14.236Z",
       "birthtime": "2019-04-02T02:20:04.377Z"
@@ -2438,7 +2398,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "7ea2efb24e8d0870389b1873e8ca3dd0",
+        "contentDigest": "913e8cf5770c819de3c34bdbf90532b0",
         "type": "Directory",
         "description": "Directory \"content/blog/taylor-swift-ai\"",
         "owner": "gatsby-source-filesystem"
@@ -2450,7 +2410,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-04-05T00:29:23.689Z",
+      "accessTime": "2019-04-05T03:10:27.410Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.219Z",
       "root": "/",
@@ -2468,11 +2428,11 @@
       "blksize": 4096,
       "ino": 21560208,
       "blocks": 0,
-      "atimeMs": 1554424163688.726,
+      "atimeMs": 1554433827410.4128,
       "mtimeMs": 1553469410368.0784,
       "ctimeMs": 1553469410368.0784,
       "birthtimeMs": 1553468358218.8079,
-      "atime": "2019-04-05T00:29:23.689Z",
+      "atime": "2019-04-05T03:10:27.410Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.219Z"
@@ -2482,7 +2442,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "afcc9bffddeb14ac3e299926d33cf12e",
+        "contentDigest": "f00f7eb3b963baa4cd7e1852a8c5a39c",
         "type": "Directory",
         "description": "Directory \"content/blog/you-got-this\"",
         "owner": "gatsby-source-filesystem"
@@ -2494,7 +2454,7 @@
       "size": 96,
       "prettySize": "96 B",
       "modifiedTime": "2019-03-24T23:16:50.368Z",
-      "accessTime": "2019-04-05T00:29:23.689Z",
+      "accessTime": "2019-04-05T03:10:27.410Z",
       "changeTime": "2019-03-24T23:16:50.368Z",
       "birthTime": "2019-03-24T22:59:18.223Z",
       "root": "/",
@@ -2512,155 +2472,14 @@
       "blksize": 4096,
       "ino": 21560215,
       "blocks": 0,
-      "atimeMs": 1554424163688.5874,
+      "atimeMs": 1554433827410.462,
       "mtimeMs": 1553469410368.314,
       "ctimeMs": 1553469410368.314,
       "birthtimeMs": 1553468358223.2244,
-      "atime": "2019-04-05T00:29:23.689Z",
+      "atime": "2019-04-05T03:10:27.410Z",
       "mtime": "2019-03-24T23:16:50.368Z",
       "ctime": "2019-03-24T23:16:50.368Z",
       "birthtime": "2019-03-24T22:59:18.223Z"
-    },
-    "b9271a27-a1a0-5b40-97c9-e359fe8946a9": {
-      "id": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
-      "children": [
-        "49cc22d5-b8d3-5943-878d-8ad7947a0a62"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "ed4d369fa0892718df2661dc4262f2d4",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"content/blog/ai-for-everyone/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "blog",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
-      "relativePath": "ai-for-everyone/index.md",
-      "extension": "md",
-      "size": 3883,
-      "prettySize": "3.88 kB",
-      "modifiedTime": "2019-04-03T19:19:26.228Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
-      "changeTime": "2019-04-03T19:19:26.228Z",
-      "birthTime": "2019-03-24T23:16:50.367Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "ai-for-everyone",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 21732452,
-      "blocks": 8,
-      "atimeMs": 1554423841910.4595,
-      "mtimeMs": 1554319166228.4778,
-      "ctimeMs": 1554319166228.4778,
-      "birthtimeMs": 1553469410367.4758,
-      "atime": "2019-04-05T00:24:01.910Z",
-      "mtime": "2019-04-03T19:19:26.228Z",
-      "ctime": "2019-04-03T19:19:26.228Z",
-      "birthtime": "2019-03-24T23:16:50.367Z"
-    },
-    "7b0bd988-4c83-5cc4-801b-dce5b46b5450": {
-      "id": "7b0bd988-4c83-5cc4-801b-dce5b46b5450",
-      "children": [
-        "91562fc4-2f1d-5ea1-9f60-0ccfeb144b10"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "fa3692c1f2a899373398b4ee1565f64d",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"content/blog/networking/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "blog",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/networking/index.md",
-      "relativePath": "networking/index.md",
-      "extension": "md",
-      "size": 123,
-      "prettySize": "123 B",
-      "modifiedTime": "2019-04-03T19:18:04.308Z",
-      "accessTime": "2019-04-05T00:24:22.121Z",
-      "changeTime": "2019-04-03T19:18:04.308Z",
-      "birthTime": "2019-04-03T03:30:39.361Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/networking",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "networking",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 22264355,
-      "blocks": 8,
-      "atimeMs": 1554423862120.7832,
-      "mtimeMs": 1554319084307.8247,
-      "ctimeMs": 1554319084307.8247,
-      "birthtimeMs": 1554262239360.9304,
-      "atime": "2019-04-05T00:24:22.121Z",
-      "mtime": "2019-04-03T19:18:04.308Z",
-      "ctime": "2019-04-03T19:18:04.308Z",
-      "birthtime": "2019-04-03T03:30:39.361Z"
-    },
-    "74b2e4bf-bf58-5c13-8f18-1971575d6dd5": {
-      "id": "74b2e4bf-bf58-5c13-8f18-1971575d6dd5",
-      "children": [
-        "c2a7a03e-3bac-52c2-8919-774c905f33d7"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "473d23de1afd641b3ee0f28a22411537",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"content/blog/systems/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "blog",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/systems/index.md",
-      "relativePath": "systems/index.md",
-      "extension": "md",
-      "size": 5040,
-      "prettySize": "5.04 kB",
-      "modifiedTime": "2019-04-03T21:03:45.003Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
-      "changeTime": "2019-04-03T21:03:45.003Z",
-      "birthTime": "2019-04-02T02:20:14.236Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/systems",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "systems",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 22230197,
-      "blocks": 16,
-      "atimeMs": 1554423841910.4922,
-      "mtimeMs": 1554325425002.5647,
-      "ctimeMs": 1554325425002.5647,
-      "birthtimeMs": 1554171614236.033,
-      "atime": "2019-04-05T00:24:01.910Z",
-      "mtime": "2019-04-03T21:03:45.003Z",
-      "ctime": "2019-04-03T21:03:45.003Z",
-      "birthtime": "2019-04-02T02:20:14.236Z"
     },
     "fa2f9b3d-a248-5b40-98cd-5afe34a16c09": {
       "id": "fa2f9b3d-a248-5b40-98cd-5afe34a16c09",
@@ -2682,7 +2501,7 @@
       "size": 11154,
       "prettySize": "11.2 kB",
       "modifiedTime": "2019-04-03T19:18:09.607Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:36:47.457Z",
       "changeTime": "2019-04-03T19:18:09.607Z",
       "birthTime": "2019-03-24T23:16:50.368Z",
       "root": "/",
@@ -2700,14 +2519,61 @@
       "blksize": 4096,
       "ino": 21732453,
       "blocks": 24,
-      "atimeMs": 1554423841910.4675,
+      "atimeMs": 1554424607457.1267,
       "mtimeMs": 1554319089606.9146,
       "ctimeMs": 1554319089606.9146,
       "birthtimeMs": 1553469410367.7905,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:36:47.457Z",
       "mtime": "2019-04-03T19:18:09.607Z",
       "ctime": "2019-04-03T19:18:09.607Z",
       "birthtime": "2019-03-24T23:16:50.368Z"
+    },
+    "74b2e4bf-bf58-5c13-8f18-1971575d6dd5": {
+      "id": "74b2e4bf-bf58-5c13-8f18-1971575d6dd5",
+      "children": [
+        "c2a7a03e-3bac-52c2-8919-774c905f33d7"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "473d23de1afd641b3ee0f28a22411537",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/systems/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/systems/index.md",
+      "relativePath": "systems/index.md",
+      "extension": "md",
+      "size": 5040,
+      "prettySize": "5.04 kB",
+      "modifiedTime": "2019-04-03T21:03:45.003Z",
+      "accessTime": "2019-04-05T00:36:47.457Z",
+      "changeTime": "2019-04-03T21:03:45.003Z",
+      "birthTime": "2019-04-02T02:20:14.236Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/systems",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "systems",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 22230197,
+      "blocks": 16,
+      "atimeMs": 1554424607457.305,
+      "mtimeMs": 1554325425002.5647,
+      "ctimeMs": 1554325425002.5647,
+      "birthtimeMs": 1554171614236.033,
+      "atime": "2019-04-05T00:36:47.457Z",
+      "mtime": "2019-04-03T21:03:45.003Z",
+      "ctime": "2019-04-03T21:03:45.003Z",
+      "birthtime": "2019-04-02T02:20:14.236Z"
     },
     "257eed26-20ae-51d9-b4d3-6134ea5db182": {
       "id": "257eed26-20ae-51d9-b4d3-6134ea5db182",
@@ -2729,7 +2595,7 @@
       "size": 47975,
       "prettySize": "48 kB",
       "modifiedTime": "2019-03-24T22:59:18.226Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.226Z",
       "birthTime": "2019-03-24T22:59:18.226Z",
       "root": "/",
@@ -2747,11 +2613,11 @@
       "blksize": 4096,
       "ino": 21560220,
       "blocks": 96,
-      "atimeMs": 1554423841910.4714,
+      "atimeMs": 1554424247802.3928,
       "mtimeMs": 1553468358226.037,
       "ctimeMs": 1553468358226.2925,
       "birthtimeMs": 1553468358225.679,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.226Z",
       "ctime": "2019-03-24T22:59:18.226Z",
       "birthtime": "2019-03-24T22:59:18.226Z"
@@ -2776,7 +2642,7 @@
       "size": 31344,
       "prettySize": "31.3 kB",
       "modifiedTime": "2019-03-24T22:59:18.228Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.229Z",
       "birthTime": "2019-03-24T22:59:18.228Z",
       "root": "/",
@@ -2794,61 +2660,14 @@
       "blksize": 4096,
       "ino": 21560222,
       "blocks": 64,
-      "atimeMs": 1554423841910.4753,
+      "atimeMs": 1554424247802.3962,
       "mtimeMs": 1553468358228.2876,
       "ctimeMs": 1553468358228.6636,
       "birthtimeMs": 1553468358227.7454,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.228Z",
       "ctime": "2019-03-24T22:59:18.229Z",
       "birthtime": "2019-03-24T22:59:18.228Z"
-    },
-    "3dc112ad-ebab-54db-b78a-55f120f17548": {
-      "id": "3dc112ad-ebab-54db-b78a-55f120f17548",
-      "children": [
-        "7af3edb5-96e4-58c2-9143-51aa205d006e"
-      ],
-      "parent": null,
-      "internal": {
-        "contentDigest": "f53e0bf144daf82009cc6912580bb996",
-        "type": "File",
-        "mediaType": "text/markdown",
-        "description": "File \"content/blog/taylor-swift-ai/index.md\"",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "blog",
-      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
-      "relativePath": "taylor-swift-ai/index.md",
-      "extension": "md",
-      "size": 2562,
-      "prettySize": "2.56 kB",
-      "modifiedTime": "2019-04-03T19:15:46.932Z",
-      "accessTime": "2019-04-05T00:24:01.911Z",
-      "changeTime": "2019-04-03T19:15:46.932Z",
-      "birthTime": "2019-03-24T23:16:50.368Z",
-      "root": "/",
-      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
-      "base": "index.md",
-      "ext": ".md",
-      "name": "index",
-      "relativeDirectory": "taylor-swift-ai",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 21732454,
-      "blocks": 8,
-      "atimeMs": 1554423841910.501,
-      "mtimeMs": 1554318946932.1558,
-      "ctimeMs": 1554318946932.1558,
-      "birthtimeMs": 1553469410368.0718,
-      "atime": "2019-04-05T00:24:01.911Z",
-      "mtime": "2019-04-03T19:15:46.932Z",
-      "ctime": "2019-04-03T19:15:46.932Z",
-      "birthtime": "2019-03-24T23:16:50.368Z"
     },
     "5ab0713f-be5f-59cf-b3c6-70259e0e3db8": {
       "id": "5ab0713f-be5f-59cf-b3c6-70259e0e3db8",
@@ -2870,7 +2689,7 @@
       "size": 45421,
       "prettySize": "45.4 kB",
       "modifiedTime": "2019-03-24T22:59:18.225Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.226Z",
       "birthTime": "2019-03-24T22:59:18.225Z",
       "root": "/",
@@ -2888,14 +2707,61 @@
       "blksize": 4096,
       "ino": 21560219,
       "blocks": 96,
-      "atimeMs": 1554423841910.4834,
+      "atimeMs": 1554424247802.4026,
       "mtimeMs": 1553468358225.279,
       "ctimeMs": 1553468358225.5442,
       "birthtimeMs": 1553468358224.904,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.225Z",
       "ctime": "2019-03-24T22:59:18.226Z",
       "birthtime": "2019-03-24T22:59:18.225Z"
+    },
+    "3dc112ad-ebab-54db-b78a-55f120f17548": {
+      "id": "3dc112ad-ebab-54db-b78a-55f120f17548",
+      "children": [
+        "7af3edb5-96e4-58c2-9143-51aa205d006e"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "f53e0bf144daf82009cc6912580bb996",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/taylor-swift-ai/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
+      "relativePath": "taylor-swift-ai/index.md",
+      "extension": "md",
+      "size": 2562,
+      "prettySize": "2.56 kB",
+      "modifiedTime": "2019-04-03T19:15:46.932Z",
+      "accessTime": "2019-04-05T00:36:47.457Z",
+      "changeTime": "2019-04-03T19:15:46.932Z",
+      "birthTime": "2019-03-24T23:16:50.368Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "taylor-swift-ai",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732454,
+      "blocks": 8,
+      "atimeMs": 1554424607457.4026,
+      "mtimeMs": 1554318946932.1558,
+      "ctimeMs": 1554318946932.1558,
+      "birthtimeMs": 1553469410368.0718,
+      "atime": "2019-04-05T00:36:47.457Z",
+      "mtime": "2019-04-03T19:15:46.932Z",
+      "ctime": "2019-04-03T19:15:46.932Z",
+      "birthtime": "2019-03-24T23:16:50.368Z"
     },
     "9be71790-6fea-5327-94ed-f2b1396e69da": {
       "id": "9be71790-6fea-5327-94ed-f2b1396e69da",
@@ -2917,7 +2783,7 @@
       "size": 5414,
       "prettySize": "5.41 kB",
       "modifiedTime": "2019-04-03T19:17:51.890Z",
-      "accessTime": "2019-04-05T00:24:01.911Z",
+      "accessTime": "2019-04-05T00:36:47.458Z",
       "changeTime": "2019-04-03T19:17:51.890Z",
       "birthTime": "2019-03-24T23:16:50.368Z",
       "root": "/",
@@ -2935,14 +2801,61 @@
       "blksize": 4096,
       "ino": 21732455,
       "blocks": 16,
-      "atimeMs": 1554423841910.5198,
+      "atimeMs": 1554424607457.5115,
       "mtimeMs": 1554319071889.8762,
       "ctimeMs": 1554319071889.8762,
       "birthtimeMs": 1553469410368.3074,
-      "atime": "2019-04-05T00:24:01.911Z",
+      "atime": "2019-04-05T00:36:47.458Z",
       "mtime": "2019-04-03T19:17:51.890Z",
       "ctime": "2019-04-03T19:17:51.890Z",
       "birthtime": "2019-03-24T23:16:50.368Z"
+    },
+    "b9271a27-a1a0-5b40-97c9-e359fe8946a9": {
+      "id": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
+      "children": [
+        "49cc22d5-b8d3-5943-878d-8ad7947a0a62"
+      ],
+      "parent": null,
+      "internal": {
+        "contentDigest": "ed4d369fa0892718df2661dc4262f2d4",
+        "type": "File",
+        "mediaType": "text/markdown",
+        "description": "File \"content/blog/ai-for-everyone/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "blog",
+      "absolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
+      "relativePath": "ai-for-everyone/index.md",
+      "extension": "md",
+      "size": 3883,
+      "prettySize": "3.88 kB",
+      "modifiedTime": "2019-04-03T19:19:26.228Z",
+      "accessTime": "2019-04-05T00:36:47.457Z",
+      "changeTime": "2019-04-03T19:19:26.228Z",
+      "birthTime": "2019-03-24T23:16:50.367Z",
+      "root": "/",
+      "dir": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "ai-for-everyone",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 21732452,
+      "blocks": 8,
+      "atimeMs": 1554424607456.993,
+      "mtimeMs": 1554319166228.4778,
+      "ctimeMs": 1554319166228.4778,
+      "birthtimeMs": 1553469410367.4758,
+      "atime": "2019-04-05T00:36:47.457Z",
+      "mtime": "2019-04-03T19:19:26.228Z",
+      "ctime": "2019-04-03T19:19:26.228Z",
+      "birthtime": "2019-03-24T23:16:50.367Z"
     },
     "0e8f494b-d78d-599e-acb7-cf8bb8e6d326": {
       "id": "0e8f494b-d78d-599e-acb7-cf8bb8e6d326",
@@ -2964,7 +2877,7 @@
       "size": 68425,
       "prettySize": "68.4 kB",
       "modifiedTime": "2019-03-24T22:59:18.227Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.227Z",
       "birthTime": "2019-03-24T22:59:18.226Z",
       "root": "/",
@@ -2982,11 +2895,11 @@
       "blksize": 4096,
       "ino": 21560221,
       "blocks": 136,
-      "atimeMs": 1554423841910.4795,
+      "atimeMs": 1554424247802.3994,
       "mtimeMs": 1553468358226.9736,
       "ctimeMs": 1553468358227.3745,
       "birthtimeMs": 1553468358226.466,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.227Z",
       "ctime": "2019-03-24T22:59:18.227Z",
       "birthtime": "2019-03-24T22:59:18.226Z"
@@ -3041,7 +2954,7 @@
       "size": 161067,
       "prettySize": "161 kB",
       "modifiedTime": "2019-03-24T22:59:18.220Z",
-      "accessTime": "2019-04-05T00:24:01.911Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.221Z",
       "birthTime": "2019-03-24T22:59:18.220Z",
       "root": "/",
@@ -3059,24 +2972,14 @@
       "blksize": 4096,
       "ino": 21560210,
       "blocks": 320,
-      "atimeMs": 1554423841910.5054,
+      "atimeMs": 1554424247802.42,
       "mtimeMs": 1553468358220.2188,
       "ctimeMs": 1553468358220.5203,
       "birthtimeMs": 1553468358219.6611,
-      "atime": "2019-04-05T00:24:01.911Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.220Z",
       "ctime": "2019-03-24T22:59:18.221Z",
       "birthtime": "2019-03-24T22:59:18.220Z"
-    },
-    "3ecbf90e-4968-511e-9774-6840c55a9ee3": {
-      "id": "3ecbf90e-4968-511e-9774-6840c55a9ee3",
-      "children": [],
-      "parent": "0e8f494b-d78d-599e-acb7-cf8bb8e6d326",
-      "internal": {
-        "contentDigest": "a3ad9a352668ee9b85f42153941fcb45",
-        "type": "ImageSharp",
-        "owner": "gatsby-transformer-sharp"
-      }
     },
     "1db1b3ff-0463-5470-ba94-fc44000be52d": {
       "id": "1db1b3ff-0463-5470-ba94-fc44000be52d",
@@ -3098,7 +3001,7 @@
       "size": 162377,
       "prettySize": "162 kB",
       "modifiedTime": "2019-03-24T22:59:18.221Z",
-      "accessTime": "2019-04-05T00:24:01.911Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.222Z",
       "birthTime": "2019-03-24T22:59:18.221Z",
       "root": "/",
@@ -3116,51 +3019,23 @@
       "blksize": 4096,
       "ino": 21560211,
       "blocks": 320,
-      "atimeMs": 1554423841910.5107,
+      "atimeMs": 1554424247802.4233,
       "mtimeMs": 1553468358221.3047,
       "ctimeMs": 1553468358221.5737,
       "birthtimeMs": 1553468358220.7073,
-      "atime": "2019-04-05T00:24:01.911Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.221Z",
       "ctime": "2019-03-24T22:59:18.222Z",
       "birthtime": "2019-03-24T22:59:18.221Z"
     },
-    "bb95713e-1f9a-5db0-9edb-85f3e6569424": {
-      "id": "bb95713e-1f9a-5db0-9edb-85f3e6569424",
+    "3ecbf90e-4968-511e-9774-6840c55a9ee3": {
+      "id": "3ecbf90e-4968-511e-9774-6840c55a9ee3",
       "children": [],
-      "parent": "36b5b7f5-c4c8-5e5e-ab0b-869386534999",
+      "parent": "0e8f494b-d78d-599e-acb7-cf8bb8e6d326",
       "internal": {
-        "contentDigest": "71e3ac914f52c89f157d4ebb4b3f9519",
+        "contentDigest": "a3ad9a352668ee9b85f42153941fcb45",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "49cc22d5-b8d3-5943-878d-8ad7947a0a62": {
-      "id": "49cc22d5-b8d3-5943-878d-8ad7947a0a62",
-      "children": [],
-      "parent": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
-      "internal": {
-        "content": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
-        "type": "MarkdownRemark",
-        "contentDigest": "9edde089d518954f8efec4b40d3c42e5",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "AI for Everyone: Things to Consider when Experimenting",
-        "date": "2017-10-01",
-        "description": "",
-        "tags": [
-          "AI"
-        ]
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
-      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
-      "fields": {
-        "slug": "/ai-for-everyone/"
       }
     },
     "c2a7a03e-3bac-52c2-8919-774c905f33d7": {
@@ -3191,33 +3066,60 @@
         "slug": "/systems/"
       }
     },
-    "91562fc4-2f1d-5ea1-9f60-0ccfeb144b10": {
-      "id": "91562fc4-2f1d-5ea1-9f60-0ccfeb144b10",
+    "7af3edb5-96e4-58c2-9143-51aa205d006e": {
+      "id": "7af3edb5-96e4-58c2-9143-51aa205d006e",
       "children": [],
-      "parent": "7b0bd988-4c83-5cc4-801b-dce5b46b5450",
+      "parent": "3dc112ad-ebab-54db-b78a-55f120f17548",
       "internal": {
-        "content": "",
+        "content": "\nI was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.\n\nNaturally, I stayed up late every night last week, eagerly anticipating the preview song from Taylor's new album, *Reputation*. But when [\"Look What You Made Me Do\"](https://www.youtube.com/watch?v=3tmd-ClpJxA) came out [shattering YouTube records](https://www.forbes.com/sites/hughmcintyre/2017/08/27/taylor-swifts-look-what-you-made-me-do-lyric-video-just-broke-a-youtube-record/#5d1f994558a8), I was a little...bummed. Don't get me wrong - I still listened to it at least twenty times. But what happened to Taylor's powerful lyrics and catchy melodies? How come this song was filled with hate and revenge?\n\nThis past weekend, I wanted to see if machine learning (ML) techniques could write better songs for Taylor. I fed all of Taylor's song lyrics into a recurrent neural network (RNN) and sampled some new lyrics. I generated samples with about 900 characters each. Here's what I got (unmodified, copy-pasted right from my terminal):\n\n![Lyrics Screenshot](./sample1.png)\n\nAfter reading these generated lyrics, I concluded that Taylor is most definitely better at writing her own music. The generated songs' grammar is weird, and numerous words are misspelled. Most of the phrases don't really make sense. Opening parentheses or quotes sometimes don't close. But hey - I'm pretty impressed that the RNN was able to learn the lyric structure with commas, line lengths, and line breaks!\n\nTo conclude this fun experiment, I generated possible song titles with the same RNN. Here are the song titles in the ML-generated Reputation:\n\n* Go won't hit me there\n* Your love through all\n* We said to be better\n* Walls if miles\n* No conversation\n* I should ever say that\n* I don't wanna see the way\n* I don't leave you here\n* You want to me\n* And we say how I just\n* Anything a good taft\n* Love there on more\n\n\"Anything a good taft?\" sounds kind of weird to me. But I could see myself jamming out to some of these, like \"Your love through all\" or \"I don't wanna see the way.\"\n\nI guess I'll go back to impatiently waiting for the real Reputation to come out in November. In the meantime, please let me know if you have any fun AI or ML ideas to experiment with!",
         "type": "MarkdownRemark",
-        "contentDigest": "a043892dddf769974b75964577c28eac",
+        "contentDigest": "7eb1eb8ef82d2a47b16658d3e2ac55d1",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
           "slug": "default-site-plugin"
         }
       },
       "frontmatter": {
-        "title": "Networking in tech for non-networkers",
-        "date": "2019-04-10",
-        "tags": [
-          "life skills"
-        ],
+        "title": "Taylor Swift vs Artificial Intelligence: Who's Better?",
+        "date": "2017-08-28",
         "description": "",
-        "draft": true
+        "tags": [
+          "AI"
+        ]
       },
       "excerpt": "",
-      "rawMarkdownBody": "",
-      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/networking/index.md",
+      "rawMarkdownBody": "\nI was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.\n\nNaturally, I stayed up late every night last week, eagerly anticipating the preview song from Taylor's new album, *Reputation*. But when [\"Look What You Made Me Do\"](https://www.youtube.com/watch?v=3tmd-ClpJxA) came out [shattering YouTube records](https://www.forbes.com/sites/hughmcintyre/2017/08/27/taylor-swifts-look-what-you-made-me-do-lyric-video-just-broke-a-youtube-record/#5d1f994558a8), I was a little...bummed. Don't get me wrong - I still listened to it at least twenty times. But what happened to Taylor's powerful lyrics and catchy melodies? How come this song was filled with hate and revenge?\n\nThis past weekend, I wanted to see if machine learning (ML) techniques could write better songs for Taylor. I fed all of Taylor's song lyrics into a recurrent neural network (RNN) and sampled some new lyrics. I generated samples with about 900 characters each. Here's what I got (unmodified, copy-pasted right from my terminal):\n\n![Lyrics Screenshot](./sample1.png)\n\nAfter reading these generated lyrics, I concluded that Taylor is most definitely better at writing her own music. The generated songs' grammar is weird, and numerous words are misspelled. Most of the phrases don't really make sense. Opening parentheses or quotes sometimes don't close. But hey - I'm pretty impressed that the RNN was able to learn the lyric structure with commas, line lengths, and line breaks!\n\nTo conclude this fun experiment, I generated possible song titles with the same RNN. Here are the song titles in the ML-generated Reputation:\n\n* Go won't hit me there\n* Your love through all\n* We said to be better\n* Walls if miles\n* No conversation\n* I should ever say that\n* I don't wanna see the way\n* I don't leave you here\n* You want to me\n* And we say how I just\n* Anything a good taft\n* Love there on more\n\n\"Anything a good taft?\" sounds kind of weird to me. But I could see myself jamming out to some of these, like \"Your love through all\" or \"I don't wanna see the way.\"\n\nI guess I'll go back to impatiently waiting for the real Reputation to come out in November. In the meantime, please let me know if you have any fun AI or ML ideas to experiment with!",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
       "fields": {
-        "slug": "/networking/"
+        "slug": "/taylor-swift-ai/"
+      }
+    },
+    "49cc22d5-b8d3-5943-878d-8ad7947a0a62": {
+      "id": "49cc22d5-b8d3-5943-878d-8ad7947a0a62",
+      "children": [],
+      "parent": "b9271a27-a1a0-5b40-97c9-e359fe8946a9",
+      "internal": {
+        "content": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
+        "type": "MarkdownRemark",
+        "contentDigest": "9edde089d518954f8efec4b40d3c42e5",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "AI for Everyone: Things to Consider when Experimenting",
+        "date": "2017-10-01",
+        "description": "",
+        "tags": [
+          "AI"
+        ]
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nI’ve recently started co-teaching CS53SI — a series of discussions centered around technology and social good. There’s a lot of hype in this intersection on campus.\n\nWe’re at an exciting time in our lives, where we have the hardware and software to accelerate AI development and see research manifest in everyday tech products. With large, growing repositories of data on the Internet, data freaks like me can obsess over applying machine learning techniques to extract insights.\n\nUnfortunately, unchecked exploration could lead to some nasty consequences. A couple of weeks ago, I was shocked to find that a professor at my own university came up with an [algorithm to detect whether a person is gay](https://www.theguardian.com/technology/2017/sep/07/new-artificial-intelligence-can-tell-whether-youre-gay-or-straight-from-a-photograph) based on a picture of their face. This algorithm can be extended to [detect political views and IQ](https://www.businessinsider.com/stanford-professor-thinks-ai-will-soon-be-able-to-detect-your-politics-iq-sexuality-2017-9), he claims.\n\nWhy is this scary? Here are 4 things to consider when training models on datasets.\n\n1. What would happen when these algorithms are used by employers to scan future employees? Or if this technology sits in people’s back pockets, giving people the opportunity to “predict” whether someone is gay by scanning someone’s face with their phone? This reminds me of the X-Men movies, where mutants wage wars to protect fellow mutants’ identities. The reality is, we don’t live in a perfect world — sadly, gay people and other minorities face discrimination.\n\n2. Machine learning is a tool that primarily identifies existing biases and separators in datasets and exaggerates these differences to make future predictions. If the input data are not representative of the population data, the output predictions will be inaccurate. In this case, input data comprise faces with self-reported sexualities. The only training points represent people who have come out or are open with their sexuality. There are plenty of other people who have not publicly stated their sexual orientations because they may face adverse consequences — biasing the inputs.\n\n3. Current media blows AI research findings out of proportion or puts an entirely new spin on things. The Stanford professor who conducted the study talks about the [negative social repercussions](https://www.theguardian.com/technology/2017/sep/12/artificial-intelligence-face-recognition-michal-kosinski) of his research. But the larger population doesn’t understand the machinery of AI, and news agencies capitalize on the public fear of artificial intelligence. We have to design for a world without threatening people or putting their identities at stake.\n\n4. Making conclusions about people based on how they look or on factors they cannot control can be bad. As it is, [we're still fighting](http://www.bbc.co.uk/newsbeat/article/41095623/pink-calls-for-ban-on-homophobia-racism-sexism---all-the-isms) racism, sexism, homophobia, and other similar phenomena in the 21st century. If AI perpetuates differences in treatment based on factors beyond individual control, we will never achieve the equality so many of us are fighting for.\n\nThe possibilities and applications of AI are endless. They have so much potential to [do good for the world](https://www.weforum.org/agenda/2017/05/artificial-intelligence-will-change-the-world-heres-how/). But as developers, scientists, engineers, and geeks, we have to anticipate and assess the consequences of our work on society. As we design the future, we can’t leave parts of the population behind — we should aim create an inclusive world for everyone.",
+      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/ai-for-everyone/index.md",
+      "fields": {
+        "slug": "/ai-for-everyone/"
       }
     },
     "c2c42fcf-69bf-583c-b1e4-a5b42ddd794c": {
@@ -3248,32 +3150,14 @@
         "slug": "/you-got-this/"
       }
     },
-    "7af3edb5-96e4-58c2-9143-51aa205d006e": {
-      "id": "7af3edb5-96e4-58c2-9143-51aa205d006e",
+    "bb95713e-1f9a-5db0-9edb-85f3e6569424": {
+      "id": "bb95713e-1f9a-5db0-9edb-85f3e6569424",
       "children": [],
-      "parent": "3dc112ad-ebab-54db-b78a-55f120f17548",
+      "parent": "36b5b7f5-c4c8-5e5e-ab0b-869386534999",
       "internal": {
-        "content": "\nI was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.\n\nNaturally, I stayed up late every night last week, eagerly anticipating the preview song from Taylor's new album, *Reputation*. But when [\"Look What You Made Me Do\"](https://www.youtube.com/watch?v=3tmd-ClpJxA) came out [shattering YouTube records](https://www.forbes.com/sites/hughmcintyre/2017/08/27/taylor-swifts-look-what-you-made-me-do-lyric-video-just-broke-a-youtube-record/#5d1f994558a8), I was a little...bummed. Don't get me wrong - I still listened to it at least twenty times. But what happened to Taylor's powerful lyrics and catchy melodies? How come this song was filled with hate and revenge?\n\nThis past weekend, I wanted to see if machine learning (ML) techniques could write better songs for Taylor. I fed all of Taylor's song lyrics into a recurrent neural network (RNN) and sampled some new lyrics. I generated samples with about 900 characters each. Here's what I got (unmodified, copy-pasted right from my terminal):\n\n![Lyrics Screenshot](./sample1.png)\n\nAfter reading these generated lyrics, I concluded that Taylor is most definitely better at writing her own music. The generated songs' grammar is weird, and numerous words are misspelled. Most of the phrases don't really make sense. Opening parentheses or quotes sometimes don't close. But hey - I'm pretty impressed that the RNN was able to learn the lyric structure with commas, line lengths, and line breaks!\n\nTo conclude this fun experiment, I generated possible song titles with the same RNN. Here are the song titles in the ML-generated Reputation:\n\n* Go won't hit me there\n* Your love through all\n* We said to be better\n* Walls if miles\n* No conversation\n* I should ever say that\n* I don't wanna see the way\n* I don't leave you here\n* You want to me\n* And we say how I just\n* Anything a good taft\n* Love there on more\n\n\"Anything a good taft?\" sounds kind of weird to me. But I could see myself jamming out to some of these, like \"Your love through all\" or \"I don't wanna see the way.\"\n\nI guess I'll go back to impatiently waiting for the real Reputation to come out in November. In the meantime, please let me know if you have any fun AI or ML ideas to experiment with!",
-        "type": "MarkdownRemark",
-        "contentDigest": "7eb1eb8ef82d2a47b16658d3e2ac55d1",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Taylor Swift vs Artificial Intelligence: Who's Better?",
-        "date": "2017-08-28",
-        "description": "",
-        "tags": [
-          "AI"
-        ]
-      },
-      "excerpt": "",
-      "rawMarkdownBody": "\nI was a huge Taylor Swift fan growing up. My middle school iPod Nano's top played songs are from *Speak Now*. I remember staying up late browsing Tumblr during my sophomore year while my parents were asleep, trying to find samples of *Red* because I couldn't pay for the album.\n\nNaturally, I stayed up late every night last week, eagerly anticipating the preview song from Taylor's new album, *Reputation*. But when [\"Look What You Made Me Do\"](https://www.youtube.com/watch?v=3tmd-ClpJxA) came out [shattering YouTube records](https://www.forbes.com/sites/hughmcintyre/2017/08/27/taylor-swifts-look-what-you-made-me-do-lyric-video-just-broke-a-youtube-record/#5d1f994558a8), I was a little...bummed. Don't get me wrong - I still listened to it at least twenty times. But what happened to Taylor's powerful lyrics and catchy melodies? How come this song was filled with hate and revenge?\n\nThis past weekend, I wanted to see if machine learning (ML) techniques could write better songs for Taylor. I fed all of Taylor's song lyrics into a recurrent neural network (RNN) and sampled some new lyrics. I generated samples with about 900 characters each. Here's what I got (unmodified, copy-pasted right from my terminal):\n\n![Lyrics Screenshot](./sample1.png)\n\nAfter reading these generated lyrics, I concluded that Taylor is most definitely better at writing her own music. The generated songs' grammar is weird, and numerous words are misspelled. Most of the phrases don't really make sense. Opening parentheses or quotes sometimes don't close. But hey - I'm pretty impressed that the RNN was able to learn the lyric structure with commas, line lengths, and line breaks!\n\nTo conclude this fun experiment, I generated possible song titles with the same RNN. Here are the song titles in the ML-generated Reputation:\n\n* Go won't hit me there\n* Your love through all\n* We said to be better\n* Walls if miles\n* No conversation\n* I should ever say that\n* I don't wanna see the way\n* I don't leave you here\n* You want to me\n* And we say how I just\n* Anything a good taft\n* Love there on more\n\n\"Anything a good taft?\" sounds kind of weird to me. But I could see myself jamming out to some of these, like \"Your love through all\" or \"I don't wanna see the way.\"\n\nI guess I'll go back to impatiently waiting for the real Reputation to come out in November. In the meantime, please let me know if you have any fun AI or ML ideas to experiment with!",
-      "fileAbsolutePath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/content/blog/taylor-swift-ai/index.md",
-      "fields": {
-        "slug": "/taylor-swift-ai/"
+        "contentDigest": "71e3ac914f52c89f157d4ebb4b3f9519",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
       }
     },
     "eed70b40-32c3-50b0-a796-ec589f8605d0": {
@@ -3319,7 +3203,7 @@
       "children": [],
       "parent": null,
       "internal": {
-        "contentDigest": "060f1c9493cc861524f1aab00bf4c93f",
+        "contentDigest": "404f7b045dd56a5b94245490910b18c1",
         "type": "Directory",
         "description": "Directory \"content/assets\"",
         "owner": "gatsby-source-filesystem"
@@ -3331,7 +3215,7 @@
       "size": 160,
       "prettySize": "160 B",
       "modifiedTime": "2019-03-25T01:52:27.480Z",
-      "accessTime": "2019-04-05T00:29:23.714Z",
+      "accessTime": "2019-04-05T03:10:27.458Z",
       "changeTime": "2019-03-25T01:52:27.480Z",
       "birthTime": "2019-03-24T22:59:18.229Z",
       "root": "/",
@@ -3349,11 +3233,11 @@
       "blksize": 4096,
       "ino": 21560223,
       "blocks": 0,
-      "atimeMs": 1554424163713.6245,
+      "atimeMs": 1554433827458.4233,
       "mtimeMs": 1553478747479.8777,
       "ctimeMs": 1553478747479.8777,
       "birthtimeMs": 1553468358228.9492,
-      "atime": "2019-04-05T00:29:23.714Z",
+      "atime": "2019-04-05T03:10:27.458Z",
       "mtime": "2019-03-25T01:52:27.480Z",
       "ctime": "2019-03-25T01:52:27.480Z",
       "birthtime": "2019-03-24T22:59:18.229Z"
@@ -3378,7 +3262,7 @@
       "size": 6177,
       "prettySize": "6.18 kB",
       "modifiedTime": "2019-03-25T01:52:08.859Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-25T01:52:27.480Z",
       "birthTime": "2019-03-24T23:41:31.313Z",
       "root": "/",
@@ -3396,11 +3280,11 @@
       "blksize": 4096,
       "ino": 21787216,
       "blocks": 16,
-      "atimeMs": 1554423841910.4382,
+      "atimeMs": 1554424247802.3645,
       "mtimeMs": 1553478728858.8718,
       "ctimeMs": 1553478747479.8774,
       "birthtimeMs": 1553470891312.5764,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-25T01:52:08.859Z",
       "ctime": "2019-03-25T01:52:27.480Z",
       "birthtime": "2019-03-24T23:41:31.313Z"
@@ -3435,7 +3319,7 @@
       "size": 6322953,
       "prettySize": "6.32 MB",
       "modifiedTime": "2019-03-24T22:59:18.241Z",
-      "accessTime": "2019-04-05T00:24:01.910Z",
+      "accessTime": "2019-04-05T00:30:47.802Z",
       "changeTime": "2019-03-24T22:59:18.242Z",
       "birthTime": "2019-03-24T22:59:18.231Z",
       "root": "/",
@@ -3453,11 +3337,11 @@
       "blksize": 4096,
       "ino": 21560226,
       "blocks": 12352,
-      "atimeMs": 1554423841910.4421,
+      "atimeMs": 1554424247802.3677,
       "mtimeMs": 1553468358241.3245,
       "ctimeMs": 1553468358241.6545,
       "birthtimeMs": 1553468358230.9766,
-      "atime": "2019-04-05T00:24:01.910Z",
+      "atime": "2019-04-05T00:30:47.802Z",
       "mtime": "2019-03-24T22:59:18.241Z",
       "ctime": "2019-03-24T22:59:18.242Z",
       "birthtime": "2019-03-24T22:59:18.231Z"
@@ -3470,41 +3354,6 @@
         "contentDigest": "6382089468f78db73988549afc8f2826",
         "type": "ImageSharp",
         "owner": "gatsby-transformer-sharp"
-      }
-    },
-    "SitePage /networking/": {
-      "jsonName": "networking-7b4",
-      "internalComponentName": "ComponentNetworking",
-      "path": "/networking/",
-      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
-      "componentChunkName": "component---src-templates-blog-post-js",
-      "isCreatedByStatefulCreatePages": false,
-      "context": {
-        "slug": "/networking/",
-        "previous": {
-          "fields": {
-            "slug": "/systems/"
-          },
-          "frontmatter": {
-            "title": "Why you should major in systems",
-            "tags": [
-              "systems"
-            ]
-          }
-        },
-        "next": null
-      },
-      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
-      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
-      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js",
-      "id": "SitePage /networking/",
-      "parent": null,
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "43e72c6a8c0ca06121286ff41f748800",
-        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
-        "owner": "internal-data-bridge"
       }
     },
     "SitePage /systems/": {
@@ -3527,17 +3376,7 @@
             ]
           }
         },
-        "next": {
-          "fields": {
-            "slug": "/networking/"
-          },
-          "frontmatter": {
-            "title": "Networking in tech for non-networkers",
-            "tags": [
-              "life skills"
-            ]
-          }
-        }
+        "next": null
       },
       "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
@@ -3547,7 +3386,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a58965469b54312535b42223a3ff2dea",
+        "contentDigest": "53b8c5738af96f6eb5b14ef102de7384",
         "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
         "owner": "internal-data-bridge"
       }
@@ -3718,29 +3557,6 @@
       "internal": {
         "type": "SitePage",
         "contentDigest": "a07db3f7b2ef6e2fa502892f55539050",
-        "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /tags/life-skills/": {
-      "jsonName": "tags-life-skills-421",
-      "internalComponentName": "ComponentTagsLifeSkills",
-      "path": "/tags/life-skills/",
-      "component": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/tags.js",
-      "componentChunkName": "component---src-templates-tags-js",
-      "isCreatedByStatefulCreatePages": false,
-      "context": {
-        "tag": "life skills"
-      },
-      "pluginCreator___NODE": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
-      "pluginCreatorId": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
-      "componentPath": "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/tags.js",
-      "id": "SitePage /tags/life-skills/",
-      "parent": null,
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "d0a1d83078aaec619bdf71d94854cbef",
         "description": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
         "owner": "internal-data-bridge"
       }
@@ -3922,21 +3738,20 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "531510ec873c25d35bf2f6848701cb43"
+    "PLUGINS_HASH": "eae5e22f9eafe30100345a3dc680aad0"
   },
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "/404/",
-        "/404.html",
         "/",
         "/tags/",
-        "/networking/",
         "/systems/",
         "/ai-for-everyone/",
         "/you-got-this/",
         "/taylor-swift-ai/",
         "/it-starts-early/",
+        "/404/",
+        "/404.html",
         "sq--src-components-bio-js",
         "sq--src-components-seo-js"
       ],
@@ -3945,9 +3760,6 @@
       ],
       "888ec415-9924-5641-aa6a-096baea69450": [
         "sq--src-components-bio-js"
-      ],
-      "91562fc4-2f1d-5ea1-9f60-0ccfeb144b10": [
-        "/networking/"
       ],
       "c2a7a03e-3bac-52c2-8919-774c905f33d7": [
         "/systems/"
@@ -3969,7 +3781,6 @@
       "MarkdownRemark": [
         "/",
         "/tags/",
-        "/tags/life-skills/",
         "/tags/systems/",
         "/tags/ai/",
         "/tags/diversity/"
@@ -3978,23 +3789,21 @@
   },
   "jsonDataPaths": {
     "sq--src-components-seo-js": 2417117884,
-    "404-html-516": "992/path---404-html-516-62a-canWq7mYqF6q0JNTt40FlSoXsuw",
-    "404-22d": "461/path---404-22-d-bce-canWq7mYqF6q0JNTt40FlSoXsuw",
-    "networking-7b4": "677/path---networking-7-b-4-e00-po3V5HbbT66L0aKEZ359OVvUTc",
-    "systems-a7a": "637/path---systems-a-7-a-804-tiHj3zExPyphZc7AwAFEe53SAY",
-    "you-got-this-5f8": "728/path---you-got-this-5-f-8-419-85EaQJr3v8YI1ZXyU5iSOzIQaA",
+    "tags-275": "425/path---tags-275-fc0-sbGXuq258fUOvmp1xVhBIez88",
     "ai-for-everyone-bff": "628/path---ai-for-everyone-bff-622-AjPrWuJPzFm9Bdtsx0azZtpmo28",
-    "index": "72/path---index-6a9-p2FvGN8WbmxfKwBH4n7juwLRswU",
+    "systems-a7a": "140/path---systems-a-7-a-804-SxCmI2T8ZyEZzXOML2J3lkYg5Y",
+    "you-got-this-5f8": "728/path---you-got-this-5-f-8-419-85EaQJr3v8YI1ZXyU5iSOzIQaA",
+    "index": "483/path---index-6a9-kAYjrlRM9PJrg7TZ3VV5eIIWZH8",
     "taylor-swift-ai-9a8": "826/path---taylor-swift-ai-9-a-8-6e2-U0ce5YC3KJgHXm4AlJaPcPMbFu4",
-    "it-starts-early-5b1": "80/path---it-starts-early-5-b-1-154-hkcK2H5xYfJUVsYJJFw4qWb6c",
-    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8",
-    "about-f34": "708/path---about-f-34-4c2-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "404-22d": "461/path---404-22-d-bce-canWq7mYqF6q0JNTt40FlSoXsuw",
+    "404-html-516": "992/path---404-html-516-62a-canWq7mYqF6q0JNTt40FlSoXsuw",
     "sq--src-components-bio-js": 4007731267,
-    "tags-275": "85/path---tags-275-fc0-yfMuwxtLsaYUI4StpbXnDQisZ0c",
-    "tags-life-skills-421": "925/path---tags-life-skills-421-012-x9okYUjLqvFuJ7Nmg29udEL2sjU",
+    "it-starts-early-5b1": "80/path---it-starts-early-5-b-1-154-hkcK2H5xYfJUVsYJJFw4qWb6c",
     "tags-systems-2db": "904/path---tags-systems-2-db-d9e-wnnHgtyh9yFmFCXnai0bmqj25I",
     "tags-ai-612": "847/path---tags-ai-612-f22-kAxdvIvhysKOOWvccjscEH0AYLE",
-    "tags-diversity-f50": "860/path---tags-diversity-f-50-c50-Pik5kVbcbIm6RbqbtUZk3PMQgg"
+    "tags-diversity-f50": "860/path---tags-diversity-f-50-c50-Pik5kVbcbIm6RbqbtUZk3PMQgg",
+    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "about-f34": "708/path---about-f-34-4c2-0SUcWyAf8ecbYDsMhQkEfPzV8"
   },
   "components": {
     "/Users/shreyashankar/Documents/projects/shreyashankar.github.io/src/templates/blog-post.js": {

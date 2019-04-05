@@ -36,11 +36,6 @@
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
-        "jsonName": "networking-7b4",
-        "path": "/networking/"
-    },
-    {
-        "componentChunkName": "component---src-templates-blog-post-js",
         "jsonName": "systems-a7a",
         "path": "/systems/"
     },
@@ -58,11 +53,6 @@
         "componentChunkName": "component---src-templates-tags-js",
         "jsonName": "tags-diversity-f50",
         "path": "/tags/diversity/"
-    },
-    {
-        "componentChunkName": "component---src-templates-tags-js",
-        "jsonName": "tags-life-skills-421",
-        "path": "/tags/life-skills/"
     },
     {
         "componentChunkName": "component---src-templates-tags-js",
