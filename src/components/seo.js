@@ -81,7 +81,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:card`,
-          content: '/icon.png',
+          content: 'summary',
         }
       ]
         .concat(
