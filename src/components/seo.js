@@ -79,6 +79,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:image`,
           content: '/icon.png',
         },
+        {
+          name: `twitter:card`,
+          content: '/icon.png',
+        }
       ]
         .concat(
           keywords.length > 0
