@@ -17,6 +17,6 @@ Here’s a secret about me: I *hate* networking. I'm quite terrible at pretendin
 5. **Don't come off as too eager.** This can turn people away. Famous people probably don’t want you to come to them just because they’re famous; they want you to come to them for their skills. (Or they might not want you to come to them at all, but that’s a different story).
 6. **You don’t have to always talk about work.** Often people want or need a break from work. Go out and explore the area with some people if you’re at a conference instead of talking about LSTMs all day long. My most memorable times at NeurIPS involved exploring the city that the conference was in.
 
-At the end of the day, it’s most important to have compassion for yourself. If you didn’t talk to everyone you wanted to talk to, it’s okay. If you didn’t accomplish your goal, it’s okay. Networking is hard and tiring! I always try to focus on what I’ve gained from the experience and feel proud of myself, even if I didn't do anything but attend. As Woody Allen says, "80% of success is just showing up."
+At the end of the day, it’s most important to have compassion for yourself. If you didn’t talk to everyone you wanted to talk to, it’s okay. If you didn’t accomplish your goal, it’s okay. Networking is hard and tiring! I always try to focus on what I’ve gained from the experience and feel proud of myself, even if I didn't do anything but show up.
 
 *Thanks to Nitya Mani for feedback on this post.*
