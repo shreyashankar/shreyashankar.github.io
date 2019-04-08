@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1)
           }}
         >
-          {post.frontmatter.date} in <Link to={`/tags/${kebabCase(post.frontmatter.tags)}/`}>
+          {post.frontmatter.date} in <Link to={`/tags/${kebabCase(post.frontmatter.tags)}/`} style={{textTransform: 'uppercase'}}>
                 #{post.frontmatter.tags}
               </Link>
         </p>
