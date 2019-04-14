@@ -74,5 +74,11 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://gmail.us20.list-manage.com/subscribe/post?u=076f3389d8d753915c5285ef4&amp;id=4733e9a320', // see instructions section below
+      },
+    },
   ],
 }
