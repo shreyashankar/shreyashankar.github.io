@@ -38,7 +38,7 @@ function Bio() {
               }}
             />
             <p>
-              <strong>{author}</strong> builds systems and intelligent machines at Stanford and Google Brain.
+              <strong>{author}</strong> is a machine learning engineer and masters student in computer science at Stanford University.
               {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
               Follow her on Twitter.

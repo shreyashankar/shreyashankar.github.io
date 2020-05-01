@@ -39,9 +39,13 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-highlight-code`,
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
+    
         ],
       },
     },
@@ -61,7 +65,7 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#0B3C5D`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },

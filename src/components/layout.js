@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 class Layout extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const aboutPath = `${__PATH_PREFIX__}/about`
     let header
+    deckDeckGoHighlightElement();
 
     if (location.pathname === rootPath || location.pathname === aboutPath) {
       header = (
