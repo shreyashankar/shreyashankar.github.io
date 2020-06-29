@@ -52,6 +52,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          name: `twitter:image`,
+          content: 'https://www.shreya-shankar.com/icon.png',
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -77,10 +81,6 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `og:image`,
-          content: '/icon.png',
-        },
-        {
-          name: `twitter:image`,
           content: '/icon.png',
         },
       ]
