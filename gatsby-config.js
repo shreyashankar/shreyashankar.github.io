@@ -28,6 +28,15 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: "Table of Contents",
+              tight: false,
+              fromHeading: 1,
+              toHeading: 6
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
@@ -45,7 +54,7 @@ module.exports = {
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-    
+          `gatsby-remark-reading-time`,
         ],
       },
     },

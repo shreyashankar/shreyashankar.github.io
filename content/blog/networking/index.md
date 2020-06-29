@@ -1,8 +1,8 @@
 ---
-title: "Networking for non-networkers"
+title: "Networking for people who hate networking"
 date: "2019-04-08"
 description: ''
-tags: ['life skills']
+tags: ['personal']
 ---
 
 

@@ -78,6 +78,7 @@ class BlogIndex extends React.Component {
       marginTop: '20px',
       paddingTop: '20px',
       paddingBottom: '20px',
+      marginBottom: '20px',
       background: 'rgba(0, 0, 0, 0.05)'
     };
   }
@@ -115,27 +116,30 @@ class BlogIndex extends React.Component {
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug}>
+            <div key={node.fields.slug} >
+              <small >{node.frontmatter.date} in </small>
+              <small style={{textTransform: 'uppercase', color: '#00688B'}}>
+              <Link to={`/tags/${kebabCase(node.frontmatter.tags)}/`}>
+                #{node.frontmatter.tags}
+              </Link>
+              </small>
+              <small> · {node.fields.readingTime.text} </small>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: rhythm(1.5),
+                  marginTop: rhythm(1 / 4),
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date} in </small>
-              <small style={{textTransform: 'uppercase', color: '#00688B'}}>
-              <Link to={`/tags/${kebabCase(node.frontmatter.tags)}/`}>
-                #{node.frontmatter.tags}
-              </Link>
-              </small>
-              <p
+            
+              {/* <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
-              />
+              /> */}
             </div>
           )
         })}
@@ -165,6 +169,12 @@ export const pageQuery = graphql`
             title
             description
             tags
+          }
+          fields {
+            slug
+            readingTime {
+              text
+            }
           }
         }
       }

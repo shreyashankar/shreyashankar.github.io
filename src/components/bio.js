@@ -38,11 +38,11 @@ function Bio() {
               }}
             />
             <p>
-              <strong>{author}</strong> is a machine learning engineer and masters student in computer science at Stanford University.
-              {` `}
+              <strong><a href={`https://twitter.com/${social.twitter}`}>{author}</a></strong> likes systems and machine learning.
+              {/* {` `}
               <a href={`https://twitter.com/${social.twitter}`}>
               Follow her on Twitter.
-              </a>
+              </a> */}
             </p>
           </div>
         )

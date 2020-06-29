@@ -12,6 +12,8 @@ class Layout extends React.Component {
     let header
     deckDeckGoHighlightElement();
 
+    let siteColor = '#0B3C5D'
+
     if (location.pathname === rootPath || location.pathname === aboutPath) {
       header = (
         <h1
@@ -28,7 +30,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`
+              color: siteColor
             }}
             to={`/`}
           >
@@ -50,7 +52,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`
+              color: siteColor
             }}
             to={`/`}
           >
@@ -64,7 +66,7 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(30),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >

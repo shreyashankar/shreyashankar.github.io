@@ -19,6 +19,8 @@ class BlogPostTemplate extends React.Component {
       title: post.frontmatter.title,
     }
 
+    const readingTime = post.fields.readingTime.text
+
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -35,7 +37,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date} in <Link to={`/tags/${kebabCase(post.frontmatter.tags)}/`} style={{textTransform: 'uppercase'}}>
                 #{post.frontmatter.tags}
-              </Link>
+              </Link> · {readingTime} 
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -94,6 +96,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         tags
+      }
+      fields {
+        slug
+        readingTime {
+          text
+        }
       }
     }
   }

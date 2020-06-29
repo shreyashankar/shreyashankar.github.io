@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Multiprocessing for Machine Learning Practitioners"
+title: "Under the hood: multiprocessing for machine learning practitioners"
 date: "2020-04-30"
 description: ''
 tags: ['systems']
