@@ -40,7 +40,7 @@ Here, I discuss the raw pros and cons of pursuing a PhD and pros and cons of joi
     *   Sometimes I still feel that I enjoy research more than engineering, but I’ve committed to developing my engineering skills. Again, being in tech is playing the long game, and having good engineering skills will help me no matter where I go, whether it’s research or IC or management.
 *   _There are more clear mentorship opportunities for me._
     *   This is probably true if I went to a PhD program, since I’d have access to many professors and older grad student friends.
-*   _I could be in a stable career option (5-6 years at least if doing PhD)._
+*   _I can be in a stable career option (5-6 years at least if doing PhD)._
     *   This point occasionally gives me anxiety, since I don’t know exactly where I am going to be for the next 5-6 years. Startups are risky. But I’ve gotten more used to this feeling over the past year. 
 
 
