@@ -7,7 +7,7 @@ tags: ['machine learning']
 
 I’m uneasy about the _saviorism_ I see becoming more common in applied machine learning. The concept of “saviorism” dates back at least as far as Rudyard Kipling’s poem [“The White Man’s Burden.”](https://en.wikipedia.org/wiki/The_White_Man%27s_Burden) In this poem, Kipling refers to 19th century imperialist “moral obligations” of white people to encourage people of color’s economic and social progress through colonialism. Some have discussed [tech saviorism](https://www.wired.com/story/tech-needs-to-listen-to-actual-researchers/), a modern-day manifestation of this phenomenon within the Silicon Valley bubble, and this problem has only been exacerbated by the explosive growth of the modern artificial intelligence and machine learning ecosystem. I’ve noticed that many people in the artificial intelligence and machine learning circles act as “AI Saviors,” believing that, when equipped with copious amounts of data and basic knowledge of artificial intelligence techniques, they can quickly solve open problems in unrelated fields.
 
-**Machine learning is a tool to help build solutions, but it’s not the entire solution.** Unfortunately, I hear about so many startups, ML[^1]  practitioners, VCs, and researchers that have forgotten the second part. In light of this worrying trend, I want to:
+**Machine learning is a tool to help build solutions, not the entire solution.** Unfortunately, I hear about so many startups, ML[^1]  practitioners, VCs, and researchers that have forgotten the second part. In light of this worrying trend, I want to:
 
 
 
