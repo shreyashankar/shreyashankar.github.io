@@ -22,7 +22,7 @@ export default class About extends React.Component {
         </p>
 
         <p>
-          Currently, I am exploring <a href"https://en.wikipedia.org/wiki/MLOps">"MLOps"</a> tooling ideas before starting a PhD. Previously, I was the first ML engineer at <a href="https://www.viaduct.ai/">Viaduct</a>, did research at <a href="https://ai.google/research/teams/brain">Google Brain</a>, learned about investing with <a href="https://amplifypartners.com/">Amplify Partners</a>, and software engineering at <a href="https://www.facebook.com">Facebook</a>.
+          Currently, I am exploring <a href="https://en.wikipedia.org/wiki/MLOps">"MLOps"</a> tooling ideas before starting a PhD. Previously, I was the first ML engineer at <a href="https://www.viaduct.ai/">Viaduct</a>, did research at <a href="https://ai.google/research/teams/brain">Google Brain</a>, learned about investing with <a href="https://amplifypartners.com/">Amplify Partners</a>, and software engineering at <a href="https://www.facebook.com">Facebook</a>.
         </p>
         <p>
           I graduated from Stanford University with a B.S. and an M.S. in computer science with concentrations in systems and artificial intelligence, respectively. At Stanford, I helped run a nonprofit called <a href="http://www.sheplusplus.com/">SHE++</a>, an organization that helps to empower underrepresented minorities in technology. I also spent a lot of time as a section leader and teaching assistant for <a href="https://cs198.stanford.edu/cs198/">CS198</a>.
