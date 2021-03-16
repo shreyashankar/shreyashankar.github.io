@@ -22,13 +22,13 @@ export default class About extends React.Component {
         </p>
 
         <p>
-          Currently, I work at <a href="https://www.viaduct.ai/" target="_blank">Viaduct</a>. Previously, I did research at <a href="https://ai.google/research/teams/brain" target="_blank">Google Brain</a>, learned about investing with <a href="https://amplifypartners.com/" target="_blank">Amplify Partners</a>, and software engineering at <a href="https://www.facebook.com" target="_blank">Facebook</a>.
+          Currently, I am building MLOps tools before starting a PhD in EECS at UC Berkeley. Previously, I was the first ML engineer at <a href="https://www.viaduct.ai/" target="_blank">Viaduct</a>, did research at <a href="https://ai.google/research/teams/brain" target="_blank">Google Brain</a>, and software engineering at <a href="https://www.facebook.com" target="_blank">Facebook</a>.
         </p>
         <p>
-          I graduated from Stanford University with a B.S. and M.S. in computer science. I concentrated in systems and artificial intelligence respectively. At Stanford, I helped run a nonprofit called <a href="http://www.sheplusplus.com/" target="_blank">SHE++</a>, an organization that helps to empower underrepresented minorities in technology. I also spent a lot of time as a section leader and teaching assistant for <a href="https://cs198.stanford.edu/cs198/" target="_blank">CS198</a>.
+          I graduated from Stanford University with a B.S. and an M.S. in computer science with concentrations in systems and artificial intelligence, respectively. At Stanford, I helped run a nonprofit called <a href="http://www.sheplusplus.com/" target="_blank">SHE++</a>, an organization that helps to empower underrepresented minorities in technology. I also spent a lot of time as a section leader and teaching assistant for <a href="https://cs198.stanford.edu/cs198/" target="_blank">CS198</a>.
         </p>
         <p>
-          To reach me, you can email <a href="mailto:shreya@cs.stanford.edu" target="_blank">shreya@cs.stanford.edu</a>. I am also fairly active on <a href="https://twitter.com/sh_reya" target="_blank">Twitter</a> and <a href="https://github.com/shreyashankar" target="_blank">Github.</a>
+          To reach me, you can email <a href="mailto:shreya@cs.stanford.edu">shreya@cs.stanford.edu</a>. I am also fairly active on <a href="https://twitter.com/sh_reya" target="_blank">Twitter</a> and <a href="https://github.com/shreyashankar" target="_blank">Github.</a>
         </p>
       </Layout>
     )
