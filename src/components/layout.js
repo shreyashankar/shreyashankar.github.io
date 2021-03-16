@@ -9,12 +9,13 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     const aboutPath = `${__PATH_PREFIX__}/about`
+    const projectsPath = `${__PATH_PREFIX__}/projects`
     let header
     deckDeckGoHighlightElement();
 
     let siteColor = '#0B3C5D'
 
-    if (location.pathname === rootPath || location.pathname === aboutPath) {
+    if (location.pathname === rootPath || location.pathname === aboutPath || location.pathname === projectsPath) {
       header = (
         <h1
           style={{
@@ -70,10 +71,10 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer style={{fontSize: '11px'}}>
+        <footer style={{ fontSize: '11px' }}>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://github.com/gatsbyjs/gatsby-starter-blog">Gatsby</a>. 
+          <a href="https://github.com/gatsbyjs/gatsby-starter-blog">Gatsby</a>.
         </footer>
       </div>
     )
