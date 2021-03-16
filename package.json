@@ -40,8 +40,10 @@
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
     "typography-theme-alton": "^0.16.19",
+    "typography-theme-bootstrap": "^0.16.19",
     "typography-theme-doelger": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19",
+    "typography-theme-github": "^0.16.19",
     "typography-theme-parnassus": "^0.16.19",
     "typography-theme-wordpress-2014": "^0.16.19"
   },

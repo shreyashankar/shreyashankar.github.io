@@ -39,7 +39,6 @@ export default class Projects extends React.Component {
                 />
                 <Links />
                 {projects.map((node) => {
-                    console.log(node)
                     const title = node.title
                     const description = node.description
                     const link = node.link

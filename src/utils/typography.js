@@ -1,10 +1,10 @@
 import Typography from "typography"
-import FairyGates from 'typography-theme-alton'
+import bootstrapTheme from 'typography-theme-bootstrap'
 
 let linkColor = '#0B3C5D'
 let unclickedLinkColor = '#00688B'
 
-FairyGates.overrideThemeStyles = ({ rhythm }, options) => {
+bootstrapTheme.overrideThemeStyles = ({ rhythm }, options) => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -24,7 +24,7 @@ FairyGates.overrideThemeStyles = ({ rhythm }, options) => {
       borderLeft: `${rhythm(6 / 16)} solid ${linkColor}`,
     },
     'h1': {
-      marginBottom: rhythm(1/2),
+      marginBottom: rhythm(1 / 2),
       marginTop: rhythm(2),
     },
     // 'h2,h3': {
@@ -34,7 +34,7 @@ FairyGates.overrideThemeStyles = ({ rhythm }, options) => {
   }
 }
 
-const typography = new Typography(FairyGates)
+const typography = new Typography(bootstrapTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
