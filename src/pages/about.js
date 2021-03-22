@@ -31,7 +31,7 @@ export default class About extends React.Component {
           To reach me, you can email <a href="mailto:shreya@cs.stanford.edu">shreya@cs.stanford.edu</a>. I am also fairly active on <a href="https://twitter.com/sh_reya" target="_blank">Twitter</a> and <a href="https://github.com/shreyashankar" target="_blank">Github.</a>
         </p>
         <p>
-          My CV is available for download <a href={`shreyashankarcv.pdf`} target="_blank">here.</a>
+          My CV is available for download <a href={`/shreyashankarcv.pdf`} target="_blank">here.</a>
         </p>
       </Layout>
     )
