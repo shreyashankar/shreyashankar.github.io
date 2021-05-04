@@ -28,7 +28,7 @@ export default class About extends React.Component {
           I graduated from Stanford University with a B.S. and an M.S. in computer science with concentrations in systems and artificial intelligence, respectively. At Stanford, I helped run a nonprofit called <a href="http://www.sheplusplus.com/" target="_blank">SHE++</a>, an organization that helps to empower underrepresented minorities in technology. I also spent a lot of time as a section leader and teaching assistant for <a href="https://cs198.stanford.edu/cs198/" target="_blank">CS198</a>.
         </p>
         <p>
-          To reach me, you can email <a href="mailto:shreyashankar@berkeley.edu">shreyashankar@berkeley.edu</a>. I am also fairly active on <a href="https://twitter.com/sh_reya" target="_blank">Twitter</a> and <a href="https://github.com/shreyashankar" target="_blank">Github.</a>
+          To reach me, you can email <a href="mailto:shreyashankar@berkeley.edu">shreyashankar@berkeley.edu</a>. I am also fairly active on <a href="https://twitter.com/sh_reya" target="_blank">Twitter</a>, <a href="https://github.com/shreyashankar" target="_blank">Github</a>, and <a href="https://www.strava.com/athletes/30137754" target="_blank">Strava</a>.
         </p>
         <p>
           My CV is available for download <a href={`/shreyashankarcv.pdf`} target="_blank">here.</a>
