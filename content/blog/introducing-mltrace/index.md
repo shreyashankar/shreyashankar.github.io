@@ -51,7 +51,7 @@ On a more personal note, while I was at Viaduct and working on my own ML project
 *   This “online” metric was computed in Spark, while the “offline” training and evaluation metrics were computed in Python.
 *   If the `HivePartitionSensor` on model output tables timed out, metrics weren’t computed.
 *   Monitoring dashboards could be vastly different for different tasks. It wasn’t scalable to build or onboard people onto.
-*   For any day on the metric graph, it was nearly impossible to retroactively figure out what data and code was involved in producing that metric. If the monitoring solution alerted me that something was wrong, I had no idea where to look. **It felt somewhat useless to have monitoring without tracing and lineage.**
+*   For any day on the metric graph, it was nearly impossible to retroactively figure out what data and code was involved in producing that metric. If the monitoring solution alerted me that something was wrong, I had no idea where to look. It felt somewhat useless to have monitoring without tracing and lineage.
 
 **For many domains, particularly those involving time-series data or user behavior, ML solutions are not viable until we have the infrastructure to easily continually train, deploy, and monitor ML pipelines for even a single prediction task.** ML pipelines need to reflect the most recent state of the world, and this is especially challenging when the state of the world changes frequently.
 
