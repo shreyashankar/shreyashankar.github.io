@@ -57,7 +57,7 @@ On a more personal note, while I was at Viaduct and working on my own ML project
 
 **Get started**
 
-You can clone or fork the repository [here.](https://github.com/loglabs/mltrace) and check out the docs [here](https://mltrace.readthedocs.io/en/latest/index.html). It’s all open source, so feel free to jump in and create or tackle an issue in the repo. 
+You can clone or fork the repository [here](https://github.com/loglabs/mltrace) and check out the docs [here](https://mltrace.readthedocs.io/en/latest/index.html). It’s all open source, so feel free to jump in and create or tackle an issue in the repo. 
 
 If you have any ideas or comments, feel free to email me at [shreyashankar@berkeley.edu](mailto:shreyashankar@berkeley.edu). I’d love to chat with people experiencing similar problems.
 
