@@ -13,7 +13,7 @@ After I left [Viaduct](https://www.viaduct.ai/), I spent some time thinking abou
 *   Deploying components of ML pipelines to production
 *   Maintaining ML pipelines in production
 
-I’m mainly interested in solving problems around production ML pipelines. As an entrepreneur-in-residence at [Amplify Partners](https://amplifypartners.com/), I’m currently building the open-source tooling that I wish I had around deploying and maintaining models in production.
+I’m mainly interested in solving problems around production ML pipelines. As an [entrepreneur-in-residence at Amplify Partners](https://amplifypartners.com/firm-news/welcome-shreya-shankar/), I’m currently building the open-source tooling that I wish I had around deploying and maintaining models in production.
 
 **What I’m working on**
 
