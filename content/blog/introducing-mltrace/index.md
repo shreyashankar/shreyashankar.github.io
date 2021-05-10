@@ -23,7 +23,7 @@ I’m excited to share a dev release of [`mltrace`](https://github.com/loglabs/m
 
 You’ll notice, in this release, that the tool doesn’t actually have anything ML-specific aspects to it. It’s intentionally designed for complex pipelines with many chained data transformations. ML pipelines are instances of complex data pipelines.
 
-Logging and tracing is only a first step. The roadmap includes more features, specific to ML:
+Logging and tracing is only a first step. The [roadmap](https://github.com/loglabs/mltrace#future-directions) includes more features, specific to ML:
 
 
 
