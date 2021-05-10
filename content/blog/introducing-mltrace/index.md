@@ -46,7 +46,6 @@ My academic interests revolve more heavily around deploying components of ML pip
 On a more personal note, while I was at Viaduct and working on my own ML projects, I was frustrated by a general lack of open-source tools around deploying and keeping ML pipelines in production. I tediously rolled my own terrible monitoring solution involving a daily executed Spark job that dumped metrics to a daily-partitioned table and a dashboard to depict a line graph of these metrics over time. Some problems with this solution include:
 
 
-
 *   This “online” metric was computed in Spark, while the “offline” training and evaluation metrics were computed in Python.
 *   If the `HivePartitionSensor` on model output tables timed out, metrics weren’t computed.
 *   Monitoring dashboards could be vastly different for different tasks. It wasn’t scalable to build or onboard people onto.
@@ -56,7 +55,9 @@ On a more personal note, while I was at Viaduct and working on my own ML project
 
 **Get started**
 
-You can clone or fork the repository [here.](https://github.com/loglabs/mltrace) and check out the docs [here](https://mltrace.readthedocs.io/en/latest/index.html). It’s all open source, so feel free to jump in and create or tackle an issue in the repo.** **If you have any ideas or comments, feel free to email me at [shreyashankar@berkeley.edu](mailto:shreyashankar@berkeley.edu). I’d love to chat with people experiencing similar problems.
+You can clone or fork the repository [here.](https://github.com/loglabs/mltrace) and check out the docs [here](https://mltrace.readthedocs.io/en/latest/index.html). It’s all open source, so feel free to jump in and create or tackle an issue in the repo. 
+
+If you have any ideas or comments, feel free to email me at [shreyashankar@berkeley.edu](mailto:shreyashankar@berkeley.edu). I’d love to chat with people experiencing similar problems.
 
 Thank you!
 
