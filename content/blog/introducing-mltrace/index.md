@@ -34,12 +34,13 @@ Logging and tracing is only a first step. The [roadmap](https://github.com/logla
 
 **Why is MLOps uniquely hard?**
 
-Although I don’t like using buzz words, [“Software 2.0,”](https://karpathy.medium.com/software-2-0-a64152b37c35) or the act of writing code to write code, is fundamentally a paradigm shift in software development because of the following:
+Although I don’t like using buzz words, [“Software 2.0,”](https://karpathy.medium.com/software-2-0-a64152b37c35) or the act of writing code to write code, is fundamentally a paradigm shift in software development for a couple of reasons:
 
+1. Model development, data exploration, and continual learning produce many more artifacts to log, version, and manage
+2. Most ML pipeline bugs are silent failures, not compiler or runtime errors
 
+Debugging ML pipelines pre and post deployment is uncharted territory for many ML practitioners. Although data is actually more important than models, understanding how data impacts model performance is hard, thus motivating the roadmap for `mltrace`. 
 
-*   Model development, data exploration, and continual learning produce many more artifacts to log, version, and manage
-*   Most ML pipeline bugs are silent failures, not compiler or runtime errors
 
 **Where I’m coming from**
 
@@ -53,7 +54,7 @@ On a more personal note, while I was at Viaduct and working on my own ML project
 *   Monitoring dashboards could be vastly different for different tasks. It wasn’t scalable to build or onboard people onto.
 *   For any day on the metric graph, it was nearly impossible to retroactively figure out what data and code was involved in producing that metric. If the monitoring solution alerted me that something was wrong, I had no idea where to look. It felt somewhat useless to have monitoring without tracing and lineage.
 
-**For many domains, particularly those involving time-series data or user behavior, ML solutions are not viable until we have the infrastructure to easily continually train, deploy, and monitor ML pipelines for even a single prediction task.** ML pipelines need to reflect the most recent state of the world, and this is especially challenging when the state of the world changes frequently.
+**For many domains, particularly those involving time-series data or user behavior, ML solutions are not viable until we have the infrastructure to easily continually train, maintain, and debug ML pipelines for even a single prediction task.** ML pipelines need to reflect the most recent state of the world, and this is especially challenging when the state of the world changes frequently.
 
 **Get started**
 
