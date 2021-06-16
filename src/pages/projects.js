@@ -15,6 +15,11 @@ export default class Projects extends React.Component {
 
         let projects = [
             {
+                title: 'mltrace',
+                description: 'This project enables coarse-grained lineage and tracing in complex data pipelines.',
+                link: 'https://github.com/loglabs/mltrace'
+            },
+            {
                 title: 'Toy ML Pipeline',
                 description: 'This is a toy example of a standalone ML pipeline written entirely in Python. No external tools are incorporated into the master branch. I built it mainly to experiment with my ideas for ML tooling.',
                 link: 'https://github.com/shreyashankar/toy-ml-pipeline'
