@@ -18,7 +18,7 @@ export default class About extends React.Component {
         <Links />
         <div style={{ marginBottom: '40px' }}></div>
         <p>
-          I'm Shreya Shankar, a computer scientist living in the Bay Area. I'm interested in building systems to operationalize machine learning  (ML) workflows. My research focus is on end-to-end observability for ML systems, particularly in the context of hetergeneous stacks of tools.
+          I'm Shreya Shankar, a computer scientist living in the Bay Area. I'm interested in building systems to operationalize machine learning  (ML) workflows. My research focus is on end-to-end observability for ML systems, particularly in the context of heterogeneous stacks of tools.
         </p>
 
         <p>
