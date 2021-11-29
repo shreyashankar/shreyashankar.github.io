@@ -1,5 +1,5 @@
 ---
-title: "ML Monitoring is a Mess: Rethinking Streaming Evaluation (1/4)"
+title: "The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)"
 date: "2021-11-29"
 description: ''
 tags: ['machine learning']
