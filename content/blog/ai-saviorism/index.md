@@ -1,5 +1,5 @@
 ---
-title: "Get rid of AI Saviorism"
+title: "Get Rid of AI Saviorism"
 date: "2020-08-21"
 description: ''
 tags: ['machine learning']

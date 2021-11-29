@@ -1,5 +1,5 @@
 ---
-title: "Why you should major in systems"
+title: "Why You Should Major in Systems"
 date: "2019-04-03"
 description: ''
 tags: ['systems']

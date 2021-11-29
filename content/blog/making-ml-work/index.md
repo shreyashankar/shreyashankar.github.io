@@ -1,5 +1,5 @@
 ---
-title: "Reflecting on a year of making machine learning actually useful"
+title: "Reflecting on a Year of Making Machine Learning Actually Useful"
 date: "2020-06-29"
 description: ''
 tags: ['machine learning']

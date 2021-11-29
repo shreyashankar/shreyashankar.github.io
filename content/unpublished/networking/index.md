@@ -1,5 +1,5 @@
 ---
-title: "Networking for people who hate networking"
+title: "Networking for People Who Hate Networking"
 date: "2019-04-08"
 description: ''
 tags: ['personal']

@@ -25,19 +25,19 @@ class BlogIndex extends React.Component {
 
   _handleSubmit = e => {
     e.preventDefault();
-    addToMailchimp(this.state.email, {name: this.state.name})
-    .then(({msg, result}) => {
-      console.log('msg', `${result}: ${msg}`);
-      if (result !== 'success') {
-        this.setState({text: 'You might already be subscribed. Try again!'});
-      } else {
-        this.setState({subscribed: true, text: 'Thanks for subscribing!'});
-      }
-    })
-    .catch(err => {
-      console.log('err', err);
-      // this.setState({text: err});
-    });
+    addToMailchimp(this.state.email, { name: this.state.name })
+      .then(({ msg, result }) => {
+        console.log('msg', `${result}: ${msg}`);
+        if (result !== 'success') {
+          this.setState({ text: 'You might already be subscribed. Try again!' });
+        } else {
+          this.setState({ subscribed: true, text: 'Thanks for subscribing!' });
+        }
+      })
+      .catch(err => {
+        console.log('err', err);
+        // this.setState({text: err});
+      });
   }
 
   formStyle = () => {
@@ -90,16 +90,16 @@ class BlogIndex extends React.Component {
 
     let subscribeComponent = (
       <div style={this.subscribeStyle()}>
-        <div style={{alignItems: 'center'}}>{this.state.text}</div>
+        <div style={{ alignItems: 'center' }}>{this.state.text}</div>
       </div>
     );
-    if (! this.state.subscribed) {
+    if (!this.state.subscribed) {
       subscribeComponent = (
         <div style={this.subscribeStyle()}>
-          <div style={{alignItems: 'center'}}>{this.state.text}</div>
+          <div style={{ alignItems: 'center' }}>{this.state.text}</div>
           <form onSubmit={this._handleSubmit} style={this.formStyle()}>
-            <input type="email" onChange={this._handleChange} placeholder="email" name="email" style={this.inputStyle()}/>
-            <input type="submit" value="Subscribe" style={this.buttonStyle()}/>
+            <input type="email" onChange={this._handleChange} placeholder="email" name="email" style={this.inputStyle()} />
+            <input type="submit" value="Subscribe" style={this.buttonStyle()} />
           </form>
         </div>
       );
@@ -118,10 +118,10 @@ class BlogIndex extends React.Component {
           return (
             <div key={node.fields.slug} >
               <small >{node.frontmatter.date} in </small>
-              <small style={{textTransform: 'uppercase', color: '#00688B'}}>
-              <Link to={`/tags/${kebabCase(node.frontmatter.tags)}/`}>
-                #{node.frontmatter.tags}
-              </Link>
+              <small style={{ textTransform: 'uppercase', color: '#00688B' }}>
+                <Link to={`/tags/${kebabCase(node.frontmatter.tags)}/`}>
+                  #{node.frontmatter.tags}
+                </Link>
               </small>
               <small> · {node.fields.readingTime.text} </small>
               <h3
@@ -134,7 +134,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-            
+
               {/* <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,

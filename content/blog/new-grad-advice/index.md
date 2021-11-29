@@ -1,5 +1,5 @@
 ---
-title: "Choosing between a PhD and industry for new computer science graduates"
+title: "Choosing Between a PhD and Industry for New Computer Science Graduates"
 date: "2020-07-24"
 description: ''
 tags: ['personal']
