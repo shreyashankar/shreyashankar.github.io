@@ -11,7 +11,7 @@ I like being a PhD student because I can think about problems without anyone yel
 
 
 1. Rethinking evaluation for streaming ML (this piece)
-2. [WIP] Categorizing the laundry list of post-deployment issues
+2. [Categorizing the laundry list of post-deployment issues](https://www.shreya-shankar.com/rethinking-ml-monitoring-2/)
 3. [WIP] Investigating where existing DevOps tools like Prometheus break down in ML monitoring
 4. [WIP] Concrete problems in building a general-purpose ML monitoring solution[^1]
 
