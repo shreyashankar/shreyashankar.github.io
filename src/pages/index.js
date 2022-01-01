@@ -112,7 +112,8 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `ai`, `diversity`, `computers`]}
         />
         <Links />
-        {subscribeComponent}
+        {/* {subscribeComponent} */}
+        <div style={{ "padding": "1.25em" }}></div>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

@@ -17,6 +17,7 @@ export default class About extends React.Component {
         />
         <Links />
         <div style={{ marginBottom: '40px' }}></div>
+        {/* <Image src={require('../images/profile-pic.jpg')} alt="Shreya Shankar" /> */}
         <p>
           I'm Shreya Shankar (she/her), a computer scientist living in San Francisco, California. I'm interested in building systems to <a href="https://www.youtube.com/watch?v=7skGd2gWN6U" target="_blank"> operationalize machine learning (ML) workflows</a>. My research focus is on <a href="https://arxiv.org/abs/2108.13557" target="_blank">end-to-end observability for ML systems</a>, particularly in the context of heterogeneous stacks of tools.
         </p>
