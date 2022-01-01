@@ -7,7 +7,6 @@ tags: ['machine learning']
 
 In the [last essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-1/) of the Modern ML Monitoring Mess series, I discussed some ways that existing streaming ML metrics fail. In this essay, I transition from a "data-centric" perspective to a software engineering perspective: I survey existing post-deployment issues and categorize them to motivate better open-source ML monitoring tools. 
 
-
 ## How do we Spend Our Time as ML Practitioners?
 
 Recently, Zillow made the rounds on social media for their latest ML disaster. Some claim their ML home-buying-and-reselling program shut down due to [low-quality predictions](https://www.geekwire.com/2021/ibuying-algorithms-failed-zillow-says-business-worlds-love-affair-ai/). Others argue it shut down because there were no organizational processes on how to act on predictions -- [employees manually overrode predictions to meet their own quotas](https://www.teamblind.com/post/Did-Zillow-fail-miserably-due-to-forcing-application-of-Machine-Learning-o8fCCZCD). Who knows what the issue(s) is/were, but I think a large reason for why the Zillow news became very popular is because **many ML applications we work on are held precariously in production**. We don’t know if or when they will fail. We don't know, organizationally, how to act on model outputs. And we definitely don't know what to do when we suspect some failure in either the ML pipelines or management. 
