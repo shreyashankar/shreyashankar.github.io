@@ -124,7 +124,7 @@ Velichko acknowledges that PromQL is [“far from trivial”](https://iximiuz.co
 I use the following questions to assess whether Prometheus can be a suitable ML monitoring solution:
 
 
-1. Can we use Prometheus Metrics to track any ML metrics we want in our ML pipeline? It’s not straightforward to map “ML metrics” to the Prometheus Metric types. For single-component stateful metrics, maybe we want to use a histogram or summary metric. If we’re interested in cross-component stateful metrics, we need to consider how we “join” the metrics from different components together to compute ML SLIs like accuracy and precision. 
+1. Can we use Prometheus Metrics to track any ML metrics we want in our ML pipeline? It’s not straightforward to map “ML metrics” to the Prometheus Metric types. For single-component stateful metrics, maybe we want to use a histogram or summary metric. If we’re interested in cross-component stateful metrics, we need to consider how we “join” the metrics from different components tgogether to compute ML SLIs like accuracy and precision. 
 2. How hard is it to write ML SLIs in PromQL?
 3. What’s the query latency for ML SLIs?
 
