@@ -31,7 +31,7 @@ I think the most confusing aspect of the discourse on ML monitoring is the termi
 
 ### ML Task, Data Source, and Pipeline
 
-For this exercise, I constructed an ML pipeline to predict whether a taxi rider will give a driver a high tip (binary classification), using data from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Using Prometheus, we’ll monitor **cumulative accuracy**, or the accuracy** **over all the predictions made since deployment. Training and inference pipelines share some components in the architecture, which looks like this:
+For this exercise, I constructed an ML pipeline to predict whether a taxi rider will give a driver a high tip (binary classification), using data from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Using Prometheus, we’ll monitor **cumulative accuracy**, or the accuracy over all the predictions made since deployment. Training and inference pipelines share some components in the architecture, which looks like this:
 
 ![Pipeline Architecture](./pipeline.svg)
 
