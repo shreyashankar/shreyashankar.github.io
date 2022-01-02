@@ -219,7 +219,7 @@ There are several issues with using PromQL for ML SLIs:
 
 **Incorrectness.** When I first ran the query for accuracy, I was surprised that the results weren’t fully accurate (ha-ha). This was because my scrape interval was 15 seconds, which was too large for the rate at which I was producing new predictions. Shortening the scrape interval to 5 seconds improved the precision of the query but made the Prometheus container slower and consume more memory and compute resources.
 
-**Sliding window challenges.** Even after several hours, I could not figure out how to compute any of the first 3 metrics (cross-component) over fixed window sizes. I found no resources on computing joins in PromQL over sliding windows. I’m not super competent at using Prometheus, so please let me know if it’s possible to compute such metrics over windows.** **
+**Sliding window challenges.** Even after several hours, I could not figure out how to compute any of the first 3 metrics (cross-component) over fixed window sizes. I found no resources on computing joins in PromQL over sliding windows. I’m not super competent at using Prometheus, so please let me know if it’s possible to compute such metrics over windows.
 
 **Disgusting queries.** The last 3 metrics (single-component) in the table aren’t as convoluted as the first 3 (cross-component). I would not expect _any_ data scientist to write these cross-component PromQL queries, especially for functions that are simply one call to a scikit-learn module. _An ideal monitoring tool should allow users to pass in custom Python functions as metrics and efficiently produce values for these metrics over time in the backend._
 
