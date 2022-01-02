@@ -7,6 +7,11 @@ tags: ['machine learning']
 
 In the [previous essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-2/), I surveyed existing post-deployment issues and categorized them across two axes: state and component. I mentioned that monitoring cross-component stateful metrics, such as model accuracy, is critical for maintaining ML pipelines but difficult with existing tools. In this piece, I demonstrate such difficulties first-hand: we extend a toy ML pipeline with Prometheus (a popular software monitoring tool) to provide ML monitoring. In the process, we’ll see many ways in which Prometheus is inadequate, from code messiness to algorithmic inefficiencies.[^1]
 
+#### Table of Contents
+```toc
+# This code block gets replaced with the TOC
+```
+
 
 ## Background
 
