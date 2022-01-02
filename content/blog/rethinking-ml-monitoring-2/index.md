@@ -133,7 +133,7 @@ I am personally interested in a completely open-source monitoring solution that 
 
 ## Recap
 
-In this essay, I discussed how to categorize post-deployment problems across two simple axes: *state* and *component*. I don’t want to get into how to monitor for each problem I described in Figure 3, but going back to a question I posed in the [first essay of this installment](https://www.shreya-shankar.com/rethinking-ml-monitoring-1/)  -- what would it take to extend existing tools to support the stateful component and cross-component cases? Is it possible to extend them easily? In the next essay, I will explore how to adapt [Prometheus](https://prometheus.io/) for monitoring ML and investigate where it breaks down. 
+In this essay, I discussed how to categorize post-deployment problems across two simple axes: *state* and *component*. I don’t want to get into how to monitor for each problem I described in Figure 3, but going back to a question I posed in the [first essay of this installment](https://www.shreya-shankar.com/rethinking-ml-monitoring-1/)  -- what would it take to extend existing tools to support the stateful component and cross-component cases? Is it possible to extend them easily? In the [next essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-3/), I will explore how to adapt [Prometheus](https://prometheus.io/) for monitoring ML and investigate where it breaks down. 
 
 *Thanks to [Laszlo Sragner](https://twitter.com/xLaszlo) for feedback on early drafts.*
 
