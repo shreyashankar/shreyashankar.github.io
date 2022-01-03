@@ -34,6 +34,7 @@ I think the most confusing aspect of the discourse on ML monitoring is the termi
 For this exercise, I constructed an ML pipeline to predict whether a taxi rider will give a driver a high tip (binary classification), using data from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). Using Prometheus, we’ll monitor **cumulative accuracy**, or the accuracy over all the predictions made since deployment. Training and inference pipelines share some components in the architecture, which looks like this:
 
 ![Pipeline Architecture](./pipeline.svg)
+*Figure 1: ML pipeline architecture.*
 
 
 Since this is a binary classification problem, the inference component generates float-valued predictions between 0 and 1, and the feedback component returns values of either 0 or 1. I host my pipeline and experiment code in [this repository](https://github.com/loglabs/mext) with the following structure:
@@ -88,6 +89,7 @@ Typically, DevOps or SRE folks at organizations use Prometheus to monitor softwa
 
 
 ![Prometheus Architecture](./promarchitecture.png)
+*Figure 2: [Prometheus architecture](https://prometheus.io/docs/introduction/overview/#architecture).*
 
 
 [This educational series of posts](https://iximiuz.com/en/series/learning-prometheus-and-promql/) by Ivan Velichko explains Prometheus well. I’ll summarize some of his key points:
@@ -232,6 +234,7 @@ To demonstrate how poorly Prometheus scales, I prototyped a small Postgres backe
 
 
 ![Query Latency](./querylatency.png)
+*Figure 3: ML Query Latency.*
 
 
 Since Prometheus Metric values are not computed eagerly (i.e., they are all computed when a user wants to query or plot them on Grafana over a period of time), **this latency is unacceptable and doesn’t scale**. As more predictions are generated, many organizations that want to keep track of a real-time ML SLI might not be able to update or refresh their SLIs quickly enough. Maybe in some domains, computing SLIs daily or even hourly might be enough, but it won’t work for domains where data and user preferences change frequently.  I know I’m using Prometheus for a situation where it’s not designed for, but all in all, these issues collectively highlight the need for organizations to either (1) have an ML monitoring team that creates a layer on top of Postgres or an existing DBMS, or (2) leverage a proprietary vendor specific for ML monitoring. I’m convinced, now, that **we need better ML monitoring practices and tools.**
