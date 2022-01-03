@@ -181,19 +181,19 @@ Now that we’ve instrumented our pipeline, we can spin up our containers via Do
   <tr>
    <td>Accuracy
    </td>
-   <td><code>count(abs(binary_class_metric_test_label - on (output_id) binary_class_metric_test_prediction) &lt; 0.5) / count(binary_class_metric_test_label - on (output_id) binary_class_metric_test_prediction)</code>
+   <td><code>count(abs(taxi_data_label - on (output_id) taxi_data_prediction) &lt; 0.5) / count(taxi_data_label - on (output_id) taxi_data_prediction)</code>
    </td>
   </tr>
   <tr>
    <td>Precision
    </td>
-   <td><code>count( (binary_class_metric_test_label * on (output_id) binary_class_metric_test_prediction) > 0.5) / count((binary_class_metric_test_prediction and on (output_id) binary_class_metric_test_label) > 0.5)</code>
+   <td><code>count( (taxi_data_label * on (output_id) taxi_data_prediction) > 0.5) / count((taxi_data_prediction and on (output_id) taxi_data_label) > 0.5)</code>
    </td>
   </tr>
   <tr>
    <td>Recall
    </td>
-   <td><code>count( (binary_class_metric_test_label * on (output_id) binary_class_metric_test_prediction) > 0.5) / count((binary_class_metric_test_label and on (output_id) binary_class_metric_test_prediction) == 1)</code>
+   <td><code>count( (taxi_data_label * on (output_id) taxi_data_prediction) > 0.5) / count((taxi_data_label and on (output_id) taxi_data_prediction) == 1)</code>
    </td>
   </tr>
   <tr>
