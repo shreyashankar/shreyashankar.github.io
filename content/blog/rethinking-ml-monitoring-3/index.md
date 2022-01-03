@@ -5,7 +5,7 @@ description: ''
 tags: ['machine learning']
 ---
 
-In the [previous essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-2/), I surveyed existing post-deployment issues and categorized them across two axes: state and component. I mentioned that monitoring cross-component stateful metrics, such as model accuracy, is critical for maintaining ML pipelines but difficult with existing tools. In this piece, I demonstrate such difficulties first-hand: we extend a toy ML pipeline with Prometheus (a popular software monitoring tool) to provide ML monitoring. In the process, we’ll see many ways in which Prometheus is inadequate, from code messiness to algorithmic inefficiencies.[^1]
+In the [previous essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-2/), I surveyed existing post-deployment issues and categorized them across two axes: state and component. I mentioned that monitoring cross-component stateful metrics, such as model accuracy, is critical for maintaining ML pipelines but difficult with existing tools. In this piece, we'll get to experience these difficulties first-hand: we'll extend a toy ML pipeline with [Prometheus](https://prometheus.io/) (a popular software monitoring tool) to provide ML monitoring. In the process, we’ll see many ways in which Prometheus is inadequate, from code messiness to algorithmic inefficiencies.[^1]
 
 #### Table of Contents
 ```toc
@@ -221,7 +221,7 @@ There are several issues with using PromQL for ML SLIs:
 
 **Sliding window challenges.** Even after several hours, I could not figure out how to compute any of the first 3 metrics (cross-component) over fixed window sizes. I found no resources on computing joins in PromQL over sliding windows. I’m not super competent at using Prometheus, so please let me know if it’s possible to compute such metrics over windows.
 
-**Disgusting queries.** The last 3 metrics (single-component) in the table aren’t as convoluted as the first 3 (cross-component). I would not expect _any_ data scientist to write these cross-component PromQL queries, especially for functions that are simply one call to a scikit-learn module. _An ideal monitoring tool should allow users to pass in custom Python functions as metrics and efficiently produce values for these metrics over time in the backend._
+**Convoluted queries.** The last 3 metrics (single-component) in the table aren’t as convoluted as the first 3 (cross-component). I would not expect _any_ data scientist to write these cross-component PromQL queries, especially for functions that are simply one call to a scikit-learn module. _An ideal monitoring tool should allow users to pass in custom Python functions as metrics and efficiently produce values for these metrics over time in the backend._
 
 
 ### Query Latency
@@ -253,7 +253,7 @@ In this post, I highlighted some of the major pitfalls of using Prometheus for M
 * Disgusting-looking PromQL queries
 * High latency for cross-component metrics (i.e., high-cardinality joins)
 
-In the next and final piece in this series, I’ll discuss some key requirements and ideas for building a general-purpose ML monitoring tool. I’m super excited to share it with you all, along with a prototype[^6] for monitoring real-time ML SLIs. More to come, and happy new year!
+In the next and final piece in this series, I’ll discuss some key requirements and ideas for building a general-purpose ML monitoring tool. I’m super excited to share it with you all, along with a prototype for monitoring real-time ML SLIs. More to come, and happy new year!
 
 *Thanks to [Divyahans Gupta](https://twitter.com/divyahansg), [Preetum Nakkiran](https://twitter.com/PreetumNakkiran), and [Peter Schafhalter](https://twitter.com/pschafhalter) for feedback on many drafts.*
 
@@ -278,5 +278,3 @@ In the next and final piece in this series, I’ll discuss some key requirements
 
      Maybe this is not a failure mode – I just couldn’t figure it out. Please let me know if I’m wrong!
 
-[^6]:
-     Built on `mltrace`, of course. I can’t wait for it to be production-ready! I’m guessing it’ll be around Q2 or Q3 this year.
