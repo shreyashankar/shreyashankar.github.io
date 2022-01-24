@@ -15,7 +15,7 @@ In this section, I introduce an example scenario that will illustrate challenges
 
 
 * **Task:**  For a taxi ride, we want to predict the probability that a taxi rider will give a driver a tip greater than 10% of the fare. This is a binary classification problem. Predictions are float-valued between 0 and 1.
-* **Dataset: **We use data between January 1, 2020 and May 31, 2020 collected from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). This data is timestamped and tabular. 
+* **Dataset:** We use data between January 1, 2020 and May 31, 2020 collected from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). This data is timestamped and tabular. 
 * **SLI:** We measure accuracy, or the fraction of correctly-predicted examples when rounded to the nearest integer. In ML communities, the SLI is commonly referred to as the evaluation metric.
 * **Pipeline architecture:** Only one model is trained in our example.[^2] Although they share some components, there are two pipelines – representing training and inference. Refer to the third piece in this series for a [diagram](https://www.shreya-shankar.com/rethinking-ml-monitoring-3/#ml-task-data-source-and-pipeline).
 
@@ -49,17 +49,17 @@ Tackling the first two problems, especially at scale, calls for better monitorin
 
 ```
 def compute_accuracy(curr_true, curr_pred):
-		return float(sum(curr_true == curr_pred) / len(curr_true)))
+	return float(sum(curr_true == curr_pred) / len(curr_true)))
 
 
 
-	t = Task(name="high_tip_prediction", description="Predicting high tip for a taxi driver")
-	t.registerMetric(name="accuracy", window=timedelta(hours=2), fn=compute_accuracy)
+t = Task(name="high_tip_prediction", description="Predicting high tip for a taxi driver")
+t.registerMetric(name="accuracy", window=timedelta(hours=2), fn=compute_accuracy)
 
-	…
-	# Under the hood, we automatically compute metrics based on params defined above. User calls the following:
-	t.logOutputs(...)
-	t.logFeedback(...)
+...
+# Under the hood, we automatically compute metrics based on params defined above. User calls the following:
+t.logOutputs(...)
+t.logFeedback(...)
 ```
 
 
@@ -71,10 +71,8 @@ A preliminary prototype[^3] to compute streaming ML SLIs, defined as Python UDFs
 
 
 ![Query Latency](./querylatencyall.png)
-*Figure 1: ML query latency.*
-
 ![Logging Latency](./loggingtimeall.png)
-*Figure 2: Logging latency.*
+*Figure 1: ML query and logging latency.*
 
 
 
@@ -114,7 +112,7 @@ Research in data management for ML observability has made strides in automatical
 
 ##### Towards Retraining Models
 
-**A massive problem in both research and practitioner communities is that “distribution shift” is a poorly defined and overloaded phrase, causing confusion across the board. **When people say “distribution shift,” they refer to a phenomenon where one dataset comes from a different distribution than another dataset. “Distribution shift” could cause an ML performance degradation – for example, models trained on one taxi company provider’s data might perform poorly on data taken from another taxi company provider. This overloaded phrase encompasses different types of shift; for example:
+**A massive problem in both research and practitioner communities is that “distribution shift” is a poorly defined and overloaded phrase, causing confusion across the board.** When people say “distribution shift,” they refer to a phenomenon where one dataset comes from a different distribution than another dataset. “Distribution shift” could cause an ML performance degradation – for example, models trained on one taxi company provider’s data might perform poorly on data taken from another taxi company provider. This overloaded phrase encompasses different types of shift; for example:
 
 
 
@@ -168,7 +166,7 @@ How do we develop visualizations that unambiguously communicate information acro
 
 
 ![Output distribution](./output_violin.gif)
-*Figure 3: Output distribution over time.*
+*Figure 2: Output distribution over time.*
 
 
 In the example above, there is a confirmed decrease in the SLI (accuracy), as we have full feedback (i.e. all predictions have labels). In cases where we need to approximate the SLI and hypothetically reason about fine-grained metrics, maybe users could intuitively see seasonality in such a visualization. This is definitely not the end-all-be-all solution, but going back to the main point: research challenges lie in principled ways to come up with better visualizations for understanding data drift and automatically presenting these to users based on the data and ML tasks they work with.
@@ -191,12 +189,12 @@ With enough context about an ML task, it’s probably possible to solve the data
 
 
 
-* **Growing data science teams and tool stacks. **Software engineering has shown that fragmentation in teams and tool stacks** **makes it hard to keep up system sustainability. This will hold for ML, especially when the number of possible ML data management tools largely increases every year. Debugging a model that someone else trained is a pain.
-* **Model stacking. **Many organizations chain models together to produce final predictions. Drift detection is hard enough for one model. Tracing faulty predictions back to the specific model(s) that need to be debugged seems extra challenging.
-* **Uninterpretable features. **Many organizations use ML to produce embeddings that are fed as features to downstream ML tasks.[^6] Data quality alerts, such as user-defined constraints on feature columns, then cannot be constructed. 
+* **Growing data science teams and tool stacks.** Software engineering has shown that fragmentation in teams and tool stacks makes it hard to keep up system sustainability. This will hold for ML, especially when the number of possible ML data management tools largely increases every year. Debugging a model that someone else trained is a pain.
+* **Model stacking.** Many organizations chain models together to produce final predictions. Drift detection is hard enough for one model. Tracing faulty predictions back to the specific model(s) that need to be debugged seems extra challenging.
+* **Uninterpretable features.** Many organizations use ML to produce embeddings that are fed as features to downstream ML tasks.[^6] Data quality alerts, such as user-defined constraints on feature columns, then cannot be constructed. 
 
 
-* **Deploying components as containerized applications. **It is hard to do online learning in Kubernetes clusters. Containerized infrastructure works well primarily for stateless applications, and unfortunately, online and continual learning is stateful (i.e. model weights are updated and need to be shared across prediction serving pods).
+* **Deploying components as containerized applications.** It is hard to do online learning in Kubernetes clusters. Containerized infrastructure works well primarily for stateless applications, and unfortunately, online and continual learning is stateful (i.e. model weights are updated and need to be shared across prediction serving pods).
 
 I haven’t thought too deeply about these ad-hoc challenges, but I suspect that a good ML monitoring tool will be aware of them at least. 
 
