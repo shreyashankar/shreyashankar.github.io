@@ -7,6 +7,10 @@ tags: ['machine learning']
 
 I’ve set up the stage in the last few pieces by discussing streaming ML evaluation, thinking about what to monitor (across state and component axes), and failure modes in existing software monitoring tools (e.g. Prometheus). In this final piece, I propose a broader research agenda for problems in ML monitoring,[^1] motivated by “real-world” post-deployment ML problems.
 
+$$
+x + y
+$$
+
 
 ## Preliminaries
 
@@ -21,7 +25,12 @@ In this section, I introduce an example scenario that will illustrate challenges
 
 ## Umbrella of Research Challenges
 
-In this section, I depict research challenges in a tree diagram. Although algorithms for training ML models is an important research area, I omit it in this piece to focus on challenges centered around data management.
+In this section, I describe the tree of research challenges I am interested in. Although algorithms for training ML models is an important research area, I omit it in this piece to focus on challenges centered around data management.
+
+```toc
+ordered: true
+from-heading: 3
+```
 
 
 ### Metric Computation
@@ -50,8 +59,6 @@ Tackling the first two problems, especially at scale, calls for better monitorin
 ```
 def compute_accuracy(curr_true, curr_pred):
 	return float(sum(curr_true == curr_pred) / len(curr_true)))
-
-
 
 t = Task(name="high_tip_prediction", description="Predicting high tip for a taxi driver")
 t.registerMetric(name="accuracy", window=timedelta(hours=2), fn=compute_accuracy)
