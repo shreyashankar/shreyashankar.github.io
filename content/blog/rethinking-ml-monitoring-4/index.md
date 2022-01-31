@@ -139,8 +139,8 @@ In reality, decreases in SLIs result from combinations of different types of shi
 * Shift in _P(Y | X)_ but no shift in _P(X)_
 * No shift in _P(Y | X)_ but shift in _P(X)_
 * Shift in _P(X<sub>i</sub>)_
-* Shift in _P(X<sub>i</sub> | X<sub>j</sub>)_ where _i_ ≠_ j_
-* Shift in _P(X<sub>i</sub> | X<sub>j</sub> , X<sub>k</sub> , ...)_ where  _i_ ≠_ j _≠_ k_
+* Shift in _P(X<sub>i</sub> | X<sub>j</sub>)_ where _i_ ≠ _j_
+* Shift in _P(X<sub>i</sub> | X<sub>j</sub> , X<sub>k</sub> , ...)_ where  _i_ ≠ _j_ ≠ _k_
 
 **Tracking many distance metrics at scale.** As mentioned earlier, to approximate the shifts described above, existing works propose tracking metrics like KL divergence and the Kolmogorov-Smirnov tests over both consecutive sliding windows and train sets (i.e. for train-serve skew as described in [Breck et al.](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf)). Keeping many windows of live data and the train set in-memory might not be feasible, so we could leverage AQP techniques to compute distance metrics with reasonable errors. For example, metric computation functions could run on histograms of features instead of full data streams; however, histogram bins need to change in the streaming setting as data evolves over time. Research challenges lie in combining ideas from incrementally-maintained approximate histograms ([Gibbons et al.](http://theory.stanford.edu/~matias/papers/vldb97_tods.pdf)) with ideas from adaptive histograms ([Leow et al.](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.4.2075&rep=rep1&type=pdf)) to produce evolving summaries of windows of data. 
 
