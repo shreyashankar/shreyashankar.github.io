@@ -14,7 +14,7 @@ We’ll walk through this agenda using an example:
 
 
 * **Task:**  For a taxi ride, we want to predict the probability that a taxi rider will give a driver a tip greater than 10% of the fare. This is a binary classification problem. Predictions are float-valued between 0 and 1.
-* **Dataset:** We use data between January 1, 2020 and May 31, 2020 collected from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). This is an example of [“temporally evolving tabular data.”](https://twitter.com/TweetAtAKK/status/1486026387525804034?s=20) 
+* **Dataset:** We use data between January 1, 2020 and May 31, 2020 collected from the [NYC Taxi Coalition](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). This is an example of [“temporally evolving tabular data”](https://twitter.com/TweetAtAKK/status/1486026387525804034?s=20) (phrase stolen from Arun Kumar).
 * **SLI:** We measure accuracy, or the fraction of correctly-predicted examples when rounded to the nearest integer. In ML communities, the SLI is commonly referred to as the evaluation metric.
 * **Pipeline architecture:** Our example only includes one model.[^2] There are two pipelines – representing training and inference – that share some components, like cleaning and feature generation. Refer to the third piece in this series for a [diagram](https://www.shreya-shankar.com/rethinking-ml-monitoring-3/#ml-task-data-source-and-pipeline).
 
