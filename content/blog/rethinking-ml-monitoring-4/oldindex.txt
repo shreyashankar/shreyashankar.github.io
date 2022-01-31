@@ -1,16 +1,11 @@
 ---
 title: "The Modern ML Monitoring Mess: The Problem Umbrella (4/4)"
-date: "2022-01-24"
+date: "2022-01-31"
 description: ''
 tags: ['machine learning']
 ---
 
 I’ve set up the stage in the last few pieces by discussing streaming ML evaluation, thinking about what to monitor (across state and component axes), and failure modes in existing software monitoring tools (e.g. Prometheus). In this final piece, I propose a broader research agenda for problems in ML monitoring,[^1] motivated by “real-world” post-deployment ML problems.
-
-$$
-x + y
-$$
-
 
 ## Preliminaries
 
@@ -53,10 +48,10 @@ Tackling the first two problems, especially at scale, calls for better monitorin
 
 **Storage.** We’d need a time-series database for persistent storage (computed metric values, histograms or summaries, raw outputs, and feedback) and in-memory streams for fast joins and metric computation.
 
-**Execution.** Users should be able to specify metric functions as Python UDFs, which we could run incrementally on windows of data with a differential dataflow-based system. Consider a hypothetical user workflow:
+**Execution.** Users should be able to specify metric functions as Python UDFs, which we could run incrementally on windows of data with a [differential dataflow](https://timelydataflow.github.io/differential-dataflow/)-based system. Consider a hypothetical user workflow:
 
 
-```
+```python
 def compute_accuracy(curr_true, curr_pred):
 	return float(sum(curr_true == curr_pred) / len(curr_true)))
 
@@ -64,13 +59,15 @@ t = Task(name="high_tip_prediction", description="Predicting high tip for a taxi
 t.registerMetric(name="accuracy", window=timedelta(hours=2), fn=compute_accuracy)
 
 ...
-# Under the hood, we automatically compute metrics based on params defined above. User calls the following:
+
+# Under the hood, we automatically compute metrics based on 
+# params defined above. User calls the following:
 t.logOutputs(...)
 t.logFeedback(...)
 ```
 
 
-One issue is that users might have large amounts of data, introducing bottlenecks in the Python UDF computation. We could leverage approximate query processing (AQP) techniques to compute metrics with reasonable errors. For example, metric computation functions could run on histograms instead of full data streams; however, operating on adaptive histograms is challenging. Furthermore, users care about subpopulations of data, and these subpopulations change over time – motivating metric computation across dynamic groups and the ability to backfill subgroup metric values when new subgroups arise.
+One issue is that users might have large amounts of data, introducing bottlenecks in the Python UDF computation. We could leverage [approximate query processing](https://www.vldb.org/conf/2001/tut4.pdf) (AQP) techniques to compute metrics with reasonable errors. For example, metric computation functions could run on histograms instead of full data streams; however, operating on adaptive histograms is tedious. Furthermore, users care about subpopulations of data, and these subpopulations change over time – motivating metric computation across dynamic groups and the ability to backfill subgroup metric values when new subgroups arise.
 
 **Querying.** Supporting fast _and_ flexible queries is of utmost importance. As I mentioned in previous posts, users will want to query across state/time and component axes. Precomputing and storing summaries – including joins and metric values – before users query results in the lowest latency queries; however, users may want to vary window sizes and other parameters at query time. What is the best tradeoff between precomputing before query time and computing everything on the fly? And how do we think about this for dynamic subgroups?
 
@@ -97,14 +94,14 @@ This is the most straightforward case – we only need to perform a streaming jo
 
 This scenario typically occurs immediately after deployment. For example, suppose we trained a fraud detection model for credit card transactions. Before we ask a team of analysts to hand-label transactions our model made predictions for, we wouldn’t know how well our classifier is performing in real-time! Still, can we estimate this?
 
-One basic idea is to use importance weighting (IW) techniques. At a high level, we could identify subgroups in the data (“bucket” the data), figure out the training SLI (e.g. accuracy) for each bucket, and aggregate these SLI values for buckets in the live (post-deployment, unlabeled) data to come up with the estimated metric. For a more sophisticated (and higher-confidence) approach, we could construct different bucketings and average the resulting SLI estimates. Again, research challenges lie in identifying these subgroups or buckets. We can draw from the rich history of predicate-finding literature (i.e. finding attributes that influence a result, typically presented as a conjunction or disjunction of clauses) in the DBMS community.
+One basic idea is to use importance weighting (IW) techniques. At a high level, we could identify subgroups in the data (“bucket” the data), figure out the training SLI (e.g. accuracy) for each bucket, and aggregate these SLI values for buckets in the live (post-deployment, unlabeled) data to come up with the estimated metric. For a more sophisticated (and higher-confidence) approach, we could construct different bucketings and average the resulting SLI estimates. Again, research challenges lie in identifying these subgroups or buckets. We can draw from predicate-finding literature (i.e. finding attributes that influence a result, typically presented as a conjunction or disjunction of clauses) in the DBMS community.
 
 
 ###### Partial Feedback
 
 This scenario is the most common amongst ML pipelines I’ve seen “in the wild.” Often, live data is only labeled on a schedule, and more often than not, some upstream data collection issues influence feedback coming in (e.g. there’s a cell tower outage in a region of Tribeca, causing payment meter data to arrive later than expected). Can we apply the full-feedback case to the labeled data points and the no-feedback case to the unlabeled data points – and simply aggregate these estimates?
 
-At a first glance, maybe we can aggregate the full-feedback and no-feedback estimates, weighted by the count of data points in each bucket. But the reality is that lag is rarely uniformly distributed across buckets – unpredictable phenomena such as sensor failures, power outages, and new regulation cause the distribution of lag to be unknown and changing over time. Identifying groups of data points that have similar feedback lag times is critical to producing accurate estimates of real-time SLIs[^4]. Existing streaming pattern mining algorithms, such as frequent itemsets, look through features in windows of _known_ data points. Our problem is harder because the data points we want to apply the frequent itemsets algorithm to – the ones that don’t have feedback (i.e. the “laggy” points) – might get feedback after we compute the frequent itemsets. Concretely, how do we extend streaming frequent itemset algorithms to efficiently recompute itemsets after removing data points? We can build on work in incremental maintenance of frequent itemsets.
+At a first glance, maybe we can aggregate the full-feedback and no-feedback estimates, weighted by the count of data points in each bucket. But the reality is that lag is rarely uniformly distributed across buckets – unpredictable phenomena such as sensor failures, power outages, and new regulation cause the distribution of lag to be unknown and changing over time. Identifying groups of data points that have similar feedback lag times is critical to producing accurate estimates of real-time SLIs.[^4] Existing streaming pattern mining algorithms, such as [frequent itemsets](http://infolab.stanford.edu/~ullman/mmds/ch6.pdf), look through features in windows of _known_ data points. Our problem is harder because the data points we want to apply the frequent itemsets algorithm to – the ones that don’t have feedback (i.e. the “laggy” points) – might get feedback after we compute the frequent itemsets. Concretely, how do we extend streaming frequent itemset algorithms to efficiently recompute itemsets after removing data points? We can build on work in incremental maintenance of frequent itemsets.
 
 
 #### Fine-grained Monitoring
@@ -114,7 +111,7 @@ Once SLIs are going down, the highest priority is to get them back up as soon as
 
 ##### Detecting Data Quality Issues
 
-Research in data management for ML observability has made strides in automatically identifying engineering issues in data pipelines. Techniques such as schema validation, detecting outliers within batches, and constraints on statistics (e.g. expected mean, completeness, and ranges) of features can flag unexpected data quality issues such as broken sensors and incomplete upstream data ingestion. Declaring bounds or expectations might be feasible with a handful of features and high familiarity with the problem domain, but can this scale to high-dimensional settings – for example, when data scientists are throwing 2000 or more features at an xgboost model? Furthermore, drawing the line between “engineering issue” and “drift” is hard, especially if we want to automate detecting issues. Tools like TFX allow users to monitor distance metrics of interest like KL divergence and the Kolmogorov-Smirnov test statistic, but these fail in cases where visually-inspected L<sub>1</sub> distance is low and distances from metrics of interest are high (thousands of data points, more than ten features). Strategies to mitigate this problem assume having the number of data points that a FAANG company might be working with (hundreds of millions, if not billions). If outside a FAANG company, what techniques can we use to bridge the gap between empirical drift $d(\hat{p}, \hat{q})$ and theoretical drift $d(p, q)$ between two distributions $p$ and $q$?
+Research in data management for ML observability has [made](https://www.vldb.org/pvldb/vol11/p1781-schelter.pdf) [strides](https://mlsys.org/Conferences/2019/doc/2019/167.pdf) in automatically identifying engineering issues in data pipelines. Techniques such as schema validation, detecting outliers within batches, and constraints on statistics (e.g. expected mean, completeness, and ranges) of features can flag unexpected data quality issues such as broken sensors and incomplete upstream data ingestion. Declaring bounds or expectations might be feasible with a handful of features and high familiarity with the problem domain, but can this scale to high-dimensional settings – for example, when data scientists are throwing 2000 or more features at an xgboost model? Furthermore, drawing the line between “engineering issue” and “drift” is hard, especially if we want to automate detecting issues. Tools like [TFX](https://research.google/pubs/pub46484/) allow users to monitor distance metrics of interest like KL divergence and the Kolmogorov-Smirnov test statistic, but these [fail](https://mlsys.org/Conferences/2019/doc/2019/167.pdf) in cases where visually-inspected L<sub>1</sub> distance is low and distances from metrics of interest are high (thousands of data points, more than ten features). Strategies to mitigate this problem assume having the number of data points that a FAANG company might be working with (hundreds of millions, if not billions). If outside a FAANG company, what techniques can we use to bridge the gap between empirical drift $d(\hat{p}, \hat{q})$ and theoretical drift $d(p, q)$ between two distributions $p$ and $q$?
 
 
 ##### Towards Retraining Models
