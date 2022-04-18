@@ -70,7 +70,7 @@ export default class About extends React.Component {
           </tr>
         </table>
         <p>
-          <strong>If you are interested in working on any of these projects or collaborating, please contact me via email.</strong> I am open to undergrads who have taken a databases course and/or a graduate level machine learning course. If you go to UC Berkeley, please mention that in your email.
+          <strong>If you are interested in working on any of these projects or collaborating, please contact me via email.</strong> I am open to undergrads who have taken a databases course and/or a graduate level machine learning course. If you go to UC Berkeley, please mention that in your email. I apologize if I am unable to respond to your email in a timely manner.
         </p>
       </Layout>
     )
