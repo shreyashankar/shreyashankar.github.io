@@ -1,6 +1,6 @@
 ---
 title: "Thoughts on ML Engineering After a Year of my PhD"
-date: "2022-07-28"
+date: "2022-07-18"
 description: ''
 tags: ['personal', 'machine learning']
 ---
