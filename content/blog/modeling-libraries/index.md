@@ -3,6 +3,7 @@ title: "Modeling Libraries Don’t Matter"
 date: "2020-11-09"
 description: ''
 tags: ['systems']
+priority: 2
 ---
 
 When building the first machine learning pipelines for my company, I agonized over which modeling libraries to include in our stack. What would most model developers want to use? I felt strongly about scikit-learn and PyTorch, but what would be the consequences of imposing my opinions on ML frameworks on our company’s infrastructure? Which modeling library would “win” in the long-term? What if I wrote modeling code in a DSL that would become obsolete in a few years?

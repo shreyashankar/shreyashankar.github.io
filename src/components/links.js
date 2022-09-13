@@ -19,7 +19,7 @@ export default class Links extends React.Component {
           to={`/about`}
         >
           ABOUT
-          </Link>
+        </Link>
         <Link
           style={{
             boxShadow: `none`,
@@ -30,7 +30,18 @@ export default class Links extends React.Component {
           to={`/projects`}
         >
           PROJECTS
-          </Link>
+        </Link>
+        <Link
+          style={{
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
+            margin: '0 20px'
+          }}
+          to={`/papers`}
+        >
+          PAPERS
+        </Link>
         <Link
           style={{
             boxShadow: `none`,

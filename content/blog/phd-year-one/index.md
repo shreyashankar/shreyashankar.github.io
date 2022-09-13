@@ -3,6 +3,7 @@ title: "Thoughts on ML Engineering After a Year of my PhD"
 date: "2022-07-18"
 description: ''
 tags: ['personal']
+priority: 1
 ---
 
 Automating the end-to-end machine learning (ML) lifecycle, even for a specific prediction task, is neither easy nor obvious. People keep talking about how ML engineering (MLE) is a subset of software engineering or should be treated as such. But over the last 15 months of graduate school, I’ve been thinking about MLE through the lens of data engineering.

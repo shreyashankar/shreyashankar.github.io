@@ -3,6 +3,7 @@ title: "The Modern ML Monitoring Mess: Research Challenges (4/4)"
 date: "2022-01-31"
 description: ''
 tags: ['machine learning']
+priority: 2
 ---
 
 In the last few pieces, I’ve discussed [streaming ML evaluation](https://www.shreya-shankar.com/rethinking-ml-monitoring-1/), thought about [what to monitor](https://www.shreya-shankar.com/rethinking-ml-monitoring-2/) (across state and component axes), and explored [failure modes in existing software monitoring tools](https://www.shreya-shankar.com/rethinking-ml-monitoring-3/) (e.g. Prometheus). In this final piece, **I propose a broader research agenda for problems in ML monitoring,**[^1] motivated by “real-world” post-deployment ML issues.

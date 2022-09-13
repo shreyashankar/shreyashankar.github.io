@@ -3,6 +3,7 @@ title: "Notes on ARIES: A Transaction Recovery Method Supporting Fine-Granularit
 date: "2022-07-09"
 description: ''
 tags: ['systems']
+priority: 2
 ---
 
 As part of my preparation for the Berkeley DB prelim exam, I’m finding it helpful to write notes for some of the difficult concepts. This post is about the [ARIES recovery algorithm](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf) (Mohan et al. 1992) — the motivation, data structures needed, and the algorithm itself. 

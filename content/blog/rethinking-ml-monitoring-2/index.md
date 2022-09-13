@@ -3,6 +3,7 @@ title: "The Modern ML Monitoring Mess: Categorizing Post-Deployment Issues (2/4)
 date: "2021-12-13"
 description: ''
 tags: ['machine learning']
+priority: 1
 ---
 
 In the [last essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-1/) of the Modern ML Monitoring Mess series, I discussed some ways that existing streaming ML metrics fail. In this essay, I transition from a "data-centric" perspective to a software engineering perspective: I survey existing post-deployment issues and categorize them to motivate better open-source ML monitoring tools. 

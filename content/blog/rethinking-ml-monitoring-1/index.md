@@ -3,6 +3,7 @@ title: "The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)"
 date: "2021-11-29"
 description: ''
 tags: ['machine learning']
+priority: 1
 ---
 
 I got interested in MLOps partly because there are [way too many tools](https://huyenchip.com/2020/12/30/mlops-v2.html), and I couldn’t believe that a number of well-respected software veterans and academics were launching new startups left, right, and center. At my previous company, using existing DevOps tools to streamline ML deployment and productionization got me decently far -- but not far enough, motivating me to think about custom solutions to MLOps problems, like ML monitoring.

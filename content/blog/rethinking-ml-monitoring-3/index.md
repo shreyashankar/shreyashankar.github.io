@@ -3,6 +3,7 @@ title: "The Modern ML Monitoring Mess: Failure Modes in Extending Prometheus (3/
 date: "2022-01-03"
 description: ''
 tags: ['machine learning']
+priority: 2
 ---
 
 In the [previous essay](https://www.shreya-shankar.com/rethinking-ml-monitoring-2/), I surveyed existing post-deployment issues and categorized them across two axes: state and component. I mentioned that monitoring cross-component stateful metrics, such as model accuracy, is critical for maintaining ML pipelines but difficult with existing tools. In this piece, we'll get to experience these difficulties first-hand: we'll extend a toy ML pipeline with [Prometheus](https://prometheus.io/) (a popular software monitoring tool) to provide ML monitoring. In the process, we’ll see many ways in which Prometheus is inadequate, from code messiness to algorithmic inefficiencies.[^1]

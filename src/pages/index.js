@@ -83,10 +83,45 @@ class BlogIndex extends React.Component {
     };
   }
 
+  renderPosts = (posts) => {
+    return posts.map(({ node }) => {
+      const title = node.frontmatter.title || node.fields.slug
+      return (
+        <div key={node.fields.slug} >
+          <small >{node.frontmatter.date} in </small>
+          <small style={{ textTransform: 'uppercase', color: '#00688B' }}>
+            <Link to={`/tags/${kebabCase(node.frontmatter.tags)}/`}>
+              #{node.frontmatter.tags}
+            </Link>
+          </small>
+          <small> · {node.fields.readingTime.text} </small>
+          <h3
+            style={{
+              marginBottom: rhythm(1.5),
+              // marginTop: rhythm(1 / 4),
+            }}
+          >
+            <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              {title}
+            </Link>
+          </h3>
+
+          {/* <p
+            dangerouslySetInnerHTML={{
+              __html: node.frontmatter.description || node.excerpt,
+            }}
+          /> */}
+        </div>
+      )
+    })
+  }
+
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
+    const popularPosts = posts.filter(post => post.node.frontmatter.priority === 1)
+    const otherPosts = posts.filter(post => post.node.frontmatter.priority !== 1)
 
     let subscribeComponent = (
       <div style={this.subscribeStyle()}>
@@ -113,37 +148,11 @@ class BlogIndex extends React.Component {
         />
         <Links />
         {/* {subscribeComponent} */}
-        <div style={{ "padding": "1.25em" }}></div>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug} >
-              <small >{node.frontmatter.date} in </small>
-              <small style={{ textTransform: 'uppercase', color: '#00688B' }}>
-                <Link to={`/tags/${kebabCase(node.frontmatter.tags)}/`}>
-                  #{node.frontmatter.tags}
-                </Link>
-              </small>
-              <small> · {node.fields.readingTime.text} </small>
-              <h3
-                style={{
-                  marginBottom: rhythm(1.5),
-                  marginTop: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-
-              {/* <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              /> */}
-            </div>
-          )
-        })}
+        {/* <div style={{ "padding": "1.25em" }}></div> */}
+        <h2 style={{ marginTop: rhythm(1.5) }}>Popular Posts</h2>
+        {this.renderPosts(popularPosts)}
+        <h2 style={{ marginTop: rhythm(1.5) }}>Other Posts</h2>
+        {this.renderPosts(otherPosts)}
       </Layout>
     )
   }
@@ -158,7 +167,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___priority, frontmatter___date], order: [ASC, DESC] }) {
       edges {
         node {
           excerpt
@@ -170,6 +179,7 @@ export const pageQuery = graphql`
             title
             description
             tags
+            priority
           }
           fields {
             slug

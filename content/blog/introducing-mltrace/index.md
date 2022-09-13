@@ -3,6 +3,7 @@ title: "Introducing mltrace"
 date: "2021-05-10"
 description: ''
 tags: ['personal']
+priority: 2
 ---
 
 After I left [Viaduct](https://www.viaduct.ai/), I spent some time thinking about bridging the gap between machine learning research and production. MLOps, or [the practice of unifying ML development and ML system operations](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning), is a diverse field and can be roughly broken down into the following subcategories:

@@ -3,6 +3,7 @@ title: "2020 Bookshelf"
 date: "2020-12-11"
 description: ''
 tags: ['personal']
+priority: 2
 ---
 
 This note is a list of books I attempted to read in 2020. I probably also read other books, but the ones in this list were explicitly mentioned in my journal entries over the past year. Note that I made up these categories — it is very possible that a more reputable source classifies the same book in a different genre.

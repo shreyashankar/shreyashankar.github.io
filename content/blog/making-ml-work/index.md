@@ -3,6 +3,7 @@ title: "Reflecting on a Year of Making Machine Learning Actually Useful"
 date: "2020-06-29"
 description: ''
 tags: ['machine learning']
+priority: 1
 ---
 
 For those of you who don’t know my story, I’ll give you the short version: I did machine learning research for two years, decided not to get a PhD at the time, and became the first machine learning engineer at [Viaduct](https://www.viaduct.ai/), a startup that provides an end-to-end machine learning platform for automakers. Since we essentially sell machine learning as a service, we’re directly responsible for making machine learning actually work in the real world. 

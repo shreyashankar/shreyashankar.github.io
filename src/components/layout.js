@@ -10,12 +10,13 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const aboutPath = `${__PATH_PREFIX__}/about`
     const projectsPath = `${__PATH_PREFIX__}/projects`
+    const papersPath = `${__PATH_PREFIX__}/papers`
     let header
     deckDeckGoHighlightElement();
 
     let siteColor = '#0B3C5D'
 
-    if (location.pathname === rootPath || location.pathname === aboutPath || location.pathname === projectsPath) {
+    if (location.pathname === rootPath || location.pathname === aboutPath || location.pathname === projectsPath || location.pathname === papersPath) {
       header = (
         <h1
           style={{

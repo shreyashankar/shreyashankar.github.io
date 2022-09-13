@@ -3,6 +3,7 @@ title: "Choosing Between a PhD and Industry for New Computer Science Graduates"
 date: "2020-07-24"
 description: ''
 tags: ['personal']
+priority: 1
 ---
 
 Many people ask me why I chose not to pursue a PhD directly after college. I figured I might as well centralize my thoughts in one place. This essay is for computer science or technical grads:
