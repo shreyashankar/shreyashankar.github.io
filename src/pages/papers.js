@@ -20,6 +20,12 @@ export default class Papers extends React.Component {
 
         let papers = [
             {
+                title: 'Operationalizing Machine Learning: An Interview Study',
+                venue: 'Preprint',
+                authors: ['Rolando Garcia', 'Joseph M. Hellerstein', 'Aditya G. Parameswaran'],
+                link: 'https://arxiv.org/abs/2209.09125'
+            },
+            {
                 title: 'Towards Observability for Machine Learning Pipelines',
                 venue: 'To appear at VLDB 2023',
                 authors: ['Aditya G. Parameswaran'],
