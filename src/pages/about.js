@@ -20,14 +20,14 @@ export default class About extends React.Component {
         {/* <Image src={require('../images/profile-pic.jpg')} alt="Shreya Shankar" /> */}
         <h3>Bio</h3>
         <p>
-          I'm Shreya Shankar (she/her), a computer scientist living in San Francisco, California. Currently, I am doing my PhD in databases at UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank">Dr. Aditya Parameswaran</a>. Previously, I was the first ML engineer at <a href="https://www.viaduct.ai/" target="_blank">Viaduct</a>, did research at <a href="https://ai.google/research/teams/brain" target="_blank">Google Brain</a>, and software engineering at <a href="https://www.facebook.com" target="_blank">Facebook</a>.
+          I'm Shreya Shankar (she/they), a computer scientist living in San Francisco, California. Currently, I am doing my PhD in databases at UC Berkeley, advised by <a href="https://people.eecs.berkeley.edu/~adityagp/" target="_blank">Dr. Aditya Parameswaran</a>. Previously, I was the first ML engineer at <a href="https://www.viaduct.ai/" target="_blank">Viaduct</a>, did research at <a href="https://ai.google/research/teams/brain" target="_blank">Google Brain</a>, and software engineering at <a href="https://www.facebook.com" target="_blank">Facebook</a>.
         </p>
         <p>
           I graduated from Stanford University with a B.S. and an M.S. in computer science with concentrations in systems and artificial intelligence, respectively. At Stanford, I helped run a nonprofit called SHE++, an organization that helps to empower underrepresented minorities in technology. I also spent a lot of time as a section leader for <a href="https://cs198.stanford.edu/cs198/Alumni.aspx" target="_blank">CS198</a> and served as the head TA for <a href="https://cs106b.stanford.edu" target="_blank">CS106B</a>.
         </p>
         <h3>Research</h3>
         <p>
-          I'm interested in building systems to <a href="https://www.youtube.com/watch?v=7skGd2gWN6U" target="_blank"> operationalize machine learning (ML) workflows</a>. My research focus is on <a href="https://arxiv.org/abs/2108.13557" target="_blank">end-to-end observability for ML systems</a>. I'm working on the following projects:
+          I'm interested in building end-to-end systems for people to <a href="https://www.youtube.com/watch?v=sr3_DQ-RhTc&ab_channel=NormConf" target="_blank"> develop production-grade machine learning (ML) applications</a>. I'm working on the following projects:
         </p>
         <table>
           <tr align="center">
@@ -44,21 +44,22 @@ export default class About extends React.Component {
           <tr>
             <td>
               <ul class="ul1">
-                <li class="li1"><span class="s2">Mitigating effects of feedback delays on real-time ML performance</span></li>
-                <li class="li1"><span class="s1"><a href="https://www.shreya-shankar.com/rethinking-ml-monitoring-4/#scalable-monitoring-infrastructure"><span class="s3">Differential dataflow to compute streaming ML metrics quickly and efficiently</span></a></span></li>
+                <li class="li1"><span class="s2">Automatic data validation for production ML pipelines (under submission)</span></li>
+                <li class="li1"><span class="s1">A query-centric perspective on building production ML pipelines</span></li>
               </ul>
             </td>
             <td>
               <ul class="ul1">
-                <li class="li1"><span class="s2">Creating streaming ML benchmarks</span></li>
-                <li class="li1"><span class="s2">Automatic data validation for production ML pipelines</span></li>
+                <li class="li1"><span class="s2">Mitigating effects of feedback delays on real-time ML performance</span></li>
+                <li class="li1"><span class="s2">Mining feedback delays to build better ML performance debugging tools</span></li>
                 {/* <li class="li1"><span class="s2">Building repository of tasks with <a href="https://twitter.com/TweetAtAKK/status/1486026387525804034?s=20"><span class="s3">&ldquo;temporally evolving tabular data&rdquo;</span></a> (e.g. Ethereum gas price prediction)</span></li> */}
               </ul>
             </td>
             <td>
               <ul class="ul1">
-                <li class="li1"><span class="s2">Interview study on best practices in CI / CD for ML</span></li>
-                <li class="li1"><span class="s2">Visualizing large-scale data drift</span></li>
+                <li class="li1"><span class="s2">Interview study on best practices in CI / CD for ML (under submission)</span></li>
+                {/* <li class="li1"><span class="s2">Visualizing large-scale data drift</span></li> */}
+                <li class="li1"><span class="s2">Interfaces for building ML pipelines from a query-centric perspective</span></li>
               </ul>
             </td>
           </tr>
