@@ -20,6 +20,12 @@ export default class Papers extends React.Component {
 
         let papers = [
             {
+                title: 'Moving Fast with Broken Data',
+                venue: 'Preprint',
+                authors: ['Labib Fawaz', 'Karl Gyllstrom', 'Aditya G. Parameswaran'],
+                link: 'https://arxiv.org/abs/2303.06094'
+            },
+            {
                 title: 'Operationalizing Machine Learning: An Interview Study',
                 venue: 'Preprint',
                 authors: ['Rolando Garcia', 'Joseph M. Hellerstein', 'Aditya G. Parameswaran'],
