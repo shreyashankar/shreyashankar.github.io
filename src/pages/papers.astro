@@ -15,10 +15,11 @@ const papers = [
       "Naman Jain",
       "Yujie Wang",
     ],
-    link: "https://arxiv.org/abs/2303.06094",
+    link: "https://arxiv.org/abs/2308.03854",
   },
   {
-    title: "Moving Fast with Broken Data: Automatic and Precise Data Validation for Machine Learning",
+    title:
+      "Moving Fast with Broken Data: Automatic and Precise Data Validation for Machine Learning",
     venue: "To appear at CIKM 2023",
     authors: [
       "Shreya Shankar",
@@ -113,9 +114,7 @@ const papers = [
   },
 ];
 const nameToBold = "Shreya Shankar";
-
 ---
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -127,111 +126,109 @@ const nameToBold = "Shreya Shankar";
         font-family: "Arial", sans-serif;
         margin: 2rem 0;
       } */
-    
-    
+
       ul {
         list-style-type: none;
         padding: 0;
       }
-    
-      li {
-      margin: 1rem 0;
-      padding: 1rem;
-      border: 1px solid;
-      border-radius: 5px;
-      overflow: hidden; /* Ensures content hides when collapsed */
-      transition: max-height 0.2s ease-out; /* Animation for the collapsing effect */
-    }
-    
-    .collapsible-content {
-      max-height: 0;  /* Initially collapsed */
-      overflow: hidden; 
-      transition: max-height 0.2s ease-out; 
-    }
-    
-    li.expanded .collapsible-content {
-      max-height: 300px;  /* Adjust as needed for your content's height */
-    }
 
-    ul li a {
-      display: block;
-      text-decoration: none;
-    }
-    
-    ul li a:hover h5,
-    ul li a:hover {
-      /* text-decoration: underline; */
-      color: #2337ff;
-    } 
-    
-    .arrow {
-      cursor: pointer;
-      float: right;
-      display: inline-block;
-      margin-left: 10px; /* adds space between the title and the arrow */
-      font-size: 2rem; /* increases the size of the arrow */
-      transition: transform 0.2s;
-    }
-    
-    .collapsible-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-    }
-    
-    input[type="checkbox"]:checked + label + .collapsible-content {
-      max-height: 300px; /* Adjust this value according to your content size */
-    }
-    
-    input[type="checkbox"]:checked + label .arrow {
-      transform: rotate(90deg);
-    }
-    
-    /* Hide the checkbox */
-    input[type="checkbox"] {
-      display: none;
-    }
+      li {
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 1px solid;
+        border-radius: 5px;
+        overflow: hidden; /* Ensures content hides when collapsed */
+        transition: max-height 0.2s ease-out; /* Animation for the collapsing effect */
+      }
+
+      .collapsible-content {
+        max-height: 0; /* Initially collapsed */
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      li.expanded .collapsible-content {
+        max-height: 300px; /* Adjust as needed for your content's height */
+      }
+
+      ul li a {
+        display: block;
+        text-decoration: none;
+      }
+
+      ul li a:hover h5,
+      ul li a:hover {
+        /* text-decoration: underline; */
+        color: #2337ff;
+      }
+
+      .arrow {
+        cursor: pointer;
+        float: right;
+        display: inline-block;
+        margin-left: 10px; /* adds space between the title and the arrow */
+        font-size: 2rem; /* increases the size of the arrow */
+        transition: transform 0.2s;
+      }
+
+      .collapsible-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+
+      input[type="checkbox"]:checked + label + .collapsible-content {
+        max-height: 300px; /* Adjust this value according to your content size */
+      }
+
+      input[type="checkbox"]:checked + label .arrow {
+        transform: rotate(90deg);
+      }
+
+      /* Hide the checkbox */
+      input[type="checkbox"] {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <Header title={SITE_TITLE} />
     <main>
       <h1>📚 Papers</h1>
-    <ul>
-      {
-        papers.map((paper, index) => (
-        <li key={paper.title}>
-            <input type="checkbox" id={`toggle-${index}`} />
-            <label for={`toggle-${index}`}>
-            <div class="arrow">&rsaquo;</div>
-            <a href={paper.link} target="_blank" rel="noopener noreferrer">
-              <h5>{paper.title}</h5>
-            </a>
-            </label>
-            <div class="collapsible-content">
-            <p>
-              <em>{paper.venue}</em>
-            </p>
-            <p>
-              <Fragment set:html={paper.authors
-                .map((author) =>
-                  author.includes(nameToBold) ? `<b>${author}</b>` : author
-                )
-                .join(", ")
-              } />
-            </p>
-        </div>
-          </li>
-        ))
-      }
-    </ul>
+      <ul>
+        {
+          papers.map((paper, index) => (
+            <li key={paper.title}>
+              <input type="checkbox" id={`toggle-${index}`} />
+              <label for={`toggle-${index}`}>
+                <div class="arrow">&rsaquo;</div>
+                <a href={paper.link} target="_blank" rel="noopener noreferrer">
+                  <h5>{paper.title}</h5>
+                </a>
+              </label>
+              <div class="collapsible-content">
+                <p>
+                  <em>{paper.venue}</em>
+                </p>
+                <p>
+                  <Fragment
+                    set:html={paper.authors
+                      .map((author) =>
+                        author.includes(nameToBold)
+                          ? `<b>${author}</b>`
+                          : author
+                      )
+                      .join(", ")}
+                  />
+                </p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
       <Footer />
     </main>
-  </body>
-</html>
-
-
-<!-- <template>
+  </body><!-- <template>
   <section>
     <h2>My Publications</h2>
     <ul>
@@ -258,4 +255,4 @@ const nameToBold = "Shreya Shankar";
     </ul>
   </section>
 </template> -->
-
+</html>
