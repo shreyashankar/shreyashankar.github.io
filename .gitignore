@@ -3,6 +3,5 @@ node_modules*
 public*
 .cache*
 
-dist/
 # Local Netlify folder
 .netlify
