@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-BVZIHDZO">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="/icon.png">
+<meta name="generator" content="Astro v2.10.9">
+
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/GTWalsheimPro-Light.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonts/GTWalsheimPro-Medium.woff" as="font" type="font/woff" crossorigin>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://example.com/blog/rethinking-ml-monitoring-1/">
+
+<!-- Primary Meta Tags -->
+<title>The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)</title>
+<meta name="title" content="The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)">
+<meta name="description" content="">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/blog/rethinking-ml-monitoring-1/">
+<meta property="og:title" content="The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://example.com/blog-placeholder-1.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://example.com/blog/rethinking-ml-monitoring-1/">
+<meta property="twitter:title" content="The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg">
+    
+  <link rel="stylesheet" href="/_astro/_...slug_.8be9d9b3.css" />
+<link rel="stylesheet" href="/_astro/_...slug_.ee60a110.css" /></head>
+
+  <body class="astro-BVZIHDZO">
+    <header class="astro-3EF6KSR2">
+  <nav class="astro-3EF6KSR2">
+    <h2 class="astro-3EF6KSR2"><a href="/" class="astro-3EF6KSR2">Shreya Shankar</a></h2>
+    <div class="internal-links astro-3EF6KSR2">
+      <a href="/" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Home
+</a>
+      <a href="/blog" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Blog
+</a>
+      <a href="/papers" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Papers
+</a>
+    </div>
+    <div class="social-links astro-3EF6KSR2">
+      <a href="https://twitter.com/sh_reya" target="_blank" class="astro-3EF6KSR2">
+		<span class="sr-only astro-3EF6KSR2">Follow Shreya on Twitter</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" class="astro-3EF6KSR2"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" class="astro-3EF6KSR2"></path></svg>
+      </a>
+      <a href="https://github.com/shreyashankar" target="_blank" class="astro-3EF6KSR2">
+		<span class="sr-only astro-3EF6KSR2">Shreya's GitHub</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" class="astro-3EF6KSR2"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" class="astro-3EF6KSR2"></path></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+    <main class="astro-BVZIHDZO">
+      <article class="astro-BVZIHDZO">
+        <!-- <div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div> -->
+        <div class="prose astro-BVZIHDZO">
+          <div class="title astro-BVZIHDZO">
+            <div class="date astro-BVZIHDZO">
+              <time datetime="2021-11-29T08:00:00.000Z">
+	Nov 29, 2021
+</time>
+              
+            </div>
+            <h1 class="astro-BVZIHDZO">The Modern ML Monitoring Mess: Rethinking Streaming Evaluation (1/4)</h1>
+            <hr class="astro-BVZIHDZO">
+          </div>
+          
+	<p>I got interested in MLOps partly because there are <a href="https://huyenchip.com/2020/12/30/mlops-v2.html">way too many tools</a>, and I couldn’t believe that a number of well-respected software veterans and academics were launching new startups left, right, and center. At my previous company, using existing DevOps tools to streamline ML deployment and productionization got me decently far — but not far enough, motivating me to think about custom solutions to MLOps problems, like ML monitoring.</p>
+<p>I like being a PhD student because I can think about problems without anyone yelling at me to build something. The truth is that <em>I don’t know exactly what to build when it comes to monitoring ML.</em> The current state of ML monitoring is, without sugarcoating it, a <a href="https://www.google.com/search?q=ml+monitoring+is+hard&#x26;oq=ml+monitoring+is+hard">mess.</a> In this collection of four essays, I illustrate my thoughts on getting to a good open-source ML monitoring solution, with the following outline:</p>
+<ol>
+<li>Rethinking evaluation for streaming ML (this piece)</li>
+<li><a href="/blog/rethinking-ml-monitoring-2/">Categorizing the laundry list of post-deployment issues</a></li>
+<li><a href="/blog/rethinking-ml-monitoring-3/">Investigating where existing DevOps tools like Prometheus break down in ML monitoring</a></li>
+<li><a href="/blog/rethinking-ml-monitoring-4/">Concrete research challenges in building a general-purpose ML monitoring solution</a><sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></li>
+</ol>
+<h2 id="rethinking-evaluation-for-streaming-ml">Rethinking evaluation for streaming ML</h2>
+<p>Before I discuss what to monitor, I’m going to define monitoring as: <em>tracking metrics to identify when the application is failing.</em> There are lots of articles out there to convince you that monitoring is necessary for ML applications. Here are my two cents on why we need monitoring:</p>
+<ol>
+<li>Applications in production will inevitably experience issues. We want to catch and address issues as early as possible to minimize downtime.</li>
+<li>ML is increasingly being deployed in high-stakes scenarios (e.g., recidivism, loans, credit card fraud, recruiting, autonomous vehicles), where regulation is inevitable.</li>
+</ol>
+<p>Many articles also discuss what <em>types</em> of bugs can occur in production ML systems, motivating <em>what</em> to monitor. I personally am overwhelmed with all the bugs that could possibly occur and the <a href="https://twolodzko.github.io/ml-checklist.html">massive</a> <a href="https://www.kdnuggets.com/2021/03/machine-learning-model-monitoring-checklist.html">checklists</a> <a href="https://deepchecks.com/ml-model-monitoring-checklist-things-you-should-look-out-for/">of</a> <a href="https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/">tests</a> and metrics one must execute and monitor to ensure “good” pipeline health<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>. At one point in my previous job, I had an existential crisis because <strong>I had no idea why I was monitoring thousands of things; I just assumed it was necessary for pipelines “not to fail.”</strong> But what does it mean to “fail,” especially in the ML context?</p>
+<h3 id="how-we-got-here">How we got here</h3>
+<p>The field of machine learning has an interesting history of evaluation. ML-specific metrics have been designed to evaluate how well <em>a specific model</em> performs on <em>a specific dataset</em>. To evaluate a model in an “academic” setting, for decades, we’ve measured fixed-point metrics such as accuracy, precision, and recall on a hold-out “validation” set that our model didn’t see during training. To assess whether a model can generalize to new data, introductory machine learning courses stress the importance of checking against <em>overfitting</em> (i.e., the validation set metric should be close to the train set metric). Is this really all we need to claim generalizability?</p>
+<p>In today’s golden age of benchmarks, we don’t <em>really</em> question this evaluation procedure of computing a metric on some static or fixed dataset (there are <a href="http://proceedings.mlr.press/v97/recht19a/recht19a.pdf">some</a> <a href="https://arxiv.org/abs/2104.14337">exceptions</a>). More recently, my friend Deb and other ML leaders have been raising awareness about how <a href="https://openreview.net/pdf?id=j6NxpQbREA1">current general-purpose ML evaluation methods fall short in assessing failure modes in ML systems</a> related to critical subgroups (e.g., race) and externalities (e.g, energy consumption). I’m mentioning this work because I think it’s incredibly important, albeit orthogonal to what I’m going to talk about here.</p>
+<p>We are well-aware that in practice, although <a href="https://www.argmin.net/2021/09/21/models-are-wrong/">all models are wrong, some are useful</a>. ML evaluation in an “industry” setting, unsurprisingly, dates back to military contexts in the 50s and 60s. <a href="https://en.wikipedia.org/wiki/Receiver_operating_characteristic">ROC curves were invented during World War II to classify enemy objects in battlefields</a>, I imagine primarily because practitioners needed to compute useful and discard useless models over time. I like to think of ROC and PR curves as better “aggregations” of metrics, which help inform what threshold of model outputs to act on and how such a threshold changes over time. Such aggregations are clearly necessary when deploying ML in practice (e.g., healthcare) over long periods of time.</p>
+<p>Because <strong>in practice, we work with streams of data, not fixed datasets,</strong> the industry standard for ML monitoring (probably a consequence of software monitoring) follows these steps:</p>
+<ol>
+<li>Choosing metric(s) and threshold(s) that they believe represent model performance</li>
+<li>Choose a sliding window size (units are time-based, like days or weeks) to compute metric(s) over</li>
+<li>Set alerts for when the metric value(s) drop below the threshold(s)</li>
+<li>Upon alert, manually or <a href="https://neptune.ai/blog/retraining-model-during-deployment-continuous-training-continuous-testing">automatically</a> <a href="https://www.phdata.io/blog/when-to-retrain-machine-learning-models/">trigger</a> <a href="https://evidentlyai.com/blog/retrain-or-not-retrain">a</a> <a href="https://mlinproduction.com/model-retraining/">retrain</a></li>
+</ol>
+<p>This process assumes that a failure is defined as a metric value dropping below its threshold. Why do we need to get this definition correct? The implications of triggering a retrain when you don’t need to can be bad: it could waste compute, or it might actually <em>decrease</em> performance if the most recent window is not representative of future data. The implications of not triggering a retrain when you need to are, well, your performance will continue to deteriorate — maybe even silently. Thus, we want our alerts to be sound (i.e., no false alarms) and complete (i.e., triggered every time there is a failure). Unfortunately, I’ve always gotten either too many or too few alerts, motivating me to question — what’s wrong with our evaluation procedure?</p>
+<h3 id="whats-wrong-with-our-current-approach">What’s wrong with our current approach?</h3>
+<p>I will now argue why <strong>this procedure to evaluate ML on streams of data is broken</strong>. Suppose we have a stream of data points beginning from time t = 0. We train and validate a model on data between t = 0 and t = i. We “deploy” at t = i and continuously compute ML metrics for rolling windows spanning d days.</p>
+<p><img src="/blogimages/monitoring1diagram.png" alt="Rolling window diagram"></p>
+<p>There are some natural and common phenomena that get factored into metric computations:</p>
+<ul>
+<li><strong>Representation differences.</strong> Class ratios across windows may not be the same (e.g., the fraction of positives in one window may be very different from the fraction of positives in another window).</li>
+<li><strong>Varying sample sizes.</strong> The number of data points in each window may vary (e.g., the number of requests received on a Sunday is less than the number of requests received on a Monday).</li>
+<li><strong>Delayed feedback.</strong> Due to reasonable events (e.g., loss of Internet connection), labels may come in at a lag, making it impossible to factor in predictions without a label into the current window’s evaluation metric.</li>
+</ul>
+<p>In each of these cases, <em>even if you measure aggregations like auROC and auPRC</em>, the metric value can change drastically — without any change in the model’s “alignment” with the desired task (i.e., predictive power) or “concept drift.” When we trigger a retrain, we’re implicitly believing that our model doesn’t have our expected predictive power. How can we be confident in this belief if our rolling window doesn’t match assumptions from our hold-out validation set (e.g., our rolling window spans a week while our validation set spans a month)? Most of the time, we aren’t explicitly aware of all the assumptions made at training time. I think <strong>ML-specific metrics evaluated on a rolling window tell you less about model alignment than properties of the data in that window.</strong></p>
+<p>Thus, since we don’t know how to evaluate how aligned the model is with the desired task, evaluation on streams of data varies across different organizations. We don’t know where to draw the line for acceptable business performance, so we look at all the defensible metrics (e.g., auROC) and try to optimize for some aggregation of them. Although we don’t have a better alternative (that I know of), this is clearly broken and renders ML useless in so many product settings. Many industry ML veterans talk about how we need clear and explicit mappings from ML metrics to business outcomes — mature organizations have a concept of <a href="https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli">“SLOs”</a> for ML models, where BizDev and data people collaborate to identify the collection of metrics, window sizes, and alert procedures for a single task (the SLO). When the SLO is not aligned with the task, you have no idea whether a metric drop should trigger a retrain! This collaboration to compute SLO parameters forces people to define how to act on model outputs. Crazily enough, it can take months or even a year to settle on the right parameters to compute the SLO. More importantly and more relevant to my interests — <strong>such a context-specific procedure for choosing an ML SLO is at odds with building a general-purpose tool to monitor ML pipelines.</strong></p>
+<h3 id="recap">Recap</h3>
+<p>So there are really two distinct problems in streaming ML evaluation I’ve outlined:</p>
+<ol>
+<li>It takes time and many resources to make the current “industry-standard” evaluation procedure (choosing metrics, thresholds, and window sizes) work</li>
+<li>This procedure may never work, depending on the nature of the data, and generalizes very poorly (i.e., it takes the same amount of time and resources to settle on the evaluation protocol or SLOs for a new task) — <em>making it really hard to have ML in production</em></li>
+</ol>
+<p>I suspect that an ML-related extension of the <a href="https://agilemanifesto.org/">Agile Manifesto</a> and better education around the strengths and weaknesses of ML can tackle the first problem. The second problem seems much more unsolved to me — as an ML infra person, I’m not interested in prescribing specific SLOs; I’m interested in building the infrastructure for anyone to easily monitor the ML SLOs that they care about.</p>
+<p><strong>I’d love for our ML community to think more deeply about how to generally evaluate the alignment or predictive power of models that will operate over streams of data.</strong> Maybe we can’t do better than the procedure we already have, but I’m curious — can we build techniques to understand the temporal nature of data <em>specific to ML outcomes</em> and use this information to choose SLOs for us? Can we create more general metrics that explicitly tie to business outcomes, such as an “ML <a href="https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/The_APDEX_Performance_Score">Apdex Score</a>?” Can these general metrics be robust to all three phenomena — representation differences, varying sample sizes, and delayed feedback — that I outlined above? I don’t know what this will look like in the end, but I’m fairly confident that being able to articulate and measure the correct SLOs will power a large breakthrough in deriving value from production ML applications. I’m excited for us to make progress.</p>
+<p><em>Thanks to <a href="https://twitter.com/AlexTamkin">Alex Tamkin</a>, <a href="https://twitter.com/rogarcia_sanz">Rolando Garcia</a>, and <a href="https://twitter.com/pschafhalter">Peter Schafhalter</a> for feedback on many drafts.</em></p>
+<!-- Footnotes themselves at the bottom. -->
+<h2 id="notes">Notes</h2>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>No MLOps company is paying me to write this. I can’t speak intelligently about solutions hidden beyond paywalls, so I make no claims about existing proprietary tools. Also, I think there is a market for a fully open-source ML monitoring solution. <a href="#user-content-fnref-1" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>It’s crazy to me that the most useful MLOps resources come from blog posts, Slack channels, and word-of-mouth. The field is totally in its infancy. <a href="#user-content-fnref-2" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+      </article>
+    </main>
+    <footer class="astro-SZ7XMLTE">
+  &copy; 2023 Shreya Shankar. All rights reserved. Website
+  modified from <a href="https://github.com/withastro/astro/tree/main/examples/blog" target="_blank" class="astro-SZ7XMLTE">Astro</a>.
+  <div class="social-links astro-SZ7XMLTE">
+    <a href="https://twitter.com/sh_reya" target="_blank" class="astro-SZ7XMLTE">
+      <span class="sr-only astro-SZ7XMLTE">Follow Shreya on Twitter</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" class="astro-SZ7XMLTE"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" class="astro-SZ7XMLTE"></path></svg>
+    </a>
+    <a href="https://github.com/shreyashankar" target="_blank" class="astro-SZ7XMLTE">
+      <span class="sr-only astro-SZ7XMLTE">Shreya's GitHub</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" class="astro-SZ7XMLTE"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" class="astro-SZ7XMLTE"></path></svg>
+    </a>
+  </div>
+</footer>
+  </body></html>

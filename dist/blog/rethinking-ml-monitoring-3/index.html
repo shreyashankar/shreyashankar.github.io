@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-BVZIHDZO">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="/icon.png">
+<meta name="generator" content="Astro v2.10.9">
+
+<!-- Font preloads -->
+<link rel="preload" href="/fonts/GTWalsheimPro-Light.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonts/GTWalsheimPro-Medium.woff" as="font" type="font/woff" crossorigin>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://example.com/blog/rethinking-ml-monitoring-3/">
+
+<!-- Primary Meta Tags -->
+<title>The Modern ML Monitoring Mess: Failure Modes in Extending Prometheus (3/4)</title>
+<meta name="title" content="The Modern ML Monitoring Mess: Failure Modes in Extending Prometheus (3/4)">
+<meta name="description" content="">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/blog/rethinking-ml-monitoring-3/">
+<meta property="og:title" content="The Modern ML Monitoring Mess: Failure Modes in Extending Prometheus (3/4)">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://example.com/blog-placeholder-1.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://example.com/blog/rethinking-ml-monitoring-3/">
+<meta property="twitter:title" content="The Modern ML Monitoring Mess: Failure Modes in Extending Prometheus (3/4)">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg">
+    
+  <link rel="stylesheet" href="/_astro/_...slug_.8be9d9b3.css" />
+<link rel="stylesheet" href="/_astro/_...slug_.ee60a110.css" /></head>
+
+  <body class="astro-BVZIHDZO">
+    <header class="astro-3EF6KSR2">
+  <nav class="astro-3EF6KSR2">
+    <h2 class="astro-3EF6KSR2"><a href="/" class="astro-3EF6KSR2">Shreya Shankar</a></h2>
+    <div class="internal-links astro-3EF6KSR2">
+      <a href="/" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Home
+</a>
+      <a href="/blog" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Blog
+</a>
+      <a href="/papers" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Papers
+</a>
+    </div>
+    <div class="social-links astro-3EF6KSR2">
+      <a href="https://twitter.com/sh_reya" target="_blank" class="astro-3EF6KSR2">
+		<span class="sr-only astro-3EF6KSR2">Follow Shreya on Twitter</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" class="astro-3EF6KSR2"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" class="astro-3EF6KSR2"></path></svg>
+      </a>
+      <a href="https://github.com/shreyashankar" target="_blank" class="astro-3EF6KSR2">
+		<span class="sr-only astro-3EF6KSR2">Shreya's GitHub</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" class="astro-3EF6KSR2"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" class="astro-3EF6KSR2"></path></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+    <main class="astro-BVZIHDZO">
+      <article class="astro-BVZIHDZO">
+        <!-- <div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div> -->
+        <div class="prose astro-BVZIHDZO">
+          <div class="title astro-BVZIHDZO">
+            <div class="date astro-BVZIHDZO">
+              <time datetime="2022-01-03T08:00:00.000Z">
+	Jan 3, 2022
+</time>
+              
+            </div>
+            <h1 class="astro-BVZIHDZO">The Modern ML Monitoring Mess: Failure Modes in Extending Prometheus (3/4)</h1>
+            <hr class="astro-BVZIHDZO">
+          </div>
+          
+	<p>In the <a href="/blog/rethinking-ml-monitoring-2/">previous essay</a>, I surveyed existing post-deployment issues and categorized them across two axes: state and component. I mentioned that monitoring cross-component stateful metrics, such as model accuracy, is critical for maintaining ML pipelines but difficult with existing tools. In this piece, we’ll get to experience these difficulties first-hand: we’ll extend a toy ML pipeline with <a href="https://prometheus.io/">Prometheus</a> (a popular software monitoring tool) to provide ML monitoring. In the process, we’ll see many ways in which Prometheus is inadequate, from code messiness to algorithmic inefficiencies.<sup><a href="#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></p>
+<h2 id="background">Background</h2>
+<p>One day at work, while I was doomscrolling through a Slack channel of AWS alerts, I suddenly realized my infra coworker and I interpreted the term “label” very differently. He meant an identifier. I meant the true value for a prediction. We only figured out that we were misaligned multiple months into a large project. Thankfully, we never collaborated on the same task, so there weren’t any repercussions for us. But I wonder if this misalignment causes a problem in other organizations.</p>
+<p>I think the most confusing aspect of the discourse on ML monitoring is the terminology. Terms like “metric” and “label” are overloaded. In this essay, I’ll leverage the following definitions:</p>
+<ul>
+<li><em>Metric</em>: a function that aggregates data to evaluate how well a pipeline is performing (e.g., mean, accuracy)</li>
+<li><em>Prometheus Metric</em>: a time series of numeric measurements</li>
+<li><em>Identifier</em>: a unique name assigned to an object or collection of objects</li>
+<li><em>Prediction</em>: an output made by an ML model</li>
+<li><em>Feedback</em>: the “true” value for a prediction</li>
+<li><em>Service Level Indicator (SLI)</em>: a function that aggregates <em>predictions and feedback</em> to evaluate how well a pipeline is performing (e.g., accuracy)</li>
+</ul>
+<h3 id="ml-task-data-source-and-pipeline">ML Task, Data Source, and Pipeline</h3>
+<p>For this exercise, I constructed an ML pipeline to predict whether a taxi rider will give a driver a high tip (binary classification), using data from the <a href="https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page">NYC Taxi Coalition</a>. Using Prometheus, we’ll monitor <strong>cumulative accuracy</strong>, or the accuracy over all the predictions made since deployment. Training and inference pipelines share some components in the architecture, which looks like this:</p>
+<p><img src="/blogimages/monitoring3pipeline.svg" alt="Pipeline Architecture">
+<em>Figure 1: ML pipeline architecture.</em></p>
+<p>Since this is a binary classification problem, the inference component generates float-valued predictions between 0 and 1, and the feedback component returns values of either 0 or 1. I host my pipeline and experiment code in <a href="https://github.com/loglabs/mext">this repository</a> with the following structure:</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #E1E4E8">├── README.md</span></span>
+<span class="line"><span style="color: #E1E4E8">├── components</span></span>
+<span class="line"><span style="color: #E1E4E8">│ ├── </span><span style="color: #E1E4E8; font-weight: bold">**init**</span><span style="color: #E1E4E8">.py</span></span>
+<span class="line"><span style="color: #E1E4E8">│ └── main.py &#x3C;!-- defines functions that represent pipeline components, such as clean_data and train_model --></span></span>
+<span class="line"><span style="color: #E1E4E8">├── docker-compose.yml &#x3C;!-- spins up inference, Prometheus, and Grafana containers --></span></span>
+<span class="line"><span style="color: #E1E4E8">├── inference</span></span>
+<span class="line"><span style="color: #E1E4E8">│ ├── Dockerfile</span></span>
+<span class="line"><span style="color: #E1E4E8">│ └── main.py &#x3C;!-- chains functions from components into an inference pipeline and benchmarks usage of mext/prometheus_ml_ext.py --></span></span>
+<span class="line"><span style="color: #E1E4E8">├── model.joblib</span></span>
+<span class="line"><span style="color: #E1E4E8">├── monitoring</span></span>
+<span class="line"><span style="color: #E1E4E8">│ ├── config.monitoring &#x3C;!-- Grafana credentials --></span></span>
+<span class="line"><span style="color: #E1E4E8">│ ├── datasource.yml &#x3C;!-- Grafana config --></span></span>
+<span class="line"><span style="color: #E1E4E8">│ └── prometheus.yml &#x3C;!-- Prometheus config, includes scrape interval --></span></span>
+<span class="line"><span style="color: #E1E4E8">├── mext</span></span>
+<span class="line"><span style="color: #E1E4E8">│ ├── </span><span style="color: #E1E4E8; font-weight: bold">**init**</span><span style="color: #E1E4E8">.py</span></span>
+<span class="line"><span style="color: #E1E4E8">│ └── prometheus_ml_ext.py &#x3C;!--  creates 2 Prometheus Gauge Metrics, one for predictions and another for feedback --></span></span>
+<span class="line"><span style="color: #E1E4E8">├── setup.py</span></span>
+<span class="line"><span style="color: #E1E4E8">└── train.py</span></span></code></pre>
+<p>I run the training pipeline on data from January 2020 and simulate a deployment starting February 1, 2020. <strong>I don’t perform any retraining</strong>, mainly because the <strong>purpose of this exercise is to demonstrate Prometheus’s failure modes, not debug low SLIs that result from “<a href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?tabs=python#what-is-data-drift">data drift</a>.”</strong></p>
+<h2 id="prometheus-primer">Prometheus Primer</h2>
+<p><a href="https://prometheus.io/docs">Prometheus</a> is an open-source software monitoring tool that:</p>
+<ol>
+<li>
+<p>Collects and stores Metrics<sup><a href="#user-content-fn-2" id="user-content-fnref-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>, like response latency</p>
+</li>
+<li>
+<p>Allows users to query aggregations of Metric values (e.g., mean latency) via a query language called PromQL</p>
+</li>
+</ol>
+<p>Prometheus supports <a href="https://prometheus.io/docs/concepts/metric_types/">four types</a> of Metric values:</p>
+<ul>
+<li><strong>Counter</strong>: a cumulative Metric that monotonically increases. Can be used to track the number of predictions served, for example.</li>
+<li><strong>Gauge</strong>: a Metric that represents a single numerical value that can arbitrarily change. Can be used to track current memory usage, for example.</li>
+<li><strong>Histogram</strong>: a Metric that categorizes observed numerical values into user-predefined buckets. This has a high server-side cost because the server calculates quantiles at query time.</li>
+<li><strong>Summary</strong>: a Metric that tracks a user-predefined quantile over a sliding time window. This has a lower server-side cost because quantiles are configured and tracked at logging time. Also, the Summary Metric doesn’t generally support aggregations in queries.</li>
+</ul>
+<p>Typically, DevOps or SRE folks at organizations use Prometheus to monitor software SLOs. Users instrument their application code to log Metric values. Those values are scraped and stored in a Prometheus server. The values can be queried using PromQL and exported to a visualization tool like Grafana. The architecture looks like this:</p>
+<p><img src="/blogimages/monitoring3promarchitecture.png" alt="Prometheus Architecture">
+<em>Figure 2: <a href="https://prometheus.io/docs/introduction/overview/#architecture">Prometheus architecture</a>.</em></p>
+<p><a href="https://iximiuz.com/en/series/learning-prometheus-and-promql/">This educational series of posts</a> by Ivan Velichko explains Prometheus well. I’ll summarize some of his key points:</p>
+<ul>
+<li>Prometheus is not a time series database (TSDB). It merely leverages a TSDB.</li>
+<li>Because Prometheus scrapes values periodically, some Metric types (e.g., Gauges) can lose precision if the Metric value changes more frequently than the scraping interval. This problem does not apply to monotonically increasing metrics (e.g., Counters).</li>
+<li>Metrics can be logged with arbitrary identifiers such that at query time, users can filter Metrics by their identifier value.</li>
+<li>PromQL is flexible – users can compute <a href="https://prometheus.io/docs/prometheus/latest/querying/functions/">many different aggregations</a> of Metric values over different window sizes, and these parameters can be specified at query time.</li>
+</ul>
+<p>Velichko acknowledges that PromQL is <a href="https://iximiuz.com/en/posts/prometheus-vector-matching/">“far from trivial”</a> (i.e., annoying) to use in real software applications. However, after learning vector matching and other syntax, I don’t think it’s too bad – especially when we don’t need to join Metrics. PromQL queries usually aren’t too long, and there are a number of <a href="https://prometheus.io/docs/prometheus/latest/querying/functions/">helper functions</a> to use while querying. But we’ll see how bad it is for the ML monitoring case.</p>
+<h2 id="prometheus--ml">Prometheus 🤝 ML</h2>
+<p>The following questions will help assess whether Prometheus is a suitable ML monitoring solution:</p>
+<ol>
+<li>Can we use Prometheus Metrics to track any ML metrics we want in our ML pipeline? It’s not straightforward to map “ML metrics” to the Prometheus Metric types. For single-component stateful metrics, maybe we want to use a histogram or summary metric. If we’re interested in cross-component stateful metrics, we need to consider how we “join” the metrics from different components tgogether to compute ML SLIs like accuracy and precision.</li>
+<li>How hard is it to write ML SLIs in PromQL?</li>
+<li>What’s the query latency for ML SLIs?</li>
+</ol>
+<h3 id="pipeline-instrumentation">Pipeline Instrumentation</h3>
+<h4 id="cross-component-stateful-metrics">Cross-component stateful metrics</h4>
+<p>None of the Prometheus Metric types (Counter, Gauge, Histogram, or Summary) obviously map to the SLI we want to measure: cumulative accuracy. Instead, we will use 2 Gauge Metrics<sup><a href="#user-content-fn-3" id="user-content-fnref-3" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup> – one for pipeline predictions and one for feedback – and aggregate them in PromQL to compute accuracy. In <code>mext/prometheus_ml_ext.py</code>, I define a <code><a href="https://github.com/loglabs/mext/blob/4db79bd2975822c7a82aebd73537fe219edff5d1/mext/prometheus_ml_ext.py#L83">BinaryClassificationMetric</a></code> class that contains the Gauge Metrics along with <code>logOutputs</code> and <code>logFeedbacks</code> methods to update them after each inference invocation. Instrumenting the application is quite straightforward. Here is the Prometheus-specific code in <code>inference/main.py</code>:</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #E1E4E8">prom_metric </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> BinaryClassificationMetric(</span></span>
+<span class="line"><span style="color: #E1E4E8">  </span><span style="color: #9ECBFF">"taxi_data"</span><span style="color: #E1E4E8">, </span><span style="color: #9ECBFF">"Binary classification metric for tip prediction"</span><span style="color: #E1E4E8">, [</span><span style="color: #9ECBFF">"output_id"</span><span style="color: #E1E4E8">],</span></span>
+<span class="line"><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">run_predictions</span><span style="color: #E1E4E8">():</span></span>
+<span class="line"><span style="color: #E1E4E8">  </span><span style="color: #6A737D"># Run inference pipeline</span></span>
+<span class="line"><span style="color: #E1E4E8">  …</span></span>
+<span class="line"><span style="color: #E1E4E8">  predictions, _ </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> inference(</span><span style="color: #79B8FF">...</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">  </span><span style="color: #6A737D"># Log predictions and feedbacks</span></span>
+<span class="line"><span style="color: #E1E4E8">  outputs </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> predictions[</span><span style="color: #9ECBFF">"prediction"</span><span style="color: #E1E4E8">].to_list()</span></span>
+<span class="line"><span style="color: #E1E4E8">  feedbacks </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> predictions[</span><span style="color: #9ECBFF">"high_tip_indicator"</span><span style="color: #E1E4E8">].astype(</span><span style="color: #9ECBFF">"int"</span><span style="color: #E1E4E8">).to_list()</span></span>
+<span class="line"><span style="color: #E1E4E8">  identifiers </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> predictions[</span><span style="color: #9ECBFF">"identifier"</span><span style="color: #E1E4E8">].to_list()</span></span>
+<span class="line"><span style="color: #E1E4E8">  prom_metric.logOutputs(outputs, identifiers)</span></span>
+<span class="line"><span style="color: #E1E4E8">  prom_metric.logFeedbacks(feedbacks, identifiers)</span></span></code></pre>
+<p>Representing the cumulative accuracy as two Gauge Metrics wasn’t exactly straightforward, but I’ll still rate this experience as easy.</p>
+<h4 id="single-component-stateful-metrics">Single-component stateful metrics</h4>
+<p>ML monitoring solutions frequently monitor aggregations of inputs and outputs, such as median and p90, to crudely measure “data drift.” Sometimes, they also compute more complicated statistical tests (e.g., Kolmogorov-Smirnov test), which I definitely will never be able to write in PromQL. These methods are neither sound nor complete, but for the purpose of this exercise, we can keep track of various percentiles of output values using a Histogram Metric. Here’s the relevant instrumentation code in <code>inference/main.py</code>:</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #E1E4E8">hist </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> Histogram(</span><span style="color: #9ECBFF">"model_output"</span><span style="color: #E1E4E8">, </span><span style="color: #9ECBFF">"Some description here"</span><span style="color: #E1E4E8">, </span><span style="color: #FFAB70">buckets</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">=</span><span style="color: #79B8FF">list</span><span style="color: #E1E4E8">( np.arange(</span><span style="color: #79B8FF">0</span><span style="color: #E1E4E8">, </span><span style="color: #79B8FF">1.01</span><span style="color: #E1E4E8">, </span><span style="color: #79B8FF">0.1</span><span style="color: #E1E4E8">)) </span><span style="color: #F97583">+</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">float</span><span style="color: #E1E4E8">(</span><span style="color: #9ECBFF">"inf"</span><span style="color: #E1E4E8">))</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #F97583">def</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">run_predictions</span><span style="color: #E1E4E8">():</span></span>
+<span class="line"><span style="color: #E1E4E8">  </span><span style="color: #6A737D"># Run inference pipeline</span></span>
+<span class="line"><span style="color: #E1E4E8">  …</span></span>
+<span class="line"><span style="color: #E1E4E8">  predictions, _ </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> inference(</span><span style="color: #79B8FF">...</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">  </span><span style="color: #6A737D"># Log predictions and feedbacks</span></span>
+<span class="line"><span style="color: #E1E4E8">  outputs </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> predictions[</span><span style="color: #9ECBFF">"prediction"</span><span style="color: #E1E4E8">].to_list()</span></span>
+<span class="line"><span style="color: #E1E4E8">  </span><span style="color: #F97583">for</span><span style="color: #E1E4E8"> output </span><span style="color: #F97583">in</span><span style="color: #E1E4E8"> outputs:</span></span>
+<span class="line"><span style="color: #E1E4E8">    hist.observe(output)</span></span></code></pre>
+<p>This integration is easier than the cross-component case, but <strong>a major drawback is that we need to define our histogram buckets up front.</strong> This is bad for two reasons: (1) we often don’t know what the distribution of outputs looks like ahead of time, and (2) the distribution may change as the data “drifts.”</p>
+<h3 id="promql-for-ml-slis">PromQL for ML SLIs</h3>
+<p>Now that we’ve instrumented our pipeline, we can spin up our containers via Docker-Compose to begin scraping logged Metric values and extract our ML metrics using PromQL. Using PromQL constructs and a very large whiteboard, I came up with the following queries:<sup><a href="#user-content-fn-4" id="user-content-fnref-4" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup></p>
+<table>
+  <tbody><tr>
+   <td><strong>ML Metric</strong>
+   </td>
+   <td><strong>PromQL Query</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>Accuracy
+   </td>
+   <td><code>count(abs(taxi_data_label - on (output_id) taxi_data_prediction) &#x3C; 0.5) / count(taxi_data_label - on (output_id) taxi_data_prediction)</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Precision
+   </td>
+   <td><code>count( (taxi_data_label * on (output_id) taxi_data_prediction) > 0.5) / count((taxi_data_prediction and on (output_id) taxi_data_label) > 0.5)</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Recall
+   </td>
+   <td><code>count( (taxi_data_label * on (output_id) taxi_data_prediction) > 0.5) / count((taxi_data_label and on (output_id) taxi_data_prediction) == 1)</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Average output [5m]
+   </td>
+   <td><code>sum(rate(model_output_sum[5m])) / sum(rate(model_output_count[5m]))</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Median output [5m]
+   </td>
+   <td><code>histogram_quantile(0.5, sum by (le) (rate(model_output_bucket[5m])))</code>
+   </td>
+  </tr>
+  <tr>
+   <td>Probability distribution of outputs [5m]
+   </td>
+   <td><code>sum(rate(model_output_bucket[5m])) by (le)</code>
+   </td>
+  </tr>
+</tbody></table>
+<p>There are several issues with using PromQL for ML SLIs:</p>
+<p><strong>Incorrectness.</strong> When I first ran the query for accuracy, I was surprised that the results weren’t fully accurate (ha-ha). This was because my scrape interval was 15 seconds, which was too large for the rate at which I was producing new predictions. Shortening the scrape interval to 5 seconds improved the precision of the query but made the Prometheus container slower and consume more memory and compute resources.</p>
+<p><strong>Sliding window challenges.</strong> Even after several hours, I could not figure out how to compute any of the first 3 metrics (cross-component) over fixed window sizes. I found no resources on computing joins in PromQL over sliding windows. I’m not super competent at using Prometheus, so please let me know if it’s possible to compute such metrics over windows.</p>
+<p><strong>Convoluted queries.</strong> The last 3 metrics (single-component) in the table aren’t as convoluted as the first 3 (cross-component). I would not expect <em>any</em> data scientist to write these cross-component PromQL queries, especially for functions that are simply one call to a scikit-learn module. <em>An ideal monitoring tool should allow users to pass in custom Python functions as metrics and efficiently produce values for these metrics over time in the backend.</em></p>
+<h3 id="query-latency">Query Latency</h3>
+<p>In this subsection, I focus on latency, specifically for cross-component queries. To compute an SLI like accuracy, as shown in the previous subsection, we need to do a join on <code>output_id</code>. This is an <em>egregious</em> abuse of Prometheus, as the <code>output_id</code> cardinality obviously grows with the number of predictions an ML pipeline makes. <strong>Prometheus isn’t meant to handle high-cardinality identifiers, let alone high-cardinality joins.</strong></p>
+<p>To demonstrate how poorly Prometheus scales, I prototyped a small Postgres backend that houses predictions and feedbacks in timestamp-indexed tables. I computed accuracies in both PromQL and PostgreSQL and measured latency with respect to number of predictions generated by the pipeline:</p>
+<p><img src="/blogimages/monitoring3querylatency.png" alt="Query Latency">
+<em>Figure 3: ML Query Latency.</em></p>
+<p>Since Prometheus Metric values are not computed eagerly (i.e., they are all computed when a user wants to query or plot them on Grafana over a period of time), <strong>this latency is unacceptable and doesn’t scale</strong>. As more predictions are generated, many organizations that want to keep track of a real-time ML SLI might not be able to update or refresh their SLIs quickly enough. Maybe in some domains, computing SLIs daily or even hourly might be enough, but it won’t work for domains where data and user preferences change frequently. I know I’m using Prometheus for a situation where it’s not designed for, but all in all, these issues collectively highlight the need for organizations to either (1) have an ML monitoring team that creates a layer on top of Postgres or an existing DBMS, or (2) leverage a proprietary vendor specific for ML monitoring. I’m convinced, now, that <strong>we need better ML monitoring practices and tools.</strong></p>
+<h2 id="recap">Recap</h2>
+<p>In this post, I highlighted some of the major pitfalls of using Prometheus for ML monitoring, most notably:</p>
+<ul>
+<li>
+<p>Needing to use multiple Prometheus Metric types for cross-component monitoring</p>
+</li>
+<li>
+<p>Needing to define histogram buckets up front for single-component monitoring</p>
+</li>
+<li>
+<p>Correctness of query results depending on scraping interval</p>
+</li>
+<li>
+<p>Inability to handle sliding windows<sup><a href="#user-content-fn-5" id="user-content-fnref-5" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup></p>
+</li>
+<li>
+<p>Disgusting-looking PromQL queries</p>
+</li>
+<li>
+<p>High latency for cross-component metrics (i.e., high-cardinality joins)</p>
+</li>
+</ul>
+<p>In the next and final piece in this series, I’ll discuss some key requirements and ideas for building a general-purpose ML monitoring tool. I’m super excited to share it with you all, along with a prototype for monitoring real-time ML SLIs. More to come, and happy new year!</p>
+<p><em>Thanks to <a href="https://twitter.com/divyahansg">Divyahans Gupta</a>, <a href="https://twitter.com/PreetumNakkiran">Preetum Nakkiran</a>, and <a href="https://twitter.com/pschafhalter">Peter Schafhalter</a> for feedback on many drafts.</em></p>
+<!-- Footnotes themselves at the bottom. -->
+<h2 id="notes">Notes</h2>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-1">
+<p>This post is geared towards ML engineers and infra people. I recommend having a basic awareness of databases <em>(e.g., tables, joins, indexes), ML SLIs (e.g., accuracy, precision, recall), and query languages (e.g., SQL, PromQL).</em> <a href="#user-content-fnref-1" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-2">
+<p>I capitalize Metric to refer to the Prometheus Metric abstraction. <a href="#user-content-fnref-2" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-3">
+<p>I choose Gauge Metrics for predictions and feedback because they represent numerical values that can go up or down. Since feedback and inference components are usually separated from each other in ML pipelines, there really isn’t a way (that I can think of) to avoid a join. <a href="#user-content-fnref-3" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-4">
+<p>I wouldn’t be surprised if these queries were wrong. Please correct me if there’s an error. <a href="#user-content-fnref-4" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+<li id="user-content-fn-5">
+<p>Maybe this is not a failure mode – I just couldn’t figure it out. Please let me know if I’m wrong! <a href="#user-content-fnref-5" data-footnote-backref="" class="data-footnote-backref" aria-label="Back to content">↩</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+      </article>
+    </main>
+    <footer class="astro-SZ7XMLTE">
+  &copy; 2023 Shreya Shankar. All rights reserved. Website
+  modified from <a href="https://github.com/withastro/astro/tree/main/examples/blog" target="_blank" class="astro-SZ7XMLTE">Astro</a>.
+  <div class="social-links astro-SZ7XMLTE">
+    <a href="https://twitter.com/sh_reya" target="_blank" class="astro-SZ7XMLTE">
+      <span class="sr-only astro-SZ7XMLTE">Follow Shreya on Twitter</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" class="astro-SZ7XMLTE"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" class="astro-SZ7XMLTE"></path></svg>
+    </a>
+    <a href="https://github.com/shreyashankar" target="_blank" class="astro-SZ7XMLTE">
+      <span class="sr-only astro-SZ7XMLTE">Shreya's GitHub</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" class="astro-SZ7XMLTE"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" class="astro-SZ7XMLTE"></path></svg>
+    </a>
+  </div>
+</footer>
+  </body></html>

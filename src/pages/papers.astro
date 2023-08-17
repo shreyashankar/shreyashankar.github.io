@@ -1,0 +1,261 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const papers = [
+  {
+    title: "Revisiting Prompt Engineering via Declarative Crowdsourcing",
+    venue: "Preprint",
+    authors: [
+      "Aditya G. Parameswaran",
+      "Shreya Shankar",
+      "Parth Asawa",
+      "Naman Jain",
+      "Yujie Wang",
+    ],
+    link: "https://arxiv.org/abs/2303.06094",
+  },
+  {
+    title: "Moving Fast with Broken Data: Automatic and Precise Data Validation for Machine Learning",
+    venue: "To appear at CIKM 2023",
+    authors: [
+      "Shreya Shankar",
+      "Labib Fawaz",
+      "Karl Gyllstrom",
+      "Aditya G. Parameswaran",
+    ],
+    link: "https://arxiv.org/abs/2303.06094",
+  },
+  {
+    title: "Operationalizing Machine Learning: An Interview Study",
+    venue: "Preprint",
+    authors: [
+      "Shreya Shankar*",
+      "Rolando Garcia*",
+      "Joseph M. Hellerstein",
+      "Aditya G. Parameswaran",
+    ],
+    link: "https://arxiv.org/abs/2209.09125",
+  },
+  {
+    title: "Towards Observability for Production Machine Learning Pipelines",
+    venue: "To appear at VLDB 2023",
+    authors: ["Shreya Shankar", "Aditya G. Parameswaran"],
+    link: "https://arxiv.org/abs/2108.13557",
+  },
+  {
+    title: "Bolt-on, Compact, and Rapid Program Slicing for Notebooks",
+    venue: "To appear at VLDB 2023",
+    authors: [
+      "Shreya Shankar*",
+      "Stephen Macke*",
+      "Sarah Chasins",
+      "Andrew Head",
+      "Aditya G. Parameswaran",
+    ],
+    link: "https://smacke.net/papers/nbslicer.pdf",
+  },
+  {
+    title: "Rethinking Streaming Machine Learning Evaluation",
+    venue: "ICLR 2022: Workshop on ML Evaluation Standards",
+    authors: ["Shreya Shankar", "Bernease Herman", "Aditya G. Parameswaran"],
+    link: "https://arxiv.org/abs/2205.11473",
+  },
+  {
+    title:
+      "Enabling certification of verification-agnostic networks via memory-efficient semidefinite programming",
+    venue: "NeurIPS 2020",
+    authors: [
+      "Sumanth Dathathri",
+      "Krishnamurthy Dvijotham",
+      "Alexey Kurakin",
+      "Aditi Raghunathan",
+      "Jonathan Uesato",
+      "Rudy R Bunel",
+      "Shreya Shankar",
+      "Jacob Steinhardt",
+      "Ian Goodfellow",
+      "Percy S Liang",
+      "Pushmeet Kohli",
+    ],
+    link: "https://proceedings.neurips.cc/paper/2020/file/397d6b4c83c91021fe928a8c4220386b-Paper.pdf",
+  },
+  {
+    title:
+      "Adversarial examples that fool both computer vision and time-limited humans",
+    venue: "NIPS 2018",
+    authors: [
+      "Gamalelden F. Elsayed",
+      "Shreya Shankar",
+      "Brian Cheung",
+      "Nicolas Papernot",
+      "Alexey Kurakin",
+      "Ian Goodfellow",
+      "Jascha Sohl-Dickstein",
+    ],
+    link: "https://proceedings.neurips.cc/paper/2018/file/8562ae5e286544710b2e7ebe9858833b-Paper.pdf",
+  },
+  {
+    title:
+      "No classification without representation: Assessing geodiversity issues in open data sets for the developing world",
+    venue: "NIPS 2017: Workshop on Machine Learning for the Developing World",
+    authors: [
+      "Shreya Shankar",
+      "Yoni Halpern",
+      "Eric Breck",
+      "James Atwood",
+      "Jimbo Wilson",
+      "D. Sculley",
+    ],
+    link: "https://arxiv.org/abs/1711.08536",
+  },
+];
+const nameToBold = "Shreya Shankar";
+
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      /* Add any desired styles here */
+      /* section {
+        font-family: "Arial", sans-serif;
+        margin: 2rem 0;
+      } */
+    
+    
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+    
+      li {
+      margin: 1rem 0;
+      padding: 1rem;
+      border: 1px solid;
+      border-radius: 5px;
+      overflow: hidden; /* Ensures content hides when collapsed */
+      transition: max-height 0.2s ease-out; /* Animation for the collapsing effect */
+    }
+    
+    .collapsible-content {
+      max-height: 0;  /* Initially collapsed */
+      overflow: hidden; 
+      transition: max-height 0.2s ease-out; 
+    }
+    
+    li.expanded .collapsible-content {
+      max-height: 300px;  /* Adjust as needed for your content's height */
+    }
+
+    ul li a {
+      display: block;
+      text-decoration: none;
+    }
+    
+    ul li a:hover h5,
+    ul li a:hover {
+      /* text-decoration: underline; */
+      color: #2337ff;
+    } 
+    
+    .arrow {
+      cursor: pointer;
+      float: right;
+      display: inline-block;
+      margin-left: 10px; /* adds space between the title and the arrow */
+      font-size: 2rem; /* increases the size of the arrow */
+      transition: transform 0.2s;
+    }
+    
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    
+    input[type="checkbox"]:checked + label + .collapsible-content {
+      max-height: 300px; /* Adjust this value according to your content size */
+    }
+    
+    input[type="checkbox"]:checked + label .arrow {
+      transform: rotate(90deg);
+    }
+    
+    /* Hide the checkbox */
+    input[type="checkbox"] {
+      display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>📚 Papers</h1>
+    <ul>
+      {
+        papers.map((paper, index) => (
+        <li key={paper.title}>
+            <input type="checkbox" id={`toggle-${index}`} />
+            <label for={`toggle-${index}`}>
+            <div class="arrow">&rsaquo;</div>
+            <a href={paper.link} target="_blank" rel="noopener noreferrer">
+              <h5>{paper.title}</h5>
+            </a>
+            </label>
+            <div class="collapsible-content">
+            <p>
+              <em>{paper.venue}</em>
+            </p>
+            <p>
+              <Fragment set:html={paper.authors
+                .map((author) =>
+                  author.includes(nameToBold) ? `<b>${author}</b>` : author
+                )
+                .join(", ")
+              } />
+            </p>
+        </div>
+          </li>
+        ))
+      }
+    </ul>
+      <Footer />
+    </main>
+  </body>
+</html>
+
+
+<!-- <template>
+  <section>
+    <h2>My Publications</h2>
+    <ul>
+      {
+        papers.map((paper) => (
+          <li key={paper.title}>
+            <a href={paper.link} target="_blank" rel="noopener noreferrer">
+              <h3>{paper.title}</h3>
+            </a>
+            <p>
+              <strong>Venue:</strong> {paper.venue}
+            </p>
+            <p>
+              <strong>Authors:</strong>
+              {paper.authors
+                .map((author) =>
+                  author === nameToBold ? `<strong>${author}</strong>` : author
+                )
+                .join(", ")}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</template> -->
+
