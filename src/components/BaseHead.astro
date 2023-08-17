@@ -11,7 +11,7 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const { title, description, image = "/icon.png" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -23,14 +23,14 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <!-- Font preloads -->
 <link
   rel="preload"
-  href="/fonts/GTWalsheimPro-Light.woff"
+  href="fonts/GTWalsheimPro-Light.woff"
   as="font"
   type="font/woff"
   crossorigin
 />
 <link
   rel="preload"
-  href="/fonts/GTWalsheimPro-Medium.woff"
+  href="fonts/GTWalsheimPro-Medium.woff"
   as="font"
   type="font/woff"
   crossorigin

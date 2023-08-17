@@ -17,7 +17,7 @@ I’m mainly interested in solving problems around production ML pipelines. As a
 
 I’m excited to share a dev release of [`mltrace`](https://github.com/loglabs/mltrace), a coarse-grained lineage and tracing tool for ML pipelines. It’s designed for collaborative teams working on production ML pipelines, which are composed of many different components that run and update at different cadences. It makes it easy to trace a prediction or model’s output back to its most upstream, raw data file.
 
-![mltrace demo](/blogimages/mltrace.gif)
+![mltrace demo](blogimages/mltrace.gif)
 
 You’ll notice, in this release, that the tool doesn’t actually have anything ML-specific aspects to it. It’s intentionally designed for complex pipelines with many chained data transformations. ML pipelines are instances of complex data pipelines.
 
