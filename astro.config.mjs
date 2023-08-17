@@ -8,6 +8,4 @@ import netlify from '@astrojs/netlify/edge-functions';
 export default defineConfig({
 	site: 'https://shreya-shankar.com',
 	integrations: [mdx(), sitemap()],
-	output: 'server',
-	adapter: netlify(),
 });

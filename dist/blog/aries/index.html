@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="astro-BVZIHDZO">
+  <head>
+    <!-- Global Metadata --><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="/icon.png">
+<meta name="generator" content="Astro v2.10.9">
+
+<!-- Font preloads -->
+<link rel="preload" href="fonts/GTWalsheimPro-Light.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/GTWalsheimPro-Medium.woff" as="font" type="font/woff" crossorigin>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://shreya-shankar.com/blog/aries/">
+
+<!-- Primary Meta Tags -->
+<title>Notes on ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging</title>
+<meta name="title" content="Notes on ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging">
+<meta name="description" content="">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shreya-shankar.com/blog/aries/">
+<meta property="og:title" content="Notes on ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://shreya-shankar.com/icon.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://shreya-shankar.com/blog/aries/">
+<meta property="twitter:title" content="Notes on ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging">
+<meta property="twitter:description" content="">
+<meta property="twitter:image" content="https://shreya-shankar.com/icon.png">
+    
+  <link rel="stylesheet" href="/_astro/_...slug_.8be9d9b3.css" />
+<link rel="stylesheet" href="/_astro/_...slug_.ee60a110.css" /></head>
+
+  <body class="astro-BVZIHDZO">
+    <header class="astro-3EF6KSR2">
+  <nav class="astro-3EF6KSR2">
+    <h2 class="astro-3EF6KSR2"><a href="/" class="astro-3EF6KSR2">Shreya Shankar</a></h2>
+    <div class="internal-links astro-3EF6KSR2">
+      <a href="/" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Home
+</a>
+      <a href="/blog" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Blog
+</a>
+      <a href="/papers" class="astro-3EF6KSR2 astro-EIMMU3LG">
+	Papers
+</a>
+    </div>
+    <div class="social-links astro-3EF6KSR2">
+      <a href="https://twitter.com/sh_reya" target="_blank" class="astro-3EF6KSR2">
+		<span class="sr-only astro-3EF6KSR2">Follow Shreya on Twitter</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" class="astro-3EF6KSR2"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" class="astro-3EF6KSR2"></path></svg>
+      </a>
+      <a href="https://github.com/shreyashankar" target="_blank" class="astro-3EF6KSR2">
+		<span class="sr-only astro-3EF6KSR2">Shreya's GitHub</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" class="astro-3EF6KSR2"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" class="astro-3EF6KSR2"></path></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+    <main class="astro-BVZIHDZO">
+      <article class="astro-BVZIHDZO">
+        <!-- <div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div> -->
+        <div class="prose astro-BVZIHDZO">
+          <div class="title astro-BVZIHDZO">
+            <div class="date astro-BVZIHDZO">
+              <time datetime="2022-07-09T07:00:00.000Z">
+	Jul 9, 2022
+</time>
+              
+            </div>
+            <h1 class="astro-BVZIHDZO">Notes on ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging</h1>
+            <hr class="astro-BVZIHDZO">
+          </div>
+          
+	<p>As part of my preparation for the Berkeley DB prelim exam, I’m finding it helpful to write notes for some of the difficult concepts. This post is about the <a href="https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf">ARIES recovery algorithm</a> (Mohan et al. 1992) — the motivation, data structures needed, and the algorithm itself.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Databases have <em>in-memory</em> and <em>disk</em> components. A database <em>transaction</em> consists of several operations, like read or write data. Operations are done in memory, and data is persistently saved in disk.</p>
+<p>Recall that a unit of data storage is a <em>page</em>. Memory consists of a buffer of pages, which get <em>dirtied</em> with new data when users want to make changes to their data. Dirty pages must then be flushed back to disk, or persistent storage.</p>
+<p>Memory is wiped on system failures or shutdowns. During a crash, data in memory that hasn’t yet been flushed to disk will be lost forever. This poses problems for database users — if the database tells them that they’ve successfully updated their data, but the updates only live in memory, the user can lose their updates if there’s a crash! Thus, as database developers, how can we guarantee <em>recovery</em>, or promise that in a crash, the database will eventually reflect a state the user is fully aware of?</p>
+<p>Recovery techniques address two of the ACID properties:</p>
+<ul>
+<li>Atomicity: either all or no operations in a transaction persist</li>
+<li>Durability: if the database claims that a transaction commit finishes, the result of the transaction will definitely persist</li>
+</ul>
+<p>As an example, suppose you are placing an Amazon shopping order and an Amazon machine loses connection in the middle of the purchase.</p>
+<ul>
+<li>Atomicity: either all the items in the order are purchased or zero of the items are purchased</li>
+<li>Durability: if Amazon confirms the order, you should always be able to see the order in your order history, and you will receive the order</li>
+</ul>
+<p>Let’s try to guarantee atomicity first. A simple policy is: only write a transaction’s dirty pages to memory after the transaction has committed. In the Amazon example, this means only write all the ordered items to persistent storage once we’ve confirmed the order. This is called a <strong>no-steal</strong> policy: we can’t “steal” buffer frames of transaction A’s dirty pages for another transaction B unless transaction A has fully completed. No-steal gives us atomicity, but it makes our throughput low — we can’t highly interleave transactions. So we’d like to be able to use a steal policy, or allow Transaction A’s dirty pages to be written to disk before it completes so there’s room for Transaction B to do work. A good recovery technique will allow stealing, but provide some guarantees on atomicity by allowing the <em>undo</em> of bad operations (more later on).</p>
+<p>Now, how can we simply guarantee durability? When a transaction commits, we can force all its dirty pages to be flushed to disk. In the Amazon example, this means when Amazon confirms an order, all items should immediately be written to persistent storage. This is called a <strong>force</strong> policy: we force changes to disk as soon as a transaction commits. Force gives us durability, but it is slow: it results in excessive I/O costs, since we must write highly used pages to disk on every commit. So we’d like to be able to use a no-force policy, or allow dirty pages to get flushed to disk on their own time. A good recovery technique will allow no-force, but provide guarantees on durability by allowing the <em>redo</em> of committed transactions (more later on).</p>
+<p>To recap, the steal and force approaches can be mixed as follows:</p>
+<table>
+  <tbody><tr>
+   <td>
+   </td>
+   <td><strong>No-Steal</strong>
+   </td>
+   <td><strong>Steal</strong>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Force</strong>
+   </td>
+   <td>Bad throughput, bad latency…but guarantees atomicity and durability
+   </td>
+   <td>Good throughput (a transaction can steal pages from the buffer do work), bad latency (must wait for all dirty pages for a transaction to be flushed to disk after it commits)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>No-Force</strong>
+   </td>
+   <td>Bad throughput (transactions can’t use the buffer if it’s full), good latency (dirty pages for finished transactions can be flushed to disk whenever convenient)
+   </td>
+   <td>Good throughput, good latency…if we can ensure atomicity and durability somehow
+   </td>
+  </tr>
+</tbody></table>
+<p>As a database developer, ideally we would use a <strong>steal, no-force</strong> approach. But we’d need to guarantee atomicity and durability somehow if there were a crash. The challenge is: <strong>what extra information do we maintain to, upon crash, reconstruct the database to the state it was in prior to the crash? And how would we use this information to actually reconstruct the database?</strong></p>
+<h2 id="logging">Logging</h2>
+<p>Recovery managers in databases typically maintain a <em>log</em> of database modifications. On failure, the log gets replayed to redo committed transactions and undo uncommitted transactions. There are several types of log records:</p>
+<ul>
+<li>UPDATE: making a change to the data</li>
+<li>COMMIT: starting the commit process</li>
+<li>ABORT: starting the abort process</li>
+<li>CLR (compensation log record): an update that happens as a result of an abort (i.e., updates for undone operations). Contains the undo LSN (the LSN of the operation we undid)</li>
+<li>END: ending the commit or abort, finishing a transaction</li>
+</ul>
+<p>It is important to make sure the log is persistent, or survives crashes itself. To guarantee atomicity and durability, we have two rules for how we write logs to disk:</p>
+<ul>
+<li>Atomicity: log records must be written to disk before its corresponding transaction’s dirty pages get written to disk. Otherwise, if dirty pages were written to disk before the log records and there was a crash, we would not know what operations to undo because the operations weren’t logged to disk!</li>
+<li>Durability: when a transaction commits, we must write all of its records to disk. Otherwise, if a transaction committed before its records were written to disk and there was a crash, we would not know what records to replay!</li>
+</ul>
+<p>These rules are known as the <em>Write-Ahead Logging</em> (WAL) protocol. WAL guarantees that a record of every change to the database is available upon crash.</p>
+<p>Now that we know the mechanisms for how to log, we can discuss what to log. Every log record has a <em>LSN</em>, or log sequence number. LSNs must be monotonically increasing so we can infer the order of operations from a sequence of LSNs. Every log record also contains a <em>prevLSN</em>, which is the LSN from the last operation of the same transaction. The prevLSN is useful when we want to undo transactions (more later).</p>
+<p>Log records contain the following metadata:</p>
+<ul>
+<li>LSN</li>
+<li>prevLSN</li>
+<li>Record Type</li>
+<li>Transaction ID</li>
+<li>Page ID (for UPDATEs only)</li>
+<li>Length (for UPDATEs only)</li>
+<li>Offset (for UPDATEs only)</li>
+<li>Old data (for UPDATEs only, for undo)</li>
+<li>New data (for UPDATEs only, for redo)</li>
+</ul>
+<p>Additionally, every log record essentially describes a change made to a page. So, every page contains a new piece of metadata — the <em>pageLSN</em>, or the LSN of the most recent log record that describes a change made to it. Since the log is periodically forcibly saved to disk, the database keeps track of the <em>flushedLSN</em>, or the maximum LSN saved to disk so far. As a result of WAL (log records must be flushed before their data pages), before a page <em>i</em> is flushed to disk, the inequality flushedLSN >= pageLSN_i always holds.</p>
+<p>Now that we know how and what to log, <em>when</em> do we write records to the log? We write a log record after any of the following actions in memory:</p>
+<table>
+  <tbody><tr>
+   <td><strong>Transaction Action</strong>
+   </td>
+   <td><strong>Corresponding Log Modifications</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>UPDATE
+   </td>
+   <td>
+<ul>
+<li>Initialize a new LSN <em>n</em>
+</li><li>Get previous LSN <em>m</em> in the log corresponding to the same transaction, or set <em>m</em> to null
+</li><li>Append an UPDATE record with LSN <em>n</em> and prevLSN <em>m</em> to the log. Also set the page ID, length, offset, old data, and new data fields in the log record.
+</li><li>Change the pageLSN to <em>n</em>
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>COMMIT
+   </td>
+   <td>
+<ul>
+<li>Initialize a new LSN <em>n</em>
+</li><li>Get previous LSN <em>m</em> in the log corresponding to the same transaction, or set <em>m</em> to null
+</li><li>Append a COMMIT record with LSN <em>n</em> and prevLSN <em>m</em> to the log
+</li><li><strong>Flush the log to disk!</strong>
+</li><li><strong>Refresh flushedLSN</strong>
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>ABORT
+   </td>
+   <td>
+<ul>
+<li>Initialize a new LSN <em>n</em>
+</li><li>Get previous LSN <em>m</em> in the log corresponding to the same transaction, or set <em>m</em> to null
+</li><li>Append an ABORT record with LSN <em>n</em> and prevLSN <em>m</em> to the log
+</li><li>Initiate an undo (i.e., undo each operation in the transaction in reverse order)
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>CLR
+   </td>
+   <td>
+<ul>
+<li>Initialize a new LSN <em>n</em>
+</li><li>Get previous LSN <em>m</em> in the log corresponding to the same transaction, or set <em>m</em> to null
+</li><li>Get undo LSN <em>l</em> for the operation to be undone
+</li><li>Append a CLR record with LSN <em>n</em>, undo LSN <em>l</em>, and prevLSN <em>m</em> to the log
+</li>
+</ul>
+   </td>
+  </tr>
+  <tr>
+   <td>END
+   </td>
+   <td>
+<ul>
+<li>Initialize a new LSN <em>n</em>
+</li><li>Get previous LSN <em>m</em> in the log corresponding to the same transaction, or set <em>m</em> to null
+</li><li>Append an END record with LSN <em>n</em> and prevLSN <em>m</em> to the log
+</li>
+</ul>
+   </td>
+  </tr>
+</tbody></table>
+<p>That is all the information needed for what to log, when to log, and how to log!</p>
+<h2 id="recovery-data-structures">Recovery Data Structures</h2>
+<p>We keep two data structures of state in memory — the <em>transaction table</em> and the <em>dirty page table</em> — to ease the recovery process.</p>
+<p>For all <em>active</em> transactions only, the transaction table keeps the following metadata:</p>
+<ul>
+<li>Transaction ID</li>
+<li>Status (in progress, committed, aborted)</li>
+<li>lastLSN (the most recent log record for this transaction, useful for undoing)</li>
+</ul>
+<p>For every dirty page in the buffer, the dirty page table keeps the following metadata:</p>
+<ul>
+<li>Page ID</li>
+<li>recLSN (the LSN of the first log record that first dirtied this page; useful for redoing)</li>
+</ul>
+<p>The following inequalities hold:</p>
+<ol>
+<li>Before a transaction T commits, all its logs must be flushed to disk (as a result of WAL), so flushedLSN >= lastLSN_T</li>
+<li>For a page P in the dirty page table, recLSN_P &#x3C;= in memory pageLSN_P</li>
+<li>For a page P in the dirty page table, recLSN_P > on disk pageLSN_P</li>
+</ol>
+<h2 id="aries-recovery-algorithm">ARIES Recovery Algorithm</h2>
+<p>The previous sections answered the question: what extra information do we maintain to, upon crash, reconstruct the database to the state it was in prior to the crash? In this section, we answer the algorithm question: <strong>how would we use this information to actually reconstruct the database?</strong></p>
+<p>When a database crashes, all we have are the logs that got saved to disk. The ARIES recovery algorithm has 3 phases that occur in the following order:</p>
+<ol>
+<li>Analysis: reconstruct transaction and dirty page tables</li>
+<li>Redo: repeat operations (for durability)</li>
+<li>Undo: undo operations from transactions in-progress during the crash (for atomicity)</li>
+</ol>
+<h3 id="analysis">Analysis</h3>
+<p>In the analysis phase, we scan through the log from the start to reconstruct the transaction and dirty page tables. For each record in the log, we act according to the following rules:</p>
+<ul>
+<li>If the record is not an END:
+<ul>
+<li>Add transaction to the transaction table if it does not exist</li>
+<li>Set transaction’s lastLSN to the record’s LSN</li>
+</ul>
+</li>
+<li>If the record is an UPDATE:
+<ul>
+<li>If the modified page is not in the DPT, add it to the DPT</li>
+<li>Set the page’s recLSN to the record’s LSN</li>
+</ul>
+</li>
+<li>If the record is a COMMIT or an ABORT:
+<ul>
+<li>Change the transaction’s status accordingly in the transaction table</li>
+</ul>
+</li>
+<li>If the record is an END:
+<ul>
+<li>Remove the transaction from the transaction table</li>
+</ul>
+</li>
+</ul>
+<p>Something else to consider is that transactions may have been in the process of running, committing, or aborting at the time of the crash. So we need to do another “final pass” for the transactions in the transaction table. There are two rules to keep in mind for the final pass:</p>
+<ul>
+<li>If the transaction was in the process of committing, we add an END record to the log and remove it from the transactions table.</li>
+<li>If the transaction was running, we change its status in the transaction table to aborting and add an ABORT record to the log.</li>
+</ul>
+<h3 id="redo">Redo</h3>
+<p>Once we finish the analysis phase, we start the redo phase to get durability. We begin at the smallest recLSN in the dirty page table and redo following transactions.</p>
+<p>Intuitively, in this phase, we want to redo all operations that did not make it to disk before the crash. The metadata in the transaction and dirty page tables will help us determine whether the operation made it to disk before the crash.</p>
+<p>We redo all UPDATE and CLR operations that do not meet <em>any</em> of the following criteria:</p>
+<ul>
+<li>The page is not in the DPT — meaning the change must have been flushed to disk before the crash</li>
+<li>The corresponding pageLSN on disk >= current record’s LSN — meaning at least the current operation (and possibly some future operation) must have made it to disk before the crash</li>
+<li>The corresponding recLSN in the dirty page table > current record’s LSN — meaning the first operation that dirtied the page occurred after the current operation, so the current operation must have made it to disk before the crash</li>
+</ul>
+<h3 id="undo">Undo</h3>
+<p>Finally, we can do the undo phase to ensure atomicity. We start at the <em>end</em> of the log and work our way back to the start. Intuitively, we want to undo any UPDATE for any running or aborting transaction at the time of crash. We will only undo UPDATEs that do not have corresponding CLRs (meaning, we will not undo UPDATEs that have already been undone by a CLR).</p>
+<p>We have one extra piece of metadata to track in this phase: the <em>undoNextLSN</em>. This field stores the LSN of the operation that we want to next undo for that transaction (derived from the prevLSN of the operation currently being undone). Once we undo all operations for a transaction, we can write an END record for that transaction.</p>
+<p>Here is the pseudocode for the undo phase (taken from the <a href="https://cs186berkeley.net/resources/static/notes/n14-Recovery.pdf">Berkeley DB notes</a>):</p>
+<pre is:raw="" class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;" tabindex="0"><code><span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">toUndo = {lastLSN of all transactions in transaction table}</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">while !toUndo.isEmpty():</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">	currRecord = max(toUndo)</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">	if currRecord.type == CLR:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">		if currRecord.undoNextLSN == NULL:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">			# Write END record for currRecord.transaction_id</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">		else:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">			toUndo.add(currRecord.undoNextLSN)</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">	else:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">		if currRecord.type == UPDATE:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">			# Undo update in the DB</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">        # Write CLR record for currRecord.transaction_id</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">        if currRecord.prevLSN != NULL:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">        	toUndo.add(currRecord.prevLSN)</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">        if currRecord.prevLSN == NULL:</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">        	# Write END record for currRecord.transaction_id</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">	toUndo.remove(currRecord)</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span></code></pre>
+<p>The intuition behind the pseudocode is as follows: we want to undo all the not-undone operations for all the transactions in the transaction table. So we keep iterating through operations of the transactions, in reverse order (according to LSNs). If the record was a CLR, then we don’t have anything to undo in the DB – we just traverse to the next LSN to undo (or write an END if there isn’t one). If the record was an UPDATE, we undo it in the DB, log a CLR record, and traverse to the next LSN to undo (or write an END if there isn’t one).</p>
+<h3 id="optimization-checkpointing">Optimization: Checkpointing</h3>
+<p>In production DBs, it can be terribly inefficient to reconstruct the transaction and dirty page tables from the absolute beginning of the log. So ARIES uses checkpointing to speed up the analysis phase, which periodically writes the contents of the transaction and dirty page tables to the log, so we can read from the latest checkpoint instead of reconstructing from scratch.</p>
+<p>With checkpointing, &#x3C;BEGIN_CHECKPOINT> and &#x3C;END_CHECKPOINT> records get written to the log, with the contents of the transaction and dirty page tables in between. When reconstructing, we need to start reading operations from the &#x3C;BEGIN_CHECKPOINT> — because the tables saved to the log can be the state at any point between the &#x3C;BEGIN_CHECKPOINT> and &#x3C;END_CHECKPOINT> records.</p>
+<h3 id="list-of-lsns">List of LSNs</h3>
+<p>The Berkeley DB course <a href="https://cs186berkeley.net/resources/static/notes/n14-Recovery.pdf">notes</a> have a helpful appendix of all the LSNs:</p>
+<table>
+  <tbody><tr>
+   <td><strong>LSN name</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>LSN
+   </td>
+   <td>Log sequence number (increasing, unique)
+   </td>
+  </tr>
+  <tr>
+   <td>flushedLSN
+   </td>
+   <td>LSN that was last flushed to disk, stored in memory
+   </td>
+  </tr>
+  <tr>
+   <td>pageLSN
+   </td>
+   <td>LSN for the last operation that edited that page (every page has a pageLSN)
+   </td>
+  </tr>
+  <tr>
+   <td>prevLSN
+   </td>
+   <td>LSN for the last operation for the same transaction, stored in each log record
+   </td>
+  </tr>
+  <tr>
+   <td>lastLSN
+   </td>
+   <td>Last LSN corresponding to the transaction, stored in each entry in the transaction table
+   </td>
+  </tr>
+  <tr>
+   <td>recLSN
+   </td>
+   <td>First LSN to modify the page, stored in each entry of the dirty page table
+   </td>
+  </tr>
+  <tr>
+   <td>undoNextLSN
+   </td>
+   <td>The LSN of the next operation to undo for the same transaction, stored in CLR records in the log
+   </td>
+  </tr>
+</tbody></table>
+
+        </div>
+      </article>
+    </main>
+    <footer class="astro-SZ7XMLTE">
+  &copy; 2023 Shreya Shankar. All rights reserved. Website
+  modified from <a href="https://github.com/withastro/astro/tree/main/examples/blog" target="_blank" class="astro-SZ7XMLTE">Astro</a>.
+  <div class="social-links astro-SZ7XMLTE">
+    <a href="https://twitter.com/sh_reya" target="_blank" class="astro-SZ7XMLTE">
+      <span class="sr-only astro-SZ7XMLTE">Follow Shreya on Twitter</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" class="astro-SZ7XMLTE"><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" class="astro-SZ7XMLTE"></path></svg>
+    </a>
+    <a href="https://github.com/shreyashankar" target="_blank" class="astro-SZ7XMLTE">
+      <span class="sr-only astro-SZ7XMLTE">Shreya's GitHub</span>
+      <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" class="astro-SZ7XMLTE"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" class="astro-SZ7XMLTE"></path></svg>
+    </a>
+  </div>
+</footer>
+  </body></html>

@@ -1,5 +1,0 @@
-/blog       /.netlify/edge-functions/entry    200
-/papers     /.netlify/edge-functions/entry    200
-/rss.xml    /.netlify/edge-functions/entry    200
-/           /.netlify/edge-functions/entry    200
-/blog/*     /.netlify/edge-functions/entry    200
