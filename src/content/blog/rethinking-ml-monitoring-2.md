@@ -12,7 +12,7 @@ Recently, Zillow made the rounds on social media for their latest ML disaster. S
 
 To dissect how to improve the distressing state of applied ML, I think it’s important to understand how ML practitioners currently spend their time. After searching far and wide, I found a pretty accurate breakdown (in my opinion) of how industry ML projects allocate time in a post on [why 87% of machine learning projects fail](https://iiot-world.com/industrial-iot/connected-industry/why-85-of-machine-learning-projects-fail/)[^1]:
 
-![Breakdown of how ML practitioners spend their time](/blogimages/montoring2breakdown.png)
+![Breakdown of how ML practitioners spend their time](/blogimages/monitoring2breakdown.png)
 
 _Figure 1: Chart breaking down time allocation for ML projects, taken from [iiot-world](https://iiot-world.com/industrial-iot/connected-industry/why-85-of-machine-learning-projects-fail/)._
 
